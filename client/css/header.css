@@ -1,0 +1,61 @@
+
+.nav{justify-content: center;display: flex;height: 115px;align-items: center}
+.nav a{display: block;text-align: center;color: #7f7f7f;padding: 0 20px;}
+.ico-nav{width: 60px;height: 42px;display: block;background: url(../img/spr-header.png) 0 -999em no-repeat;opacity: .8;margin: 0 auto;background-size: 480px auto;}
+.nav a{font-size: 14px;position: relative;}
+.ico-nav{width: 40px;height: 28px;}
+.ico-movie{background-position: 0 0}
+.ico-tv{background-position: -40px 0}
+.ico-game{background-position: -79px 0}
+.ico-show{background-position: -120px 0}
+.ico-vip{background-position: -160px 0}
+.ico-lx{background-position: -200px 0}
+.ico-sjxl{background-position: -240px 0}
+.ico-personal{
+  width:30px;
+  background:url(../img/header/ani-per.png) no-repeat;
+  animation: ani-home 3.1s steps(31) infinite;
+}
+.ico-feature{background-position: -400px 0;}
+@keyframes ani-home{
+  0%{background-position: 0 0;}
+  100%{background-position: -992px 0;}
+}
+a:hover .ico-vip{background-position: -160px -30px;}
+a:hover .ico-movie{background-position: 0 -30px;}
+a:hover .ico-tv{background-position: -40px -30px;}
+a:hover .ico-game{background-position: -79px -30px}
+a:hover .ico-show{background-position: -120px -30px}
+a:hover .ico-lx{background-position: -200px -30px}
+a:hover .ico-sjxl{background-position: -240px -30px;}
+.ico-home{background-position: -280px 0}
+a:hover .ico-home{background-position: -280px -30px;}
+a:hover .ico-feature{background-position: -400px -30px;}
+.index-x .link-report-top{
+  position: absolute;
+  top: 2px;
+  right: -10px;
+  width: 60px;
+  text-align: center;
+  transform: rotate(45deg);
+}
+.link-report-top:hover .link-report-text1{
+  background: #ff8080;
+}
+.link-report-top:hover .link-report-text2{
+  color: #ff8080;
+}
+.link-report-text1{
+  display: block;
+  height: 17px;
+  line-height: 17px;
+  color: #fff;
+  background: #ff4848;
+  transition: .2s;
+}
+.link-report-text2{
+  color: #ff4848;
+  transition: .2s;
+}
+
+

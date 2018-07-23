@@ -1,0 +1,116 @@
+/* scrollbar */
+/* BEM */
+.xlx-speed-list {
+  width: 192px; }
+
+.xlx-speed-list__header {
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
+  line-height: 44px; }
+  .xlx-speed-list__header .xlx-speed-list__title {
+    color: #7698B7; }
+
+.xlx-speed-list__content .xlx-speed-list__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  height: 56px; }
+  .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__image {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: solid 2px transparent;
+    border-radius: 50%;
+    box-sizing: border-box; }
+    .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__image img {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      border-radius: 50%; }
+    .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__image:after {
+      position: absolute;
+      left: 1px;
+      bottom: -1px;
+      font-size: 24px;
+      font-family: "xlx-icon" !important;
+      content: "\e649"; }
+    .xlx-speed-list__rank {
+      position: absolute;
+      z-index: 3;
+      top: -15px;
+      left: 2px; }
+      .xlx-speed-list__rank .xlx-speed-list__rank-num {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 10px;
+        line-height: 20px;
+        font-style: normal; }
+    .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__image.is-first {
+      color: #ffc24c;
+      border-color: currentColor; }
+    .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__image.is-second {
+      color: #99bade;
+      border-color: currentColor; }
+    .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__image.is-third {
+      color: #ffaca1;
+      border-color: currentColor; }
+  .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__user-name {
+    display: inline-block;
+    max-width: 6em;
+    margin-left: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all; }
+  .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__infomation {
+    position: absolute;
+    top: 0;
+    right: 6px;
+    display: flex;
+    align-items: center;
+    height: 100%; }
+  .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__speed {
+    color: var(--color-detail-primary); }
+  .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__message {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    color: var(--color-primary);
+    display: none; }
+  .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__link, .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__text {
+    margin-left: 8px;
+    color: var(--color-primary); }
+  .xlx-speed-list__content .xlx-speed-list__item:hover {
+    background: #f0f3fa; }
+  .xlx-speed-list__content .xlx-speed-list__item.is-front .xlx-speed-list__speed {
+    color: var(--color-danger); }
+  .xlx-speed-list__content .xlx-speed-list__item.is-last {
+    margin-bottom: 30px; }
+    .xlx-speed-list__content .xlx-speed-list__item.is-last:before {
+      position: absolute;
+      bottom: -15px;
+      left: 13px;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: #7698b7;
+      box-shadow: 6px 0 0 #7698b7,12px 0 0 #7698b7;
+      content: ""; }
+  .xlx-speed-list__content .xlx-speed-list__item.is-myself .xlx-speed-list__user-name {
+    color: var(--color-primary); }
+  .xlx-speed-list__content .xlx-speed-list__item.is-null .xlx-speed-list__image {
+    color: #d3e3f0;
+    border-color: var(--color-detail-line); }
+  .xlx-speed-list__content .xlx-speed-list__item.is-null .xlx-speed-list__user-name {
+    color: var(--color-detail-primary); }
+
+/*# sourceMappingURL=xlx-speed.css.map */

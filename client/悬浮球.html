@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="http://xl_public_service.gitlab.xunlei.cn/thunder-ui/_dist/thunder-ui.css">
+  <link rel="stylesheet" href="css/xlx-icon.css">
+  <link rel="stylesheet" href="css/xlx-suspension.css">
+  <title>悬浮球</title>
+
+</head>
+
+<body>
+  <div class="xlx-suspension is-downing">
+    <div class="xlx-suspension__inner">
+      <div class="xlx-suspension__ball"></div>
+      <div class="xlx-suspension__wave">
+        <div class="xlx-suspension__wave-inner" style="height: 20%"></div>
+      </div>
+      <div class="xlx-suspension__bird"></div>
+      <div class="xlx-suspension__speed">
+        <p class="xlx-suspension__speed-total"><span>787</span>KB/S</p>
+        <p class="xlx-suspension__speed-upgrade">+999KB/S</p>
+      </div>
+      <div class="xlx-suspension__status">
+        <p>状态</p>
+      </div>
+    </div>
+    <!-- <div class="xlx-suspension-list" style="right: 50%;top: 50%;">
+      <div class="xlx-suspension-list__header">
+        <h2>正在下载（<span>8</span>）</h2>
+        <p>+0KB/s，您还未开通<a href="#">开通会员</a></p>
+      </div>
+      <div class="xlx-suspension-list__body">
+        <ul>
+          <li class="xlx-suspension-list__item">
+            <span class="xlx-suspension-list__background" style="width: 5%;"></span>
+            <i class="xlx-icon-type xlx-icon-type-rmvb"></i>
+            <p class="xlx-suspension-list__name">闪光少女.rmvb</p>
+            <p class="xlx-suspension-list__status">暂停</p>
+          </li>
+          <li class="xlx-suspension-list__item">
+            <span class="xlx-suspension-list__background" style="width: 80%;"></span>
+            <i class="xlx-icon-type xlx-icon-type-bt-file"></i>
+            <p class="xlx-suspension-list__name">[银光字幕组][七月新番★][漫威未来复仇者][04][简日双语][HDrip][X264-AAC][720P][MP4].mp4.bt</p>
+            <p class="xlx-suspension-list__status">999.99MB/s</p>
+          </li>
+          <li class="xlx-suspension-list__item">
+            <span class="xlx-suspension-list__background" style="width: 30%;"></span>
+            <i class="xlx-icon-type xlx-icon-type-pdf"></i>
+            <p class="xlx-suspension-list__name">HTML从入门到放弃.pdf</p>
+            <p class="xlx-suspension-list__status">暂停</p>
+          </li>
+          <li class="xlx-suspension-list__item">
+            <span class="xlx-suspension-list__background" style="width: 50%;"></span>
+            <i class="xlx-icon-type xlx-icon-type-bt-file"></i>
+            <p class="xlx-suspension-list__name">[银光字幕组][七月新番★][漫威未来复仇者][04][简日双语][HDrip][X264-AAC][720P][MP4].mp4.bt</p>
+            <p class="xlx-suspension-list__status">暂停</p>
+          </li>
+          <li class="xlx-suspension-list__item">
+            <span class="xlx-suspension-list__background" style="width: 50%;"></span>
+            <i class="xlx-icon-type xlx-icon-type-exe"></i>
+            <p class="xlx-suspension-list__name">388.16-quadro-grid-desktop-notebook-win10-64bit-international-whql.exe</p>
+            <p class="xlx-suspension-list__status">暂停</p>
+          </li>
+          <li class="xlx-suspension-list__item">
+            <span class="xlx-suspension-list__background" style="width: 50%;"></span>
+            <i class="xlx-icon-type xlx-icon-type-bt-file"></i>
+            <p class="xlx-suspension-list__name">[银光字幕组][七月新番★][漫威未来复仇者][04][简日双语][HDrip][X264-AAC][720P][MP4].mp4.bt</p>
+            <p class="xlx-suspension-list__status">暂停</p>
+          </li>
+        </ul>
+        <div class="xlx-suspension-list__empty" style="display: none">
+          <p>暂无下载任务</p>
+        </div>
+      </div>
+      <div class="xlx-suspension-list__footer">
+          <a href="javascript:;" class="td-button td-button--secondary">查看已完成</a>
+      </div>
+    </div>
+    <div class="xlx-suspension-list" style="right: 500px;top: 50%;">
+        <div class="xlx-suspension-list__header">
+          <h2>正在下载（<span>8</span>）</h2>
+          <a href="#">开通会员，有效提速164%</a>
+        </div>
+        <div class="xlx-suspension-list__body">
+          <ul style="display: none">
+            <li class="xlx-suspension-list__item">
+              <span class="xlx-suspension-list__background" style="width: 5%;"></span>
+              <i class="xlx-icon-type xlx-icon-type-rmvb"></i>
+              <p class="xlx-suspension-list__name">闪光少女.rmvb</p>
+              <p class="xlx-suspension-list__status">暂停</p>
+            </li>
+            <li class="xlx-suspension-list__item">
+              <span class="xlx-suspension-list__background" style="width: 80%;"></span>
+              <i class="xlx-icon-type xlx-icon-type-bt-file"></i>
+              <p class="xlx-suspension-list__name">[银光字幕组][七月新番★][漫威未来复仇者][04][简日双语][HDrip][X264-AAC][720P][MP4].mp4.bt</p>
+              <p class="xlx-suspension-list__status">999.99MB/s</p>
+            </li>
+            <li class="xlx-suspension-list__item">
+              <span class="xlx-suspension-list__background" style="width: 30%;"></span>
+              <i class="xlx-icon-type xlx-icon-type-pdf"></i>
+              <p class="xlx-suspension-list__name">HTML从入门到放弃.pdf</p>
+              <p class="xlx-suspension-list__status">暂停</p>
+            </li>
+            <li class="xlx-suspension-list__item">
+              <span class="xlx-suspension-list__background" style="width: 50%;"></span>
+              <i class="xlx-icon-type xlx-icon-type-bt-file"></i>
+              <p class="xlx-suspension-list__name">[银光字幕组][七月新番★][漫威未来复仇者][04][简日双语][HDrip][X264-AAC][720P][MP4].mp4.bt</p>
+              <p class="xlx-suspension-list__status">暂停</p>
+            </li>
+            <li class="xlx-suspension-list__item">
+              <span class="xlx-suspension-list__background" style="width: 50%;"></span>
+              <i class="xlx-icon-type xlx-icon-type-exe"></i>
+              <p class="xlx-suspension-list__name">388.16-quadro-grid-desktop-notebook-win10-64bit-international-whql.exe</p>
+              <p class="xlx-suspension-list__status">暂停</p>
+            </li>
+            <li class="xlx-suspension-list__item">
+              <span class="xlx-suspension-list__background" style="width: 50%;"></span>
+              <i class="xlx-icon-type xlx-icon-type-bt-file"></i>
+              <p class="xlx-suspension-list__name">[银光字幕组][七月新番★][漫威未来复仇者][04][简日双语][HDrip][X264-AAC][720P][MP4].mp4.bt</p>
+              <p class="xlx-suspension-list__status">暂停</p>
+            </li>
+          </ul>
+          <div class="xlx-suspension-list__empty">
+            <p>暂无下载任务</p>
+          </div>
+        </div>
+        <div class="xlx-suspension-list__footer">
+            <a href="javascript:;" class="td-button td-button--secondary">查看已完成</a>
+        </div>
+      </div> -->
+  </div>
+  <button class="vip">会员常态</button>
+  <button class="vip-login">会员登录</button>
+  <button class="downing">正在下载</button>
+  <button class="connecting">连接中</button>
+</body>
+<script>
+  var vip = document.querySelector(".vip");
+  vip.addEventListener("click",function(){
+    document.querySelector(".xlx-suspension").classList.add("is-vip")
+  })
+
+  var vipLogin = document.querySelector(".vip-login");
+  vipLogin.addEventListener("click",function(){
+    document.querySelector(".xlx-suspension").classList.add("is-vip","is-vip-login")
+  })
+  var downing = document.querySelector(".downing");
+  downing.addEventListener("click",function(){
+    document.querySelector(".xlx-suspension").classList.add("is-downing")
+    document.querySelector(".xlx-suspension").classList.remove("is-status")
+  })
+  var connecting = document.querySelector(".connecting");
+  connecting.addEventListener("click",function(){
+    document.querySelector(".xlx-suspension").classList.add("is-status");
+    document.querySelector(".xlx-suspension").classList.remove("is-downing")
+  })
+</script>
+</html>

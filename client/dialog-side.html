@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="http://xl_public_service.gitlab.xunlei.cn/thunder-ui/_dist/thunder-ui.css">
+  <link rel="stylesheet" href="css/xlx-client-all.css">
+  <title>弹窗</title>
+  <style>
+    .td-cover {
+      position: relative;
+      display: block;
+      height: auto;
+    }
+
+    .td-dialog {
+      margin: 10px;
+      float: left;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="td-cover">
+    <!-- 私人下载存储目录设置 -->
+    <div class="td-dialog">
+      <div class="td-dialog__header">
+        <h2>私人下载存储目录设置</h2>
+        <a href="javascript:;" class="td-dialog__close" title="关闭">
+          <i class="td-icon-close"></i>
+        </a>
+      </div>
+      <div class="td-dialog__body">
+        <div class="td-dialog-secret">
+          <div class="td-select">
+            <div class="td-select-group">
+              <label class="td-input">
+                <input name="text" class="td-input__inner" placeholder="请输入文字" value="E:\">
+                <span class="xlx-file-size">1021.99M</span>
+
+              </label>
+              <a href="javascript:;" class="td-select__drop">
+                <i class="td-icon-arrow-drop"></i>
+              </a>
+              <a href="javascript:;" class="td-select__choose">
+                <svg class="td-icon-svg td-icon-svg-file" aria-hidden="true">
+                  <use xlink:href="#td-icon-svg-file"></use>
+                </svg>
+              </a>
+            </div>
+            <ul class="td-dropdown-menu" style="display: none;">
+              <li class="td-dropdown-menu__item">选项1</li>
+              <li class="td-dropdown-menu__item">选项2</li>
+              <li class="td-dropdown-menu__item">选项3</li>
+              <li class="td-dropdown-menu__item">选项4</li>
+              <li class="td-dropdown-menu__item">选项5</li>
+              <li class="td-dropdown-menu__item">选项6</li>
+              <li class="td-dropdown-menu__item">选项7</li>
+              <li class="td-dropdown-menu__item">选项8</li>
+            </ul>
+          </div>
+          <p class="td-dialog-comfirm__text">
+            <label class="td-checkbox is-checked">
+              <input type="checkbox" class="td-checkbox__inner" checked="">
+              <span class="td-checkbox__label">在本地隐藏私人空间对应文件夹</span>
+            </label>
+          </p>
+        </div>
+      </div>
+      <div class="td-dialog__footer">
+        <div class="td-dialog-footer">
+          <a href="javascript:;" class="td-button">确定</a>
+          <a href="javascript:;" class="td-button td-button--secondary">取消</a>
+        </div>
+      </div>
+    </div>
+    <!-- END -->
+    <!-- 登录帐号身份验证 -->
+    <div class="td-dialog">
+      <div class="td-dialog__header">
+        <h2>登录帐号身份验证</h2>
+        <a href="javascript:;" class="td-dialog__close" title="关闭">
+          <i class="td-icon-close"></i>
+        </a>
+      </div>
+      <div class="td-dialog__body">
+        <div class="td-dialog-secret__setting">
+          <p class="td-dialog-secret__tips">为了确保信息安全，请填写已绑定的安全手机信息，并填写验证码。</p>
+          <ul>
+            <li>
+              <label class="td-input">
+                <input type="text" class="td-input__inner" placeholder="请输入绑定手机号">
+              </label>
+              <a href="#" class="td-dialog-secret__code">获取验证码</a>
+            </li>
+            <li>
+              <label class="td-input">
+                <input type="text" class="td-input__inner" placeholder="验证码">
+              </label>
+            </li>
+          </ul>
+          <div class="td-dialog-secret__link">
+            <a href="#">修改安全手机</a>
+          </div>
+        </div>
+      </div>
+      <div class="td-dialog__footer">
+        <div class="td-dialog-footer">
+          <a href="javascript:;" class="td-button">确定</a>
+          <a href="javascript:;" class="td-button td-button--secondary">取消</a>
+        </div>
+      </div>
+    </div>
+    <!-- 登录帐号身份验证 -->
+    <div class="td-dialog">
+      <div class="td-dialog__header">
+        <h2>私人空间密码验证</h2>
+        <a href="javascript:;" class="td-dialog__close" title="关闭">
+          <i class="td-icon-close"></i>
+        </a>
+      </div>
+      <div class="td-dialog__body">
+        <div class="td-dialog-secret__setting">
+          <ul>
+            <li>
+              <label class="td-input">
+                <input type="text" class="td-input__inner" placeholder="请输入密码">
+              </label>
+            </li>
+          </ul>
+          <div class="td-dialog-secret__link">
+            <a href="#">忘记密码</a>
+          </div>
+        </div>
+      </div>
+      <div class="td-dialog__footer">
+        <div class="td-dialog-footer">
+          <a href="javascript:;" class="td-button">确定</a>
+          <a href="javascript:;" class="td-button td-button--secondary">取消</a>
+        </div>
+      </div>
+    </div>
+    <!-- 设置私人空间密码 -->
+    <div class="td-dialog">
+      <div class="td-dialog__header">
+        <h2>设置私人空间密码</h2>
+        <a href="javascript:;" class="td-dialog__close" title="关闭">
+          <i class="td-icon-close"></i>
+        </a>
+      </div>
+      <div class="td-dialog__body">
+        <div class="td-dialog-secret__setting">
+          <ul>
+            <li>
+              <label class="td-input">
+                <span class="td-input__label">输入密码：</span>
+                <input type="text" class="td-input__inner" placeholder="请输入密码">
+              </label>
+            </li>
+            <li>
+              <label class="td-input">
+                <span class="td-input__label">确认密码：</span>
+                <input type="text" class="td-input__inner" placeholder="再次输入密码">
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="td-dialog__footer">
+        <div class="td-dialog-footer">
+          <a href="javascript:;" class="td-button">确定</a>
+          <a href="javascript:;" class="td-button td-button--secondary">取消</a>
+        </div>
+      </div>
+    </div>
+    <!-- 私人下载任务管理 -->
+    <div class="td-dialog">
+      <div class="td-dialog__header">
+        <h2>私人下载任务管理</h2>
+        <a href="javascript:;" class="td-dialog__close" title="关闭">
+          <i class="td-icon-close"></i>
+        </a>
+      </div>
+      <div class="td-dialog__body">
+        <div class="td-dialog-secret__setting">
+          <ul>
+            <li>
+              <span>同时下载的最大任务数</span>
+              <div class="td-select xlx-select-size-1">
+                  <div class="td-select-group">
+                    <label class="td-input">
+                      <input type="text" class="td-input__inner" placeholder="5">
+                    </label>
+                    <a href="#" class="td-select__drop">
+                      <i class="td-icon-arrow-drop"></i>
+                    </a>
+                  </div>
+                </div>
+                <span class="xlx-setting-content__tips">（1-10）</span>
+            </li>
+          </ul>
+          <p class="td-dialog-comfirm__text">
+              <label class="td-checkbox is-checked">
+                <input type="checkbox" class="td-checkbox__inner" checked="">
+                <span class="td-checkbox__label">自动将低速任务移动至列尾</span>
+              </label>
+            </p>
+        </div>
+      </div>
+      <div class="td-dialog__footer">
+        <div class="td-dialog-footer">
+          <a href="javascript:;" class="td-button">确定</a>
+          <a href="javascript:;" class="td-button td-button--secondary">取消</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/svg.js"></script>
+</body>
+
+</html>

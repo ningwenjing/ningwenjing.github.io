@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="http://xl_public_service.gitlab.xunlei.cn/thunder-ui/_dist/thunder-ui.css">
+  <link rel="stylesheet" href="css/xlx-side.css">
+  <title>客户端右键菜单</title>
+</head>
+<body>
+  <div class="td-context-menu">
+    <ul class="td-context-menu__main">
+      <li class="td-context-menu__item">
+        <div class="td-context-menu__content">
+          <i class="td-icon"></i>
+          <span class="td-context-menu__text">打开文件夹(F)</span>
+        </div>
+      </li>
+      <li class="td-context-menu__item">
+        <div class="td-context-menu__content">
+          <i class="td-icon"></i>
+          <span class="td-context-menu__text">组队加速</span>
+        </div>
+      </li>
+    </ul>
+    <ul class="td-context-menu__main">
+      <li class="td-context-menu__item">
+        <div class="td-context-menu__content">
+          <i class="td-icon"></i>
+          <span class="td-context-menu__text">开始</span>
+        </div>
+      </li>
+      <li class="td-context-menu__item">
+        <div class="td-context-menu__content">
+          <i class="td-icon"></i>
+          <span class="td-context-menu__text">删除</span>
+        </div>
+      </li>
+      <li class="td-context-menu__item">
+        <div class="td-context-menu__content">
+          <i class="td-icon"></i>
+          <span class="td-context-menu__text">彻底删除</span>
+        </div>
+      </li>
+      <li class="td-context-menu__item">
+        <div class="td-context-menu__content is-active">
+          <i class="td-icon"></i>
+          <span class="td-context-menu__text">移动文件到</span>
+          <span class="">&gt;</span>
+        </div>
+        <!-- 子菜单 -->
+        <ul class="td-context-menu__children">
+          <li class="td-context-menu__item">
+            <div class="td-context-menu__content">
+              <i class="td-icon"></i>
+              <span class="td-context-menu__text">私人空间</span>
+            </div>
+          </li>
+          <li class="td-context-menu__item">
+            <div class="td-context-menu__content is-active">
+              <i class="td-icon"></i>
+              <span class="td-context-menu__text">其它目录</span>
+            </div>
+          </li>
+        </ul>
+        <!-- 子菜单 END -->
+      </li>
+    </ul>
+    <ul class="td-context-menu__main">
+      <li class="td-context-menu__item">
+        <div class="td-context-menu__content">
+          <i class="td-icon"></i>
+          <span class="td-context-menu__text">上移到顶部</span>
+        </div>
+      </li>
+      <li class="td-context-menu__item">
+        <div class="td-context-menu__content">
+          <i class="td-icon"></i>
+          <span class="td-context-menu__text">下移到顶部</span>
+        </div>
+      </li>
+    </ul>
+    <ul class="td-context-menu__main">
+      <li class="td-context-menu__item">
+        <div class="td-context-menu__content is-disabled">
+          <i class="td-icon"></i>
+          <span class="td-context-menu__text">会员加速</span>
+        </div>
+      </li>
+    </ul>
+    <ul class="td-context-menu__main">
+      <li class="td-context-menu__item">
+        <div class="td-context-menu__content">
+          <i class="td-icon"></i>
+          <span class="td-context-menu__text">复制下载链接</span>
+        </div>
+      </li>
+      <li class="td-context-menu__item">
+        <div class="td-context-menu__content">
+          <i class="td-icon"></i>
+          <span class="td-context-menu__text">添加到下载合集</span>
+        </div>
+      </li>
+      <li class="td-context-menu__item">
+        <div class="td-context-menu__content">
+          <i class="td-icon"></i>
+          <span class="td-context-menu__text">种子文件另存为</span>
+        </div>
+      </li>
+      <li class="td-context-menu__item">
+        <div class="td-context-menu__content">
+          <i class="td-icon"></i>
+          <span class="td-context-menu__text">复制磁力链接</span>
+        </div>
+      </li>
+    </ul>
+  </div> 
+  <div class="td-context-menu" style="left:300px;">
+    <ul class="td-context-menu__main">
+      <li class="td-context-menu__item">
+        <div class="td-context-menu__content">
+          <i class="td-icon"></i>
+          <span class="td-context-menu__text">全速下载</span>
+        </div>    
+      </li>
+      <li class="td-context-menu__item">
+        <div class="td-context-menu__content is-active">
+          <i class="td-icon"></i>
+          <span class="td-context-menu__text">限速下载</span>
+        </div>
+      </li>
+    </ul>
+    <ul class="td-context-menu__main">
+      <li class="td-context-menu__item">
+        <div class="td-context-menu__content">
+          <i class="td-icon"></i>
+          <span class="td-context-menu__text">空闲下载</span>
+        </div>
+      </li>
+      <li class="td-context-menu__item">
+        <div class="td-context-menu__content">
+          <i class="td-icon"></i>
+          <span class="td-context-menu__text">计划任务</span>
+        </div>
+      </li>
+      <li class="td-context-menu__item">
+        <div class="td-context-menu__content is-active">
+          <i class="td-icon"></i>
+          <span class="td-context-menu__text">下载完成后关机</span>
+        </div>
+        <ul class="td-context-menu__children">
+          <li class="td-context-menu__item">
+            <div class="td-context-menu__content">
+              <i class="td-icon"></i>
+              <span class="td-context-menu__text">关机</span>
+            </div>
+          </li>
+          <li class="td-context-menu__item">
+            <div class="td-context-menu__content">
+              <i class="td-icon"></i>
+              <span class="td-context-menu__text">睡眠</span>
+            </div>
+          </li>
+          <li class="td-context-menu__item">
+            <div class="td-context-menu__content">
+              <i class="td-icon"></i>
+              <span class="td-context-menu__text">退出迅雷</span>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

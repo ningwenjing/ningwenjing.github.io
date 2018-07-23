@@ -1,0 +1,99 @@
+/* scrollbar */
+/* BEM */
+.xlx-promote__item {
+  position: relative;
+  width: 30%;
+  max-width: 250px;
+  min-width: 183px;
+  line-height: 1; }
+.xlx-promote__content {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top: 38%;
+  border-radius: 4px;
+  overflow: hidden; }
+  .xlx-promote__content:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 62%, rgba(0, 0, 0, 0.8) 100%);
+    opacity: .6;
+    transition: .3s; }
+  .xlx-promote__content:hover .xlx-promote__detail {
+    height: 100%; }
+  .xlx-promote__content:hover .xlx-promote__text {
+    display: -webkit-box; }
+  .xlx-promote__content:hover:after {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
+    opacity: .8; }
+.xlx-promote__picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+.xlx-promote__detail {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+  transition: .2s; }
+.xlx-promote__detail-user {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  margin-bottom: 10px;
+  color: #fff; }
+.xlx-promote__name {
+  max-width: calc(100% - 65px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all; }
+.xlx-promote__text {
+  padding: 0 10px 0 37px;
+  height: 32px;
+  font-size: 11px;
+  line-height: 16px;
+  color: #ccc;
+  pointer-events: none;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: none; }
+.xlx-promote__avatar {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px; }
+  .xlx-promote__avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: solid 1px #fff; }
+
+.xlx-promote-list {
+  display: flex;
+  justify-content: space-between; }
+
+@media screen and (max-width: 1005px) {
+  .xlx-promote__item:nth-child(4) {
+    display: none; } }
+@media screen and (min-width: 1005px) {
+  .xlx-promote__item {
+    width: 23%; } }
+
+/*# sourceMappingURL=xlx-promote.css.map */

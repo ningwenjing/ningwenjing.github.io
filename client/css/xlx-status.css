@@ -1,0 +1,90 @@
+/* scrollbar */
+/* BEM */
+.xlx-status {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center; }
+  .xlx-status.is-limit .xlx-status-speed .xlx-status-speed__text {
+    color: var(--color-danger-1); }
+  .xlx-status.is-limit .xlx-icon-time {
+    color: var(--color-danger-1);
+    background-image: none; }
+
+.xlx-status-control {
+  position: relative; }
+  .xlx-status-control .xlx-icon-time {
+    margin-left: 10px;
+    font-size: 14px;
+    color: transparent;
+    background-image: linear-gradient(0, #9a9a9a 0, #656565 100%);
+    -webkit-background-clip: text; }
+    .xlx-status-control .xlx-icon-time:hover {
+      background-image: linear-gradient(0, #b3b3b3 0, #999999 100%); }
+    .xlx-status-control .xlx-icon-time:active {
+      background-image: linear-gradient(0, #9a9a9a 0, #656565 100%); }
+
+.xlx-status-control-pop {
+  position: absolute;
+  top: -170px;
+  z-index: 1000; }
+  .xlx-status-control-pop .td-context-menu__children {
+    top: -65px; }
+
+.xlx-status-speed {
+  position: relative;
+  margin-left: 5px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: default; }
+  .xlx-status-speed em {
+    font-style: normal;
+    color: var(--color-primary); }
+  .xlx-status-speed:hover .xlx-status-speed-pop {
+    display: block; }
+
+.xlx-status-speed-pop {
+  position: absolute;
+  top: -142px;
+  left: 0;
+  z-index: 1;
+  display: none;
+  width: 200px;
+  height: 142px;
+  padding: 17px 0 0;
+  background: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2); }
+
+.xlx-status-speed-list {
+  padding-bottom: 11px;
+  margin-bottom: 11px;
+  margin-left: 32px;
+  border-bottom: 1px solid #e6e6e6; }
+  .xlx-status-speed-list__item + .xlx-status-speed-list__item {
+    margin-top: 13px; }
+  .xlx-status-speed-list__item em {
+    color: var(--color-default); }
+  .xlx-status-speed-list__item .xlx-icon {
+    margin-right: 6px;
+    margin-left: -22px;
+    color: #1a1a1a;
+    vertical-align: -2px; }
+  .xlx-status-speed-list__item .xlx-icon-tips-download {
+    color: var(--color-success-1); }
+  .xlx-status-speed-list__item .xlx-icon-tips-upload {
+    color: var(--color-primary); }
+  .xlx-status-speed-list__item p {
+    display: inline-block;
+    font-size: 12px;
+    color: var(--color-default); }
+    .xlx-status-speed-list__item p em {
+      font-style: normal; }
+  .xlx-status-speed-list:last-child {
+    margin-bottom: 0;
+    border-bottom: 0; }
+
+/*# sourceMappingURL=xlx-status.css.map */

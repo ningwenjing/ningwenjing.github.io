@@ -1,0 +1,185 @@
+/* scrollbar */
+/* BEM */
+.xlx-personal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none; }
+
+.xlx-personal-concise {
+  margin-top: 10px;
+  display: flex;
+  align-items: center; }
+  .xlx-personal-concise__avatar {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%; }
+    .xlx-personal-concise__avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .xlx-personal-concise__name {
+    display: block;
+    max-width: 142px;
+    margin: 0 7px;
+    overflow: hidden;
+    font-size: 13px;
+    color: #454d72;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+    .xlx-personal-concise__name:hover {
+      color: initial; }
+    .xlx-personal-concise__name.is-vip {
+      color: #ff1a1a; }
+  .xlx-personal-concise__nian {
+    position: relative;
+    height: 12px;
+    margin-left: 5px; }
+    .xlx-personal-concise__nian .vip-icon-nian {
+      vertical-align: top; }
+  .xlx-personal-concise .td-tooltip {
+    z-index: 1;
+    width: max-content; }
+    .xlx-personal-concise .td-tooltip a {
+      color: #6293f6; }
+      .xlx-personal-concise .td-tooltip a:hover {
+        text-decoration: underline; }
+  .xlx-personal-concise.is-offline .xlx-personal-concise__avatar img {
+    filter: grayscale(1); }
+  .xlx-personal-concise.is-offline .xlx-personal-concise__name {
+    color: #454d72; }
+    .xlx-personal-concise.is-offline .xlx-personal-concise__name.is-vip {
+      color: #454d72; }
+
+.xlx-personal-main {
+  position: relative;
+  width: 270px;
+  height: 370px;
+  background: url(../img/xlx-personal-bg.png);
+  border-radius: 4px; }
+
+.xlx-personal-aside {
+  position: absolute;
+  top: 0;
+  left: 274px; }
+
+.xlx-personal-menu {
+  position: absolute;
+  top: 15px;
+  right: 15px; }
+
+.xlx-personal-information {
+  padding: 30px 0 0; }
+  .xlx-personal-information__avatar {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto; }
+    .xlx-personal-information__avatar img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      overflow: hidden;
+      border-radius: 50%; }
+    .xlx-personal-information__avatar.is-pendant {
+      position: relative; }
+      .xlx-personal-information__avatar.is-pendant:after {
+        position: absolute;
+        top: -7px;
+        left: 50%;
+        margin-left: -43px;
+        width: 86px;
+        height: 84px;
+        content: ""; }
+  .xlx-personal-information__pendant {
+    position: absolute;
+    left: 50%;
+    margin-left: -13px;
+    bottom: -16px;
+    z-index: 2;
+    width: 24px;
+    height: 24px;
+    border: solid 1px #e5c691;
+    border-radius: 50%; }
+    .xlx-personal-information__pendant img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      box-sizing: border-box;
+      border: solid 1px #e5210d;
+      object-fit: cover; }
+  .xlx-personal-information__name a {
+    display: block;
+    max-width: 245px;
+    margin: 20px auto;
+    overflow: hidden;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .xlx-personal-information__name.is-vip a {
+    color: #ff1a1a; }
+  .xlx-personal-information__vip {
+    margin-bottom: 21px;
+    font-size: 0;
+    text-align: center; }
+  .xlx-personal-information__data {
+    font-size: 0;
+    text-align: center; }
+    .xlx-personal-information__data a {
+      margin: 0 9px;
+      font-size: 12px;
+      color: #fff; }
+      .xlx-personal-information__data a em {
+        margin-left: 4px;
+        font-style: normal; }
+
+.xlx-personal-activity {
+  position: absolute;
+  bottom: 30px;
+  width: 100%; }
+  .xlx-personal-activity p {
+    font-size: 12px;
+    color: #4c4c4c;
+    text-align: center; }
+  .xlx-personal-activity__button {
+    display: block;
+    width: 210px;
+    height: 33px;
+    margin: 8px auto 0;
+    font-size: 12px;
+    color: #ff1a1a;
+    line-height: 33px;
+    text-align: center;
+    background: #ffdceb;
+    border-radius: 4px; }
+    .xlx-personal-activity__button:hover {
+      color: #fffefe;
+      background: #ff4d4d; }
+    .xlx-personal-activity__button:active {
+      color: #fffefe;
+      background: #ff7b7b; }
+
+.xlx-personal-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: -3px;
+  background: #fff;
+  -webkit-mask: url(../img/spr-personal-x2.png) no-repeat;
+  -webkit-mask-size: 16px auto;
+  transition: background .2s; }
+  .xlx-personal-icon__menu {
+    -webkit-mask-position: 0 0; }
+    .xlx-personal-icon__menu:hover {
+      background: #6699ff; }
+  .xlx-personal-icon__badge {
+    -webkit-mask-position: 0 -17px; }
+  .xlx-personal-icon__time {
+    -webkit-mask-position: 0 -34px; }
+  .xlx-personal-icon__rank {
+    -webkit-mask-position: 0 -51px; }
+
+/*# sourceMappingURL=xlx-personal.css.map */

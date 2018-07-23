@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="http://xl_public_service.gitlab.xunlei.cn/thunder-ui/_dist/thunder-ui.css">
+  <link rel="stylesheet" href="css/xlx-icon.css">
+  <link rel="stylesheet" href="css/xlx-status.css">
+  <title>速度浮层</title>
+  
+</head>
+<body>
+<div class="xlx-status is-limit">
+  <div class="xlx-status-control">
+    <a class="xlx-icon-time" href="javascript:;"></a>
+    <div class="xlx-status-control-pop">
+      <div class="td-context-menu">
+        <ul class="td-context-menu__main">
+          <li class="td-context-menu__item">
+            <div class="td-context-menu__content">
+              <i class="td-icon"><i class="td-icon-choose"></i></i>
+              <span class="td-context-menu__text">全速下载</span>
+            </div>
+          </li>
+          <li class="td-context-menu__item">
+            <div class="td-context-menu__content">
+              <i class="td-icon"></i>
+              <span class="td-context-menu__text">限速下载</span>
+            </div>
+          </li>
+        </ul>
+        <ul class="td-context-menu__main">
+          <li class="td-context-menu__item">
+            <div class="td-context-menu__content">
+              <i class="td-icon"></i>
+              <span class="td-context-menu__text">空闲下载</span>
+            </div>
+          </li>
+          <li class="td-context-menu__item">
+            <div class="td-context-menu__content">
+              <i class="td-icon"></i>
+              <span class="td-context-menu__text">计划任务</span>
+            </div>
+          </li>
+          <li class="td-context-menu__item">
+            <div class="td-context-menu__content  is-active">
+              <i class="td-icon"></i>
+              <span class="td-context-menu__text">下载完成后</span>
+              <i class="td-icon-more-right"></i>
+            </div>
+            <ul class="td-context-menu__children">
+              <li class="td-context-menu__item">
+                <div class="td-context-menu__content">
+                  <i class="td-icon"></i>
+                  <span class="td-context-menu__text">关机</span>
+                </div>
+              </li>
+              <li class="td-context-menu__item">
+                <div class="td-context-menu__content">
+                  <i class="td-icon"></i>
+                  <span class="td-context-menu__text">睡眠</span>
+                </div>
+              </li>
+              <li class="td-context-menu__item">
+                <div class="td-context-menu__content">
+                  <i class="td-icon"></i>
+                  <span class="td-context-menu__text">退出迅雷</span>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="xlx-status-speed">
+    <p class="xlx-status-speed__text">11.99MB/s<em>+568.9KB/s</em></p>
+    <div class="xlx-status-speed-pop">
+      <div class="xlx-status-speed-list">
+        <div class="xlx-status-speed-list__item">
+          <i class="xlx-icon xlx-icon-tips-download"></i><p>当前下载速度：<em>124.99KB/s</em></p>
+        </div>
+        <div class="xlx-status-speed-list__item">
+            <i class="xlx-icon xlx-icon-tips-upload"></i><p>当前上传速度：<em>124.99KB/s</em></p>
+          </div>
+      </div>
+      <div class="xlx-status-speed-list">
+        <div class="xlx-status-speed-list__item">
+          <p>今日下载流量：<em>325MB</em></p>
+        </div>
+        <div class="xlx-status-speed-list__item">
+            <p>今日上传流量：<em>48MB</em></p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* scrollbar */
+/* BEM */
+.xlx-plugin-vip {
+  position: relative;
+  width: 284px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 4px; }
+  .xlx-plugin-vip .td-progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px; }
+    .xlx-plugin-vip .td-progress-bar .td-progress-bar__outer {
+      border-radius: 4px; }
+    .xlx-plugin-vip .td-progress-bar .td-progress-bar__inner {
+      box-sizing: border-box;
+      border-radius: 4px 0 0 4px; }
+  .xlx-plugin-vip__inner {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between; }
+  .xlx-plugin-vip__text {
+    padding: 0 8px;
+    white-space: nowrap; }
+    .xlx-plugin-vip__text.is-error {
+      color: var(--color-danger-2) !important; }
+    .xlx-plugin-vip__text.is-default {
+      color: var(--color-sub) !important; }
+    .is-normal .xlx-plugin-vip__text {
+      padding: 0; }
+  .xlx-plugin-vip__button {
+    display: flex;
+    height: 20px;
+    line-height: 20px;
+    margin: 4px;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: .2s; }
+  .xlx-plugin-vip__logo-vip {
+    padding: 0 3px;
+    background: #adadad; }
+  .xlx-plugin-vip__button-text {
+    padding: 0 3px;
+    white-space: nowrap; }
+  .xlx-plugin-vip__status {
+    color: #707070; }
+    .xlx-plugin-vip__status.is-super {
+      color: #b77020; }
+  .xlx-plugin-vip--ordinary {
+    background: #fff0d0; }
+    .xlx-plugin-vip--ordinary .td-progress-bar__outer {
+      background: var(--color-danger-3); }
+    .xlx-plugin-vip--ordinary .td-progress-bar__inner {
+      background: var(--color-danger-2);
+      border-right: solid 1px #ff9494; }
+    .xlx-plugin-vip--ordinary .xlx-plugin-vip__text {
+      color: var(--color-danger-2); }
+    .xlx-plugin-vip--ordinary .xlx-plugin-vip__button {
+      background-color: var(--color-danger-2);
+      color: #fff; }
+      .xlx-plugin-vip--ordinary .xlx-plugin-vip__button:hover {
+        background-color: var(--color-danger-3); }
+    .xlx-plugin-vip--ordinary .xlx-plugin-vip__button-text {
+      color: #fff; }
+    .xlx-plugin-vip--ordinary.is-trying .xlx-plugin-vip__text {
+      color: #fff; }
+    .xlx-plugin-vip--ordinary.is-trying .xlx-plugin-vip__button {
+      background: rgba(255, 255, 255, 0.6); }
+      .xlx-plugin-vip--ordinary.is-trying .xlx-plugin-vip__button:hover {
+        background: rgba(255, 255, 255, 0.8); }
+    .xlx-plugin-vip--ordinary.is-trying .xlx-plugin-vip__button-text {
+      color: #e13333; }
+    .xlx-plugin-vip--ordinary.is-normal {
+      background: transparent; }
+      .xlx-plugin-vip--ordinary.is-normal .xlx-plugin-vip__text {
+        color: var(--color-primary); }
+        .xlx-plugin-vip--ordinary.is-normal .xlx-plugin-vip__text:hover {
+          color: var(--color-primary-hover); }
+  .xlx-plugin-vip--super {
+    background: #efdea2; }
+    .xlx-plugin-vip--super [class^="vip-icon-svip"] {
+      width: 24px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 22px;
+      margin: 0;
+      color: #fc0 !important; }
+    .xlx-plugin-vip--super .xlx-plugin-vip__text {
+      color: #a86e17; }
+    .xlx-plugin-vip--super .xlx-plugin-vip__button {
+      background: rgba(0, 0, 0, 0.5); }
+      .xlx-plugin-vip--super .xlx-plugin-vip__button:hover {
+        background: rgba(0, 0, 0, 0.7); }
+    .xlx-plugin-vip--super .xlx-plugin-vip__button-text {
+      color: #f1B55a; }
+    .xlx-plugin-vip--super .td-progress-bar__outer {
+      background: #aa9373; }
+    .xlx-plugin-vip--super .td-progress-bar__inner {
+      background: #d6a55a;
+      border-right: solid 1px #edc78d; }
+    .xlx-plugin-vip--super.is-trying .xlx-plugin-vip__text {
+      color: #fff; }
+    .xlx-plugin-vip--super.is-normal {
+      background: transparent; }
+      .xlx-plugin-vip--super.is-normal .xlx-plugin-vip__text {
+        color: var(--color-primary); }
+
+/*# sourceMappingURL=xlx-plugin-vip.css.map */

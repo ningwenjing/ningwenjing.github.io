@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+  <link rel="stylesheet" href="css/xlx-side.css">
+  <link rel="stylesheet" href="css/xlx-icon.css">
+  <link rel="stylesheet" href="http://xl_public_service.gitlab.xunlei.cn/thunder-ui/_dist/thunder-ui.css">
+  <title>左侧</title>
+  <style>
+    .xlx-nav{width: 500px;}
+    .xlx-side{margin-left: 10px;}
+  </style>
+</head>
+
+<body>
+<div class="xlx-nav">
+  <a href="javascript:;" class="xlx-nav-operate" title="新建">
+    <i class="xlx-icon-nav-new"></i>
+  </a>
+  <a href="javascript:;" class="xlx-nav-operate is-disabled" title="下载">
+    <i class="xlx-icon-nav-down"></i>
+  </a><!-- 不可用叠加"is-disabled" -->
+  <a href="javascript:;" class="xlx-nav-operate" title="暂停">
+    <i class="xlx-icon-nav-pause"></i>
+  </a>
+  <a href="javascript:;" class="xlx-nav-operate" title="打开文件">
+    <i class="xlx-icon-nav-file"></i>
+  </a>
+  <a href="javascript:;" class="xlx-nav-operate" title="打开文件夹">
+    <i class="xlx-icon-nav-folder"></i>
+  </a>
+  <a href="javascript:;" class="xlx-nav-operate" title="删除任务">
+    <i class="xlx-icon-nav-delete"></i>
+  </a>
+  <a href="javascript:;" class="xlx-nav-operate" title="删除任务">
+    <i class="xlx-icon-nav-vip"></i>
+  </a>
+  <a href="javascript:;" class="xlx-nav-operate" title="还原">
+    <i class="xlx-icon-nav-restore"></i>
+  </a>
+  <a href="javascript:;" class="xlx-nav-operate" title="彻底删除">
+    <i class="xlx-icon-nav-clear"></i>
+  </a>
+  <a href="javascript:;" class="xlx-nav-operate" title="清空垃圾箱">
+    <i class="xlx-icon-nav-rubbish"></i>
+  </a>
+  <a href="javascript:;" class="xlx-nav-operate" title="私人空间设置">
+    <i class="xlx-icon-nav-lock"></i>
+  </a>
+  <a href="javascript:;" class="xlx-nav-operate" title="更多">
+    <i class="xlx-icon-nav-more"></i>
+  </a>
+  <a href="javascript:;" class="xlx-nav-operate">
+    <i class="xlx-icon-nav-computer"></i>
+  </a>
+  <a href="javascript:;" class="xlx-nav-operate">
+    <i class="xlx-icon-nav-home"></i>
+  </a>
+</div>
+<div class="td-collapse xlx-side">
+  <!-- 正在下载 -->
+  <div class="td-collapse-item xlx-side-downloading is-active">
+    <div class="td-collapse-item__title">正在下载(5)</div>
+    <div class="td-collapse-item__content">
+      <!-- 下载列表为空 -->
+      <div class="xlx-side__empty">
+        <span class="xlx-icon-empty-down"></span>
+        <p>没有正在下载任务</p>
+      </div>
+      <!-- 下载列表为空 END -->
+    </div>
+  </div>
+  <!-- 正在下载 END -->
+  <!--  已完成 -->
+  <div class="td-collapse-item xlx-side-completed">
+    <div class="td-collapse-item__title">已完成</div>
+    <div class="td-collapse-item__content">
+      <!-- 没有已完成任务 -->
+      <div class="xlx-side__empty">
+        <span class="xlx-icon-empty-finish"></span>
+        <p>没有已完成任务</p>
+      </div>
+      <!-- 没有已完成任务 END -->
+    </div>
+  </div>
+  <!-- 已完成 END -->
+  <!-- 垃圾箱 -->
+  <div class="td-collapse-item xlx-side-deleted">
+    <div class="td-collapse-item__title">垃圾箱</div>
+    <div class="td-collapse-item__content">
+      <div class="td-collapse-item__content">
+        <!-- 没有垃圾箱任务 -->
+        <div class="xlx-side__empty">
+          <span class="xlx-icon-empty-dustbin"></span>
+          <p>没有垃圾箱任务</p>
+        </div>
+        <!-- 没有垃圾箱任务 END -->
+      </div>
+    </div>
+  </div>
+  <!-- 垃圾箱 END -->
+</div>
+<script>
+  var box1 = document.querySelector('.xlx-side-downloading');
+  var box2 = document.querySelector('.xlx-side-completed');
+  var box3 = document.querySelector('.xlx-side-deleted');
+  box1.addEventListener('click',function(){
+    this.classList.add("is-active")
+    box2.classList.remove("is-active");
+    box3.classList.remove("is-active");
+  })
+  box2.addEventListener('click',function(){
+    this.classList.add("is-active")
+    box1.classList.remove("is-active");
+    box3.classList.remove("is-active");
+  })
+  box3.addEventListener('click',function(){
+    this.classList.add("is-active")
+    box2.classList.remove("is-active");
+    box1.classList.remove("is-active");
+  })
+
+</script>
+</body>
+
+</html>

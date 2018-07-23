@@ -1,0 +1,15 @@
+/* scrollbar */
+/* BEM */
+.xlx-search {
+  width: 38%;
+  background: #fff;
+  border: 0;
+  border-radius: 15px; }
+  .xlx-search .xlx-search__text {
+    color: var(--color-success-1); }
+  .xlx-search .td-icon-security {
+    color: #61ba96; }
+  .xlx-search .xlx-search__text {
+    color: var(--color-success-1); }
+
+/*# sourceMappingURL=xlx-search.css.map */

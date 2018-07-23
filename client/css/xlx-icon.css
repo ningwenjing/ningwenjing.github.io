@@ -1,0 +1,763 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "xlx-icon";
+  -webkit-font-smoothing: antialiased;
+  src: url("../fonts/xlx-icon.ttf?t=1529390461110") format("truetype"); }
+[class^="xlx-icon"], [class*=" xlx-icon-"] {
+  font-family: "xlx-icon" !important;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.xlx-icon-download-play:before {
+  content: "\e627"; }
+
+.xlx-icon-lock:before {
+  content: "\e628"; }
+
+.xlx-icon-play:before {
+  content: "\e629"; }
+
+.xlx-icon-clear:before {
+  content: "\e62a"; }
+
+.xlx-icon-pause:before {
+  content: "\e62b"; }
+
+.xlx-icon-delete:before {
+  content: "\e62c"; }
+
+.xlx-icon-time:before {
+  content: "\e62d"; }
+
+.xlx-icon-file:before {
+  content: "\e62e"; }
+
+.xlx-icon-restore:before {
+  content: "\e62f"; }
+
+.xlx-icon-download:before {
+  content: "\e630"; }
+
+/* 导航 */
+.xlx-icon-nav-new:before {
+  content: "\e64a"; }
+
+.xlx-icon-nav-file:before {
+  content: "\e64b"; }
+
+.xlx-icon-nav-clear:before {
+  content: "\e64c"; }
+
+.xlx-icon-nav-rubbish:before {
+  content: "\e64d"; }
+
+.xlx-icon-nav-vip:before {
+  content: "\e64e"; }
+
+.xlx-icon-nav-lock:before {
+  content: "\e64f"; }
+
+.xlx-icon-nav-folder:before {
+  content: "\e650"; }
+
+.xlx-icon-nav-restore:before {
+  content: "\e651"; }
+
+.xlx-icon-nav-home:before {
+  content: "\e652"; }
+
+.xlx-icon-nav-more:before {
+  content: "\e653"; }
+
+.xlx-icon-nav-delete:before {
+  content: "\e654"; }
+
+.xlx-icon-nav-down:before {
+  content: "\e655"; }
+
+.xlx-icon-nav-computer:before {
+  content: "\e656"; }
+
+.xlx-icon-nav-pause:before {
+  content: "\e657"; }
+
+/* 右上角操作 */
+.xlx-icon-menu:before {
+  content: "\e68b"; }
+
+.xlx-icon-close:before {
+  content: "\e68c"; }
+
+.xlx-icon-minimize:before {
+  content: "\e68d"; }
+
+.xlx-icon-maximize:before {
+  content: "\e68e"; }
+
+.xlx-icon-maximize.is-active:before {
+  content: "\e69c"; }
+
+/* tips */
+.xlx-icon-tips-download:before {
+  content: "\e616"; }
+
+.xlx-icon-tips-upload:before {
+  content: "\e615"; }
+
+/* 详情页 */
+.xlx-icon-crown:before {
+  content: "\e635"; }
+
+.xlx-icon-file-hover:before {
+  content: "\e636"; }
+
+.xlx-icon-delete-hover:before {
+  content: "\e637"; }
+
+.xlx-icon-comment-hover:before {
+  content: "\e638"; }
+
+.xlx-icon-message:before {
+  content: "\e63a"; }
+
+.xlx-icon-quote {
+  font-size: 10px;
+  vertical-align: 6px; }
+
+.xlx-icon-quote:before {
+  content: "\e63b"; }
+
+.xlx-icon-file-comment:before {
+  content: "\e63c"; }
+
+.xlx-icon-comment:before {
+  content: "\e63d"; }
+
+.xlx-icon-send:before {
+  content: "\e63e"; }
+
+.xlx-icon-praise:before {
+  content: "\e63f"; }
+
+.xlx-icon-top:before {
+  content: "\e640"; }
+
+.xlx-icon-praise-done:before {
+  content: "\e641"; }
+
+.xlx-icon-face:before {
+  content: "\e642"; }
+
+.xlx-icon-delete-comment:before {
+  content: "\e643"; }
+
+.xlx-icon-success:before {
+  content: "\e644"; }
+
+.xlx-icon-fail:before {
+  content: "\e645"; }
+
+.xlx-icon-help:before {
+  content: "\e646"; }
+
+.xlx-icon-note:before {
+  content: "\e647"; }
+
+.xlx-icon-refresh:before {
+  content: "\e648"; }
+
+.is-active .xlx-icon-praise {
+  color: var(--color-primary); }
+.is-active .xlx-icon-praise:before {
+  content: "\e641"; }
+.is-active .xlx-icon-delete {
+  color: var(--color-primary); }
+.is-active .xlx-icon-comment {
+  color: var(--color-primary); }
+.is-active .xlx-icon-comment:before {
+  content: "\e638"; }
+
+.is-hot .xlx-icon-praise {
+  color: var(--color-danger-1); }
+
+.xlx-icon-girl {
+  color: #ff7cb6; }
+
+.xlx-icon-girl:before {
+  content: "\e626"; }
+
+.xlx-icon-boy {
+  color: #69f; }
+
+.xlx-icon-boy:before {
+  content: "\e631"; }
+
+.xlx-icon-dialog-play:before {
+  content: "\e69e"; }
+
+.xlx-icon-dialog-open:before {
+  content: "\e69f"; }
+
+/* 书签 */
+.xlx-icon-message-bookmarks:before {
+  content: "\e692"; }
+
+.xlx-icon-search-bookmarks:before {
+  content: "\e694"; }
+
+.xlx-icon-more-bookmarks:before {
+  content: "\e695"; }
+
+.xlx-icon-net:before {
+  content: "\e696"; }
+
+.xlx-icon-file-bookmarks {
+  color: #ffdf8b; }
+
+.xlx-icon-file-bookmarks:before {
+  content: "\e697"; }
+
+.xlx-icon-fav {
+  color: #ff9c1a; }
+
+.xlx-icon-fav:before {
+  content: "\e698"; }
+
+.xlx-icon-fav.is-checked:before {
+  content: "\e699"; }
+
+.xlx-icon-new:before {
+  content: "\e69a"; }
+
+.xlx-icon-new-file {
+  margin-right: 5px; }
+
+.xlx-icon-new-file:before {
+  content: "\e69b"; }
+
+.xlx-icon-unfold:before {
+  content: "\e69d"; }
+
+.xlx-icon-browser-ie,
+.xlx-icon-browser-chrome {
+  display: block;
+  width: 35px;
+  height: 32px;
+  margin: 0 auto 10px;
+  background: url(../img/bookmarks/xlx-bookmarks.png) no-repeat;
+  background-size: 70px auto; }
+
+.xlx-icon-browser-chrome {
+  background-position: -35px 0; }
+
+/* 下载文件类型图标 */
+.xlx-icon-type {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/xlx-icon-32x32.png) -560px 0 no-repeat;
+  background-size: 1085px auto; }
+
+.xlx-icon-type-apk {
+  background-position: 0 0; }
+
+.xlx-icon-type-avi {
+  background-position: -35px 0; }
+
+.xlx-icon-type-bt-link {
+  background-position: -70px 0; }
+
+.xlx-icon-type-bt-file {
+  background-position: -105px 0; }
+
+.xlx-icon-type-chm {
+  background-position: -140px 0; }
+
+.xlx-icon-type-doc {
+  background-position: -175px 0; }
+
+.xlx-icon-type-exe {
+  background-position: -210px 0; }
+
+.xlx-icon-type-install {
+  background-position: -245px 0; }
+
+.xlx-icon-type-flv {
+  background-position: -280px 0; }
+
+.xlx-icon-type-ipa {
+  background-position: -315px 0; }
+
+.xlx-icon-type-ipsw {
+  background-position: -350px 0; }
+
+.xlx-icon-type-iso {
+  background-position: -385px 0; }
+
+.xlx-icon-type-mkv {
+  background-position: -420px 0; }
+
+.xlx-icon-type-mov {
+  background-position: -455px 0; }
+
+.xlx-icon-type-mp4 {
+  background-position: -490px 0; }
+
+.xlx-icon-type-mpg {
+  background-position: -525px 0; }
+
+.xlx-icon-type-unknown {
+  background-position: -560px 0; }
+
+.xlx-icon-type-pdf {
+  background-position: -595px 0; }
+
+.xlx-icon-type-pic {
+  background-position: -630px 0; }
+
+.xlx-icon-type-ppt {
+  background-position: -665px 0; }
+
+.xlx-icon-type-rar {
+  background-position: -700px 0; }
+
+.xlx-icon-type-rm {
+  background-position: -735px 0; }
+
+.xlx-icon-type-rmvb {
+  background-position: -770px 0; }
+
+.xlx-icon-type-group {
+  background-position: -805px 0; }
+
+.xlx-icon-type-txt {
+  background-position: -840px 0; }
+
+.xlx-icon-type-video {
+  background-position: -875px 0; }
+
+.xlx-icon-type-link {
+  background-position: -910px 0; }
+
+.xlx-icon-type-wmv {
+  background-position: -945px 0; }
+
+.xlx-icon-type-word {
+  background-position: -980px 0; }
+
+.xlx-icon-type-xls {
+  background-position: -1015px 0; }
+
+.xlx-icon-type-music {
+  background-position: -1050px 0; }
+
+.td-tree-node__image-icon .xlx-icon-type {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/xlx-icon-16x16.png) -340px 0 no-repeat;
+  background-image: -webkit-image-set(url(../img/xlx-icon-16x16.png) 1x, url(../img/xlx-icon-16x16-2x.png) 2x);
+  background-position: -340px 0; }
+.td-tree-node__image-icon .xlx-icon-type-apk {
+  background-position: 0 0; }
+.td-tree-node__image-icon .xlx-icon-type-avi {
+  background-position: -20px 0; }
+.td-tree-node__image-icon .xlx-icon-type-bt-file {
+  background-position: -60px 0; }
+.td-tree-node__image-icon .xlx-icon-type-bt-link {
+  background-position: -40px 0; }
+.td-tree-node__image-icon .xlx-icon-type-chm {
+  background-position: -80px 0; }
+.td-tree-node__image-icon .xlx-icon-type-doc {
+  background-position: -100px 0; }
+.td-tree-node__image-icon .xlx-icon-type-exe {
+  background-position: -120px 0; }
+.td-tree-node__image-icon .xlx-icon-type-install {
+  background-position: -140px 0; }
+.td-tree-node__image-icon .xlx-icon-type-flv {
+  background-position: -160px 0; }
+.td-tree-node__image-icon .xlx-icon-type-ipa {
+  background-position: -180px 0; }
+.td-tree-node__image-icon .xlx-icon-type-ipsw {
+  background-position: -200px 0; }
+.td-tree-node__image-icon .xlx-icon-type-iso {
+  background-position: -220px 0; }
+.td-tree-node__image-icon .xlx-icon-type-mkv {
+  background-position: -240px 0; }
+.td-tree-node__image-icon .xlx-icon-type-mov {
+  background-position: -260px 0; }
+.td-tree-node__image-icon .xlx-icon-type-mp4 {
+  background-position: -280px 0; }
+.td-tree-node__image-icon .xlx-icon-type-mpg {
+  background-position: -300px 0; }
+.td-tree-node__image-icon .xlx-icon-type-music {
+  background-position: -320px 0; }
+.td-tree-node__image-icon .xlx-icon-type-unknown {
+  background-position: -340px 0; }
+.td-tree-node__image-icon .xlx-icon-type-pdf {
+  background-position: -360px 0; }
+.td-tree-node__image-icon .xlx-icon-type-pic {
+  background-position: -380px 0; }
+.td-tree-node__image-icon .xlx-icon-type-ppt {
+  background-position: -400px 0; }
+.td-tree-node__image-icon .xlx-icon-type-rar {
+  background-position: -420px 0; }
+.td-tree-node__image-icon .xlx-icon-type-rm {
+  background-position: -440px 0; }
+.td-tree-node__image-icon .xlx-icon-type-rmvb {
+  background-position: -460px 0; }
+.td-tree-node__image-icon .xlx-icon-type-group {
+  background-position: -480px 0; }
+.td-tree-node__image-icon .xlx-icon-type-txt {
+  background-position: -500px 0; }
+.td-tree-node__image-icon .xlx-icon-type-video {
+  background-position: -520px 0; }
+.td-tree-node__image-icon .xlx-icon-type-link {
+  background-position: -540px 0; }
+.td-tree-node__image-icon .xlx-icon-type-wmv {
+  background-position: -560px 0; }
+.td-tree-node__image-icon .xlx-icon-type-word {
+  background-position: -580px 0; }
+.td-tree-node__image-icon .xlx-icon-type-xls {
+  background-position: -600px 0; }
+
+.chart-box .xlx-icon-type, .xlx-suspension .xlx-icon-type {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  background: url(../img/xlx-icon-24x24.png) -780px 0 no-repeat;
+  background-image: -webkit-image-set(url(../img/xlx-icon-24x24.png) 1x, url(../img/xlx-icon-24x24-2x.png) 2x);
+  background-position: -780px 0; }
+.chart-box .xlx-icon-type-apk, .xlx-suspension .xlx-icon-type-apk {
+  background-position: 0 0; }
+.chart-box .xlx-icon-type-avi, .xlx-suspension .xlx-icon-type-avi {
+  background-position: -30px 0; }
+.chart-box .xlx-icon-type-bt-file, .xlx-suspension .xlx-icon-type-bt-file {
+  background-position: -60px 0; }
+.chart-box .xlx-icon-type-bt-link, .xlx-suspension .xlx-icon-type-bt-link {
+  background-position: -90px 0; }
+.chart-box .xlx-icon-type-chm, .xlx-suspension .xlx-icon-type-chm {
+  background-position: -120px 0; }
+.chart-box .xlx-icon-type-doc, .xlx-suspension .xlx-icon-type-doc {
+  background-position: -150px 0; }
+.chart-box .xlx-icon-type-exe, .xlx-suspension .xlx-icon-type-exe {
+  background-position: -180px 0; }
+.chart-box .xlx-icon-type-flv, .xlx-suspension .xlx-icon-type-flv {
+  background-position: -210px 0; }
+.chart-box .xlx-icon-type-group, .xlx-suspension .xlx-icon-type-group {
+  background-position: -240px 0; }
+.chart-box .xlx-icon-type-install, .xlx-suspension .xlx-icon-type-install {
+  background-position: -270px 0; }
+.chart-box .xlx-icon-type-ipa, .xlx-suspension .xlx-icon-type-ipa {
+  background-position: -300px 0; }
+.chart-box .xlx-icon-type-ipsw, .xlx-suspension .xlx-icon-type-ipsw {
+  background-position: -330px 0; }
+.chart-box .xlx-icon-type-iso, .xlx-suspension .xlx-icon-type-iso {
+  background-position: -360px 0; }
+.chart-box .xlx-icon-type-link, .xlx-suspension .xlx-icon-type-link {
+  background-position: -390px 0; }
+.chart-box .xlx-icon-type-mkv, .xlx-suspension .xlx-icon-type-mkv {
+  background-position: -420px 0; }
+.chart-box .xlx-icon-type-mov, .xlx-suspension .xlx-icon-type-mov {
+  background-position: -450px 0; }
+.chart-box .xlx-icon-type-mp4, .xlx-suspension .xlx-icon-type-mp4 {
+  background-position: -480px 0; }
+.chart-box .xlx-icon-type-mpg, .xlx-suspension .xlx-icon-type-mpg {
+  background-position: -510px 0; }
+.chart-box .xlx-icon-type-music, .xlx-suspension .xlx-icon-type-music {
+  background-position: -540px 0; }
+.chart-box .xlx-icon-type-pdf, .xlx-suspension .xlx-icon-type-pdf {
+  background-position: -570px 0; }
+.chart-box .xlx-icon-type-pic, .xlx-suspension .xlx-icon-type-pic {
+  background-position: -600px 0; }
+.chart-box .xlx-icon-type-ppt, .xlx-suspension .xlx-icon-type-ppt {
+  background-position: -630px 0; }
+.chart-box .xlx-icon-type-rar, .xlx-suspension .xlx-icon-type-rar {
+  background-position: -660px 0; }
+.chart-box .xlx-icon-type-rm, .xlx-suspension .xlx-icon-type-rm {
+  background-position: -690px 0; }
+.chart-box .xlx-icon-type-rmvb, .xlx-suspension .xlx-icon-type-rmvb {
+  background-position: -720px 0; }
+.chart-box .xlx-icon-type-txt, .xlx-suspension .xlx-icon-type-txt {
+  background-position: -750px 0; }
+.chart-box .xlx-icon-type-unknown, .xlx-suspension .xlx-icon-type-unknown {
+  background-position: -780px 0; }
+.chart-box .xlx-icon-type-video, .xlx-suspension .xlx-icon-type-video {
+  background-position: -810px 0; }
+.chart-box .xlx-icon-type-wmv, .xlx-suspension .xlx-icon-type-wmv {
+  background-position: -840px 0; }
+.chart-box .xlx-icon-type-word, .xlx-suspension .xlx-icon-type-word {
+  background-position: -870px 0; }
+.chart-box .xlx-icon-type-xls, .xlx-suspension .xlx-icon-type-xls {
+  background-position: -900px 0; }
+
+/* 会员图标类型 */
+@font-face {
+  font-family: "xlx-icon-vip";
+  src: url("../fonts/xlx-icon-vip.ttf?t=1525418285563") format("truetype"); }
+[class^="vip-icon-"] {
+  display: inline-block;
+  width: 19px;
+  height: 12px;
+  line-height: 12px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "xlx-icon-vip" !important;
+  font-style: normal;
+  border-radius: 2px; }
+  [class^="vip-icon-"].is-disabled {
+    background: #aaaaaa;
+    color: #e9e9e9; }
+  [class^="vip-icon-"].is-large {
+    width: 42px;
+    background-image: url(../img/spr-vip-icon-x2.png);
+    background-size: 400px auto; }
+  [class^="vip-icon-"].is-large:before {
+    display: none; }
+
+[class^="vip-icon-vip"] {
+  color: #ffe3a1 !important;
+  background: #f15063; }
+
+[class^="vip-icon-pvip"] {
+  color: #c17010 !important;
+  background: #fdca41; }
+
+[class^="vip-icon-svip"] {
+  color: #ffe14e !important;
+  background: #424242; }
+
+.vip-icon-vip0, .vip-icon-pvip0, .vip-icon-svip0 {
+  width: 15px; }
+
+.vip-icon-vip6:before {
+  content: "\e672"; }
+
+.vip-icon-vip4:before {
+  content: "\e670"; }
+
+.vip-icon-vip0:before {
+  content: "\e66c"; }
+
+.vip-icon-vip3:before {
+  content: "\e66f"; }
+
+.vip-icon-vip5:before {
+  content: "\e671"; }
+
+.vip-icon-vip7:before {
+  content: "\e673"; }
+
+.vip-icon-vip2:before {
+  content: "\e66e"; }
+
+.vip-icon-vip1:before {
+  content: "\e66d"; }
+
+.vip-icon-svip1:before {
+  content: "\e674"; }
+
+.vip-icon-svip0:before {
+  content: "\e675"; }
+
+.vip-icon-svip5:before {
+  content: "\e676"; }
+
+.vip-icon-svip6:before {
+  content: "\e677"; }
+
+.vip-icon-svip4:before {
+  content: "\e678"; }
+
+.vip-icon-svip7:before {
+  content: "\e679"; }
+
+.vip-icon-svip3:before {
+  content: "\e67a"; }
+
+.vip-icon-svip2:before {
+  content: "\e67b"; }
+
+.vip-icon-pvip0:before {
+  content: "\e67c"; }
+
+.vip-icon-pvip1:before {
+  content: "\e67d"; }
+
+.vip-icon-pvip2:before {
+  content: "\e67e"; }
+
+.vip-icon-pvip3:before {
+  content: "\e682"; }
+
+.vip-icon-pvip4:before {
+  content: "\e683"; }
+
+.vip-icon-pvip5:before {
+  content: "\e684"; }
+
+.vip-icon-pvip6:before {
+  content: "\e685"; }
+
+.vip-icon-pvip7:before {
+  content: "\e686"; }
+
+.vip-icon-vip0.is-large, .vip-icon-pvip0.is-large, .vip-icon-svip0.is-large {
+  width: 35px; }
+
+.vip-icon-nian.is-large {
+  width: 12px;
+  background-position: 0 -78px; }
+
+.vip-icon-nian.is-large.is-disabled {
+  background-position: -13px -78px; }
+
+.vip-icon-vip0.is-large {
+  background-position: 0 0; }
+
+.vip-icon-vip1.is-large {
+  background-position: -36px 0; }
+
+.vip-icon-vip2.is-large {
+  background-position: -79px 0; }
+
+.vip-icon-vip3.is-large {
+  background-position: -122px 0; }
+
+.vip-icon-vip4.is-large {
+  background-position: -165px 0; }
+
+.vip-icon-vip5.is-large {
+  background-position: -208px 0; }
+
+.vip-icon-vip6.is-large {
+  background-position: -251px 0; }
+
+.vip-icon-vip7.is-large {
+  background-position: -294px 0; }
+
+.vip-icon-vip0.is-large.is-disabled {
+  background-position: 0 -13px; }
+
+.vip-icon-vip1.is-large.is-disabled {
+  background-position: -36px -13px; }
+
+.vip-icon-vip2.is-large.is-disabled {
+  background-position: -79px -13px; }
+
+.vip-icon-vip3.is-large.is-disabled {
+  background-position: -122px -13px; }
+
+.vip-icon-vip4.is-large.is-disabled {
+  background-position: -165px -13px; }
+
+.vip-icon-vip5.is-large.is-disabled {
+  background-position: -208px -13px; }
+
+.vip-icon-vip6.is-large.is-disabled {
+  background-position: -251px -13px; }
+
+.vip-icon-vip7.is-large.is-disabled {
+  background-position: -294px -13px; }
+
+.vip-icon-pvip0.is-large {
+  background-position: 0 -26px; }
+
+.vip-icon-pvip1.is-large {
+  background-position: -36px -26px; }
+
+.vip-icon-pvip2.is-large {
+  background-position: -79px -26px; }
+
+.vip-icon-pvip3.is-large {
+  background-position: -122px -26px; }
+
+.vip-icon-pvip4.is-large {
+  background-position: -165px -26px; }
+
+.vip-icon-pvip5.is-large {
+  background-position: -208px -26px; }
+
+.vip-icon-pvip6.is-large {
+  background-position: -251px -26px; }
+
+.vip-icon-pvip7.is-large {
+  background-position: -294px -26px; }
+
+.vip-icon-pvip0.is-large.is-disabled {
+  background-position: 0 -39px; }
+
+.vip-icon-pvip1.is-large.is-disabled {
+  background-position: -36px -39px; }
+
+.vip-icon-pvip2.is-large.is-disabled {
+  background-position: -79px -39px; }
+
+.vip-icon-pvip3.is-large.is-disabled {
+  background-position: -122px -39px; }
+
+.vip-icon-pvip4.is-large.is-disabled {
+  background-position: -165px -39px; }
+
+.vip-icon-pvip5.is-large.is-disabled {
+  background-position: -208px -39px; }
+
+.vip-icon-pvip6.is-large.is-disabled {
+  background-position: -251px -39px; }
+
+.vip-icon-pvip7.is-large.is-disabled {
+  background-position: -294px -39px; }
+
+.vip-icon-svip0.is-large {
+  background-position: 0 -52px; }
+
+.vip-icon-svip1.is-large {
+  background-position: -36px -52px; }
+
+.vip-icon-svip2.is-large {
+  background-position: -79px -52px; }
+
+.vip-icon-svip3.is-large {
+  background-position: -122px -52px; }
+
+.vip-icon-svip4.is-large {
+  background-position: -165px -52px; }
+
+.vip-icon-svip5.is-large {
+  background-position: -208px -52px; }
+
+.vip-icon-svip6.is-large {
+  background-position: -251px -52px; }
+
+.vip-icon-svip7.is-large {
+  background-position: -294px -52px; }
+
+.vip-icon-svip0.is-large.is-disabled {
+  background-position: 0 -65px; }
+
+.vip-icon-svip1.is-large.is-disabled {
+  background-position: -36px -65px; }
+
+.vip-icon-svip2.is-large.is-disabled {
+  background-position: -79px -65px; }
+
+.vip-icon-svip3.is-large.is-disabled {
+  background-position: -122px -65px; }
+
+.vip-icon-svip4.is-large.is-disabled {
+  background-position: -165px -65px; }
+
+.vip-icon-svip5.is-large.is-disabled {
+  background-position: -208px -65px; }
+
+.vip-icon-svip6.is-large.is-disabled {
+  background-position: -251px -65px; }
+
+.vip-icon-svip7.is-large.is-disabled {
+  background-position: -294px -65px; }
+
+/*# sourceMappingURL=xlx-icon.css.map */

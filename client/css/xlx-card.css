@@ -1,0 +1,71 @@
+/* scrollbar */
+/* BEM */
+:root {
+  --background-card: linear-gradient(45deg,#b8e9ff,#d3b7ff); }
+
+.xlx-card {
+  position: absolute;
+  width: 280px;
+  height: 144px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden; }
+  .xlx-card__content {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+    background-image: var(--background-card); }
+  .xlx-card__avatar {
+    width: 60px;
+    height: 60px; }
+    .xlx-card__avatar img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%; }
+  .xlx-card__information {
+    flex: 1;
+    margin-left: 20px; }
+  .xlx-card__title {
+    display: flex;
+    align-items: center;
+    margin: 0 0 5px; }
+  .xlx-card__name {
+    display: inline-block;
+    max-width: 9em;
+    font-size: 15px;
+    color: var(--color-default);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all; }
+  .xlx-card__sign {
+    max-width: 13em;
+    margin-top: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all; }
+  .xlx-card__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    padding: 0 20px; }
+    .xlx-card__bottom .td-button {
+      width: 75px;
+      height: 24px;
+      font-size: 12px;
+      line-height: 24px; }
+      .xlx-card__bottom .td-button.td-button--secondary {
+        border: solid 1px var(--color-primary);
+        box-sizing: border-box;
+        line-height: 22px;
+        color: var(--color-primary);
+        background: transparent; }
+        .xlx-card__bottom .td-button.td-button--secondary:hover {
+          color: #fff;
+          background-color: var(--color-primary); }
+
+/*# sourceMappingURL=xlx-card.css.map */

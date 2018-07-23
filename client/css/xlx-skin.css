@@ -1,0 +1,92 @@
+@charset "UTF-8";
+:root {
+  --background-search: #fff;
+  --background-hover: #f0f3fa;
+  --background-body:#fff;
+  --opacity-tab-current: 1;
+  --opacity-tab: .5;
+  --color-icon-oparate: rgba(0,0,0,.9);
+  --color-text: #808080;
+  --color-sub:rgba(0, 0, 0, 0.6);
+  --background-item: linear-gradient(to right,rgba(181,224,255,.2),rgba(26,160,255,.2));
+  --background-item-hover:linear-gradient(to right,rgba(68,177,255,.2),rgba(181,224,255,.2));
+  --background-drag: rgba(102,153,255,.2);
+  --border-drag: rgba(102,153,255,.4);
+  --background-side-title: linear-gradient( to right, rgba(102,153,255,0.16),rgba(136,108,251,.08), rgba(136,108,251,0));
+  --background-side-title-hover: linear-gradient( to right, rgba(102,153,255,0.3),rgba(136,108,251,.15), rgba(136,108,251,0));
+  --background-progress-bar: #69f;
+  --background-progress: rgba(0,0,0,.1);
+  --color-tab-text: #1a1a1a;
+  --background-chart: linear-gradient(to right,#dff6fe,#e8e9fe);
+  --color-chart-line: rgba(255,255,255,.5);
+  --background-comment: #fff; }
+
+/* 下载进度 */
+.xlx-side .td-progress-bar__inner {
+  background: var(--background-progress-bar); }
+
+/* 下载进度条 */
+.xlx-side .td-progress-bar__outer {
+  background: var(--background-progress); }
+
+.xlx-side .td-collapse-item.is-active .td-collapse-item__title, .xlx-side .td-collapse-item .td-collapse-item__title:hover, .td-browser-tab__item:hover .td-browser-tab__text {
+  color: var(--color-tab-text-current); }
+
+.xlx-side .td-collapse-item__title, .td-browser-tab__text {
+  color: var(--color-tab-text); }
+
+/* 搜索背景色 */
+.xlx-search {
+  background: var(--background-search); }
+  .xlx-search a {
+    color: var(--color-icon-oparate); }
+
+.td-icon-arrow-line, .td-browser-tab__close {
+  color: var(--color-icon-oparate); }
+
+/* 浏览器TAB选中颜色 */
+.td-browser-tab__item.is-current .td-browser-tab__text {
+  color: var(--color-text); }
+
+/* 默认背景色 */
+.xlx-client-content--default {
+  background: var(--background-body); }
+
+/* 文件名颜色 */
+.xlx-file-name {
+  color: var(--color-text); }
+
+/* 下载信息颜色 */
+.td-draglist-item__content .xlx-file-info, .xlx-status-speed {
+  color: var(--color-sub); }
+
+.xlx-status-control .xlx-icon-time {
+  background-image: var(--icon-color); }
+
+/* 右侧 */
+.nav a, .index-article p, .from-info .art-name {
+  color: var(--color-text); }
+
+.index-article h1 a, .from-info .user-name, .from-info .praise, .td-tabs__item.is-active, .xlx-speed-list__user-name, .td-textarea__inner {
+  color: var(--color-tab-text-current); }
+
+.from-info .art-name a, .from-info .art-name a, .from-info .art-nam, .file-info .text-name {
+  color: var(--color-text);
+  opacity: .8; }
+
+.ico-praise {
+  background-color: var(--color-text); }
+
+.chart-box {
+  height: 100%;
+  background: var(--background-chart); }
+  .chart-box:after {
+    background: repeating-linear-gradient(transparent, transparent 24px, var(--color-chart-line) 24px, var(--color-chart-line) 25px); }
+
+.data-info {
+  color: var(--color-sub); }
+
+.xlx-comment .xlx-comment__write {
+  background: var(--background-comment); }
+
+/*# sourceMappingURL=xlx-skin.css.map */

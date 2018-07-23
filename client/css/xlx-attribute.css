@@ -1,0 +1,89 @@
+/* scrollbar */
+/* BEM */
+.xlx-attribute-progress {
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px; }
+  .xlx-attribute-progress__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    user-select: none; }
+    .xlx-attribute-progress__item--address .td-progress-bar__outer {
+      background: rgba(140, 168, 207, 0.1); }
+    .xlx-attribute-progress__item--address .td-progress-bar__inner {
+      background: #d5dfed; }
+    .xlx-attribute-progress__item--mirror .td-progress-bar__outer {
+      background: rgba(87, 189, 246, 0.1); }
+    .xlx-attribute-progress__item--mirror .td-progress-bar__inner {
+      background: #a7dfff; }
+    .xlx-attribute-progress__item--p2p .td-progress-bar__outer {
+      background: rgba(88, 158, 246, 0.1); }
+    .xlx-attribute-progress__item--p2p .td-progress-bar__inner {
+      background: #8fc1ff; }
+    .xlx-attribute-progress__item--local .td-progress-bar__outer {
+      background: rgba(143, 140, 255, 0.1); }
+    .xlx-attribute-progress__item--local .td-progress-bar__inner {
+      background: #b1afff; }
+    .xlx-attribute-progress__item--vip .td-progress-bar__outer {
+      background: rgba(253, 128, 102, 0.1); }
+    .xlx-attribute-progress__item--vip .td-progress-bar__inner {
+      background: #ffb4a4; }
+  .xlx-attribute-progress__title {
+    width: 60px;
+    margin-right: 12px;
+    font-size: 12px;
+    color: #333; }
+  .xlx-attribute-progress__size {
+    width: 57px;
+    margin-left: 14px;
+    font-size: 12px;
+    color: #333;
+    text-align: right; }
+  .xlx-attribute-progress__detail {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--color-primary); }
+  .xlx-attribute-progress .td-progress,
+  .xlx-attribute-progress .td-progress-bar {
+    flex: 1;
+    height: 12px; }
+  .xlx-attribute-progress .td-progress__text {
+    width: 35px;
+    text-align: right;
+    font-size: 12px;
+    color: #999; }
+
+.xlx-attribute-info__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; }
+  .xlx-attribute-info__item a {
+    font-size: 12px;
+    color: var(--color-primary);
+    white-space: nowrap; }
+    .xlx-attribute-info__item a:hover {
+      color: var(--color-primary-hover); }
+.xlx-attribute-info__title {
+  width: 60px;
+  margin-right: 12px;
+  font-size: 12px;
+  color: #808080;
+  user-select: none; }
+.xlx-attribute-info__text {
+  font-size: 12px;
+  color: #333333; }
+.xlx-attribute-info__path {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+.xlx-attribute-info__act {
+  width: 24px;
+  margin-left: 10px; }
+.xlx-attribute-info .td-input {
+  flex: 1; }
+  .xlx-attribute-info .td-input .td-input__inner {
+    width: 100%; }
+
+/*# sourceMappingURL=xlx-attribute.css.map */

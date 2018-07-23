@@ -1,0 +1,4620 @@
+@charset "UTF-8";
+/* scrollbar */
+/* BEM */
+/* scrollbar */
+/* BEM */
+.xlx-dialog-about {
+  padding: 0 20px 20px; }
+  .xlx-dialog-about__content {
+    padding-top: 20px; }
+  .xlx-dialog-about__picture {
+    position: relative;
+    width: 102px;
+    height: 96px;
+    margin: 0 auto 12px;
+    overflow: hidden;
+    -webkit-mask: url(../img/about/bird.png) no-repeat;
+    -webkit-mask-size: 100% auto;
+    background-color: #88b0ff; }
+    .xlx-dialog-about__picture:before, .xlx-dialog-about__picture:after {
+      position: absolute;
+      content: ""; }
+    .xlx-dialog-about__picture:before {
+      left: -100px;
+      top: -60px;
+      width: 102px;
+      height: 102px;
+      background: #6dc6ff;
+      border-radius: 50%;
+      filter: blur(22px);
+      animation: xlx-ball-1 5s .8s both infinite; }
+    .xlx-dialog-about__picture:after {
+      right: -160px;
+      top: 0px;
+      width: 145px;
+      height: 145px;
+      background: #c175ff;
+      border-radius: 50%;
+      filter: blur(22px);
+      animation: xlx-ball-2 5s both infinite; }
+@keyframes xlx-ball-1 {
+  0% {
+    transform: translate3d(0, 0, 0); }
+  100% {
+    transform: translate3d(200px, 0, 0); } }
+@keyframes xlx-ball-2 {
+  0% {
+    transform: translate3d(0, 0, 0); }
+  100% {
+    transform: translate3d(-200px, 100px, 0); } }
+  .xlx-dialog-about__title {
+    text-align: center; }
+    .xlx-dialog-about__title h1 {
+      display: inline-block;
+      position: relative;
+      margin-bottom: 2px;
+      font-size: 30px;
+      font-weight: lighter; }
+      .xlx-dialog-about__title h1 span {
+        font-family: 'xlx-icon'; }
+      .xlx-dialog-about__title h1 i {
+        position: absolute;
+        top: 7px;
+        right: -44px;
+        width: 44px;
+        height: 14px;
+        text-align: center;
+        font-size: 10px;
+        font-style: normal;
+        color: #fff;
+        line-height: 14px;
+        background: #88b0ff;
+        border-radius: 7px; }
+  .xlx-dialog-about__copyright {
+    margin-top: 30px;
+    color: #999;
+    font-size: 11px; }
+    .xlx-dialog-about__copyright p {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      line-height: 1.6; }
+
+/* scrollbar */
+/* BEM */
+.xlx-attribute-progress {
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px; }
+  .xlx-attribute-progress__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    user-select: none; }
+    .xlx-attribute-progress__item--address .td-progress-bar__outer {
+      background: rgba(140, 168, 207, 0.1); }
+    .xlx-attribute-progress__item--address .td-progress-bar__inner {
+      background: #d5dfed; }
+    .xlx-attribute-progress__item--mirror .td-progress-bar__outer {
+      background: rgba(87, 189, 246, 0.1); }
+    .xlx-attribute-progress__item--mirror .td-progress-bar__inner {
+      background: #a7dfff; }
+    .xlx-attribute-progress__item--p2p .td-progress-bar__outer {
+      background: rgba(88, 158, 246, 0.1); }
+    .xlx-attribute-progress__item--p2p .td-progress-bar__inner {
+      background: #8fc1ff; }
+    .xlx-attribute-progress__item--local .td-progress-bar__outer {
+      background: rgba(143, 140, 255, 0.1); }
+    .xlx-attribute-progress__item--local .td-progress-bar__inner {
+      background: #b1afff; }
+    .xlx-attribute-progress__item--vip .td-progress-bar__outer {
+      background: rgba(253, 128, 102, 0.1); }
+    .xlx-attribute-progress__item--vip .td-progress-bar__inner {
+      background: #ffb4a4; }
+  .xlx-attribute-progress__title {
+    width: 60px;
+    margin-right: 12px;
+    font-size: 12px;
+    color: #333; }
+  .xlx-attribute-progress__size {
+    width: 57px;
+    margin-left: 14px;
+    font-size: 12px;
+    color: #333;
+    text-align: right; }
+  .xlx-attribute-progress__detail {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--color-primary); }
+  .xlx-attribute-progress .td-progress,
+  .xlx-attribute-progress .td-progress-bar {
+    flex: 1;
+    height: 12px; }
+  .xlx-attribute-progress .td-progress__text {
+    width: 35px;
+    text-align: right;
+    font-size: 12px;
+    color: #999; }
+
+.xlx-attribute-info__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; }
+  .xlx-attribute-info__item a {
+    font-size: 12px;
+    color: var(--color-primary);
+    white-space: nowrap; }
+    .xlx-attribute-info__item a:hover {
+      color: var(--color-primary-hover); }
+.xlx-attribute-info__title {
+  width: 60px;
+  margin-right: 12px;
+  font-size: 12px;
+  color: #808080;
+  user-select: none; }
+.xlx-attribute-info__text {
+  font-size: 12px;
+  color: #333333; }
+.xlx-attribute-info__path {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+.xlx-attribute-info__act {
+  width: 24px;
+  margin-left: 10px; }
+.xlx-attribute-info .td-input {
+  flex: 1; }
+  .xlx-attribute-info .td-input .td-input__inner {
+    width: 100%; }
+
+/* scrollbar */
+/* BEM */
+:root {
+  --border-bookmarks: #f0f0f0; }
+
+.xlx-bookmarks {
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .xlx-bookmarks__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding: 0 20px;
+    border-bottom: solid 1px var(--border-bookmarks); }
+    .xlx-bookmarks__header h2 {
+      font-size: 18px; }
+  .xlx-bookmarks__body {
+    display: flex;
+    flex: 1;
+    justify-content: space-between; }
+  .xlx-bookmarks__tips {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    height: 30px;
+    color: #4c4c4c;
+    line-height: 30px;
+    border-bottom: solid 1px var(--border-bookmarks); }
+    .xlx-bookmarks__tips-link {
+      color: var(--color-primary); }
+    .xlx-bookmarks__tips-close {
+      color: var(--color-default);
+      transition: .2s; }
+  .xlx-bookmarks__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px; }
+
+.xlx-bookmarks-title {
+  display: flex; }
+
+.xlx-search-bookmarks {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+  margin-left: 40px;
+  background: #f0f3fa;
+  border-radius: 15px; }
+  .xlx-search-bookmarks .td-input {
+    display: flex;
+    align-items: center; }
+  .xlx-search-bookmarks .xlx-search-bookmarks__icon {
+    width: 24px;
+    padding: 4px;
+    margin: 0 3px;
+    box-sizing: border-box; }
+  .xlx-search-bookmarks .td-input__inner {
+    font-size: 14px;
+    background: transparent;
+    border: 0;
+    padding-left: 0; }
+    .xlx-search-bookmarks .td-input__inner::-webkit-input-placeholder {
+      color: #707070; }
+
+.xlx-bookmarks-operate {
+  display: flex;
+  align-items: center; }
+  .xlx-bookmarks-operate a {
+    margin-left: 30px;
+    color: var(--color-default);
+    transition: .2s; }
+    .xlx-bookmarks-operate a:hover {
+      color: var(--color-primary); }
+  .xlx-bookmarks-operate__text {
+    margin-left: 4px; }
+
+/* body */
+.xlx-bookmarks-side {
+  width: 260px;
+  height: 100%;
+  padding: 10px 0;
+  border-right: solid 1px var(--border-bookmarks);
+  box-sizing: border-box; }
+  .xlx-bookmarks-side .td-tree {
+    margin: 0 10px;
+    color: var(--color-default); }
+  .xlx-bookmarks-side .td-tree-node__expand-icon, .xlx-bookmarks-side .td-tree-node__label {
+    margin: 0; }
+  .xlx-bookmarks-side .td-tree-node__content {
+    height: 30px;
+    border-radius: 4px; }
+
+.xlx-bookmarks-content {
+  padding: 0 12px;
+  width: calc(100% - 260px);
+  box-sizing: border-box; }
+  .xlx-bookmarks-content__title {
+    padding: 10px 0 0;
+    line-height: 30px; }
+    .xlx-bookmarks-content__title h3 {
+      font-size: 14px;
+      text-indent: 10px; }
+
+.xlx-bookmarks-list__item {
+  width: 100%;
+  padding: 0 10px;
+  border-radius: 4px; }
+  .xlx-bookmarks-list__item.is-chosen {
+    background: #eaedf5; }
+  .xlx-bookmarks-list__item a {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    color: var(--color-default); }
+  .xlx-bookmarks-list__item:hover {
+    background: #f0f3fa; }
+    .xlx-bookmarks-list__item:hover .xlx-bookmarks-list__link {
+      opacity: 1; }
+  .xlx-bookmarks-list__item .td-input {
+    margin-right: 20px; }
+  .xlx-bookmarks-list__item .td-input__inner {
+    width: 300px; }
+.xlx-bookmarks-list__text {
+  max-width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all; }
+.xlx-bookmarks-list__link {
+  opacity: 0;
+  margin-left: 20px;
+  color: var(--color-primary-gray-1); }
+
+/* 书签栏 */
+.xlx-bookmarks-bar {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  height: 30px;
+  padding: 0 4px;
+  border-bottom: solid 1px var(--border-bookmarks); }
+  .xlx-bookmarks-bar__content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden; }
+  .xlx-bookmarks-bar__item {
+    display: flex;
+    align-items: center;
+    height: 22px;
+    padding: 0 6px;
+    border-radius: 4px;
+    color: #4c4c4c; }
+    .xlx-bookmarks-bar__item:hover {
+      color: #4c4c4c;
+      background: #f0f3fa; }
+  .xlx-bookmarks-bar__more {
+    padding: 3px;
+    border-radius: 4px; }
+    .xlx-bookmarks-bar__more:hover {
+      color: #4c4c4c;
+      background: #f0f3fa; }
+
+.xlx-context-menu--bookmarks {
+  top: 32px;
+  right: 0px; }
+
+/* scrollbar */
+/* BEM */
+::selection {
+  background: transparent; }
+
+html, body {
+  overflow: hidden; }
+
+button::selection, input::selection, select::selection, textarea::selection, .xlx-search__text::selection {
+  color: #fff;
+  background: var(--color-primary); }
+
+.xlx-media {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top; }
+
+.xlx-client {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh; }
+  .xlx-client__header {
+    height: 76px; }
+  .xlx-client__body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex: 1; }
+
+.xlx-client-header {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px; }
+
+.xlx-client-nav .td-browser-tab__number {
+  display: inline-block;
+  height: 16px;
+  margin-left: 6px;
+  padding: 0 7px;
+  color: #fff;
+  line-height: 16px;
+  font-style: normal;
+  background-color: var(--color-primary);
+  border-radius: 8px; }
+.xlx-client-nav .td-icon-arrow-drop {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: -11px;
+  font-size: 12px;
+  color: var(--background-progress-bar);
+  opacity: .5; }
+
+.xlx-client-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%; }
+  .xlx-client-content--default {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between; }
+
+.xlx-client-index {
+  flex: 1; }
+
+.xlx-client-side {
+  position: relative;
+  width: var(--side-width); }
+
+.xlx-client-operate {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .xlx-client-operate a {
+    padding: 5px;
+    color: var(--color-icon-oparate);
+    transition: .2s; }
+    .xlx-client-operate a:hover {
+      background: #95affd; }
+  .xlx-client-operate .xlx-client-operate__message {
+    transition: 1s; }
+    .xlx-client-operate .xlx-client-operate__message .xlx-icon-message {
+      position: relative; }
+    .xlx-client-operate .xlx-client-operate__message.is-move {
+      opacity: 0;
+      pointer-events: none; }
+    .xlx-client-operate .xlx-client-operate__message span {
+      position: absolute;
+      right: -8px;
+      top: -5px;
+      width: 17px;
+      height: 11px;
+      color: #fff;
+      line-height: 11px;
+      text-align: center;
+      font-size: 9px;
+      background: var(--color-danger-2);
+      border-radius: 5px; }
+
+.xlx-context-menu__hotkey {
+  position: absolute;
+  right: 10px;
+  color: var(--color-primary-gray-1); }
+
+.td-context-menu__content:hover .xlx-context-menu__hotkey {
+  color: #fff; }
+
+/* scrollbar */
+/* BEM */
+.xlx-comment .xlx-comment-main {
+  display: flex;
+  margin-bottom: 35px; }
+.xlx-comment .xlx-comment__image {
+  width: 42px;
+  height: 42px;
+  margin-right: 22px; }
+  .xlx-comment .xlx-comment__image img {
+    width: 100%;
+    border-radius: 50%; }
+.xlx-comment .xlx-comment__write {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  background: #fff;
+  border-radius: 4px;
+  border: solid 1px var(--color-detail-line);
+  box-sizing: border-box; }
+  .xlx-comment .xlx-comment__write .td-textarea {
+    width: calc(100% - 60px); }
+    .xlx-comment .xlx-comment__write .td-textarea .td-textarea__inner {
+      width: 100%;
+      height: 30px;
+      overflow: hidden;
+      background: transparent;
+      transition: .2s; }
+  .xlx-comment__oprate {
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 10px; }
+    .xlx-comment__oprate .xlx-comment__line {
+      width: 1px;
+      height: 11px;
+      margin: 0 12px;
+      background: var(--color-detail-line); }
+    .xlx-comment__oprate .xlx-button-sumbit {
+      color: #7698b7; }
+      .xlx-comment__oprate .xlx-button-sumbit:hover {
+        color: var(--color-primary); }
+      .xlx-comment__oprate .xlx-button-sumbit:active {
+        color: var(--color-primary-hover); }
+      .xlx-comment__oprate .xlx-button-sumbit.is-disabled {
+        color: var(--color-primary-gray-2);
+        cursor: default; }
+  .xlx-comment .xlx-comment__write.is-focus {
+    display: block;
+    text-align: right; }
+    .xlx-comment .xlx-comment__write.is-focus .td-textarea {
+      width: 100%;
+      display: block; }
+    .xlx-comment .xlx-comment__write.is-focus .td-textarea__inner {
+      width: 100%;
+      height: 40px;
+      overflow: auto; }
+  .xlx-comment .xlx-comment__write .td-textarea__inner {
+    border: 0; }
+
+.xlx-comment-list__item {
+  display: flex;
+  margin-bottom: 20px; }
+  .xlx-comment-list__item .xlx-comment-list__speed {
+    margin-left: 8px;
+    color: var(--color-detail-primary); }
+    .xlx-comment-list__item .xlx-comment-list__speed.is-fast {
+      color: var(--color-warn-1); }
+  .xlx-comment-list__item.is-hot .xlx-comment__content {
+    border-color: #ffd4d4; }
+  .xlx-comment-list__item.is-hot .xlx-comment-list__praise {
+    color: var(--color-danger-1); }
+
+.xlx-comment-list__content {
+  padding-bottom: 20px;
+  flex: 1;
+  width: calc(100% - 64px);
+  border-bottom: solid 1px var(--color-detail-line); }
+  .xlx-comment-list__content .xlx-comment-list__delete {
+    display: none; }
+  .xlx-comment-list__content:hover .xlx-comment-list__delete {
+    display: inline-block; }
+  .xlx-comment-list__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px; }
+    .xlx-comment-list__header .xlx-comment-list__user-name {
+      margin-right: 5px;
+      color: #667f97; }
+      .xlx-comment-list__header .xlx-comment-list__user-name.is-vip {
+        color: var(--color-danger-1); }
+
+  .xlx-comment-list__body {
+    margin-bottom: 14px;
+    line-height: 16px; }
+    .xlx-comment-list__body .xlx-comment-list__text {
+      word-wrap: break-word;
+      white-space: pre-wrap; }
+    .xlx-comment-list__body .xlx-comment-list__quote {
+      position: relative;
+      padding: 10px;
+      margin-top: 14px;
+      background: #f5f5f5;
+      border-radius: 5px;
+      color: var(--color-detail-primary); }
+    .xlx-comment-list__body .xlx-comment-list__quote-text {
+      word-wrap: break-word;
+      white-space: pre-wrap; }
+
+  .xlx-comment-list__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px; }
+    .xlx-comment-list__information {
+      color: var(--color-detail-primary); }
+
+    .xlx-comment-list__operate a {
+      margin-left: 20px;
+      transition: .2s; }
+      .xlx-comment-list__operate a:hover {
+        color: var(--color-primary); }
+    .xlx-comment-list__operate .xlx-comment-list__praise.is-animation {
+      position: relative; }
+      .xlx-comment-list__operate .xlx-comment-list__praise.is-animation:before {
+        position: absolute;
+        top: -13px;
+        right: 0;
+        content: "+1";
+        animation: praise-add .8s both; }
+@keyframes praise-add {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0; }
+  40%,60% {
+    transform: translate3d(0, -5px, 0);
+    opacity: 1; }
+  100% {
+    transform: translate3d(0, -10px, 0);
+    opacity: 0; } }
+    .is-active.xlx-comment-list__praise {
+      color: var(--color-primary); }
+    .is-active.xlx-comment-list__comment {
+      color: var(--color-primary); }
+
+    .is-hot .is-active.xlx-comment-list__praise {
+      color: var(--color-danger-1); }
+  .xlx-comment-list__footer .xlx-comment__write {
+    margin-top: 14px; }
+
+.xlx-comment-fast {
+  padding-left: 64px; }
+  .xlx-comment-fast .xlx-comment-fast__title-text {
+    display: flex;
+    align-items: center;
+    color: var(--color-detail-primary); }
+  .xlx-comment-fast .xlx-comment-fast__refresh {
+    color: var(--color-primary); }
+  .xlx-comment-fast .xlx-comment-fast__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 0 -10px; }
+  .xlx-comment-fast .xlx-comment-fast__item {
+    display: inline-block;
+    margin: 0 0 10px 10px;
+    padding: 0 10px;
+    line-height: 30px;
+    border: solid 1px var(--color-detail-line);
+    border-radius: 4px;
+    transition: .2s; }
+    .xlx-comment-fast .xlx-comment-fast__item:hover {
+      border-color: var(--color-primary); }
+
+.td-pagination {
+  margin-left: 64px; }
+
+/* 表情 */
+.xlx-face {
+  position: relative; }
+  .xlx-face .xlx-face__icon {
+    color: #7698b7; }
+    .xlx-face .xlx-face__icon:hover {
+      color: var(--color-primary); }
+    .xlx-face .xlx-face__icon:active {
+      color: var(--color-primary-hover); }
+
+.xlx-face-emoji {
+  position: absolute;
+  z-index: 99;
+  width: 200px;
+  padding: 10px 6px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
+
+/* scrollbar */
+/* BEM */
+.xlx-detail {
+  display: flex;
+  padding-bottom: 50px; }
+  .xlx-detail .xlx-comment {
+    flex: 1;
+    width: calc(100% - 212px); }
+  .xlx-detail .xlx-speed-list {
+    margin-left: 20px; }
+
+/* scrollbar */
+/* BEM */
+.td-dialog.xlx-dialog--large {
+  width: 460px; }
+
+.td-dialog.xlx-dialog--small {
+  width: 300px; }
+
+.xlx-dialog .td-dropdown-group .td-button:nth-child(1) {
+  text-indent: 3em; }
+
+.td-textarea__inner {
+  white-space: nowrap;
+  height: 90px; }
+
+.xlx-dialog__down {
+  margin-bottom: 20px; }
+  .xlx-dialog__down .td-textarea__inner {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
+
+.xlx-dialog__down-info {
+  position: relative;
+  background: #fff;
+  border: solid 1px #ccc;
+  border-top-width: 0;
+  border-radius: 0 0 4px 4px; }
+  .xlx-dialog__down-info::-webkit-scrollbar {
+    width: 4px; }
+    .xlx-dialog__down-info::-webkit-scrollbar:horizontal {
+      height: 4px; }
+    .xlx-dialog__down-info::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      width: 4px;
+      background: #e6e6e6; }
+    .xlx-dialog__down-info::-webkit-scrollbar-corner {
+      background: #fff; }
+    .xlx-dialog__down-info::-webkit-scrollbar-track {
+      background: #fff; }
+      .xlx-dialog__down-info::-webkit-scrollbar-track-piece {
+        background: #fff;
+        width: 4px; }
+  .xlx-dialog__down-info .xlx-dialog__down-info-name, .xlx-dialog__down-info .xlx-dialog__down-info-type, .xlx-dialog__down-info .xlx-dialog__down-info-size {
+    padding-left: 6px;
+    box-sizing: border-box; }
+  .xlx-dialog__down-info .xlx-dialog__down-info-name {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 130px); }
+    .xlx-dialog__down-info .xlx-dialog__down-info-name .td-checkbox {
+      overflow: hidden; }
+  .xlx-dialog__down-info .xlx-dialog__down-info-type {
+    width: 48px; }
+  .xlx-dialog__down-info .xlx-dialog__down-info-size {
+    width: 82px;
+    position: relative; }
+  .xlx-dialog__down-info .file-choose {
+    position: absolute;
+    top: 8px;
+    right: 3px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px; }
+
+.xlx-dialog__down--tasks .xlx-dialog__down-info {
+  border-top-width: 1px;
+  border-radius: 4px; }
+  .xlx-dialog__down--tasks .xlx-dialog__down-info .xlx-dialog__down-info-name {
+    width: calc(100% - 220px); }
+.xlx-dialog__down--tasks .xlx-dialog__down-unordered {
+  min-height: 90px; }
+.xlx-dialog__down--tasks .xlx-dialog__down-info-url {
+  position: relative;
+  width: 76px;
+  padding-right: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all; }
+
+.xlx-dialog__down-tasks {
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: solid 1px #ccc; }
+  .xlx-dialog__down-tasks .xlx-dialog__down-tasks-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 58px;
+    overflow-y: auto;
+    padding: 0 3px 10px; }
+    .xlx-dialog__down-tasks .xlx-dialog__down-tasks-list::-webkit-scrollbar {
+      width: 4px; }
+      .xlx-dialog__down-tasks .xlx-dialog__down-tasks-list::-webkit-scrollbar:horizontal {
+        height: 4px; }
+      .xlx-dialog__down-tasks .xlx-dialog__down-tasks-list::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+        width: 4px;
+        background: #e6e6e6; }
+      .xlx-dialog__down-tasks .xlx-dialog__down-tasks-list::-webkit-scrollbar-corner {
+        background: #fff; }
+      .xlx-dialog__down-tasks .xlx-dialog__down-tasks-list::-webkit-scrollbar-track {
+        background: #fff; }
+        .xlx-dialog__down-tasks .xlx-dialog__down-tasks-list::-webkit-scrollbar-track-piece {
+          background: #fff;
+          width: 4px; }
+    .xlx-dialog__down-tasks .xlx-dialog__down-tasks-list a {
+      width: 46px;
+      height: 18px;
+      margin: 10px 3px 0;
+      line-height: 18px;
+      color: var(--color-primary);
+      text-align: center;
+      border-radius: 3px;
+      border: solid 1px var(--color-primary); }
+      .xlx-dialog__down-tasks .xlx-dialog__down-tasks-list a.is-disabled {
+        color: var(--color-primary-gray-2);
+        border-color: currentColor; }
+  .xlx-dialog__down-tasks .xlx-dialog__down-tasks-size {
+    height: 30px;
+    text-indent: 5px;
+    line-height: 30px;
+    background: #f5f5f5;
+    border-radius: 0 0 4px 4px; }
+
+.xlx-dialog__down-task-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  padding: 0 8px; }
+  .xlx-dialog__down-task-group .td-checkbox__label {
+    max-width: 14em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all; }
+  .xlx-dialog__down-task-group .td-input__inner {
+    width: 160px;
+    margin-left: 6px; }
+  .xlx-dialog__down-task-group .xlx-dialog__down-text {
+    position: absolute;
+    right: 8px;
+    color: var(--color-primary-gray-2); }
+
+.xlx-operate {
+  display: flex;
+  padding-top: 20px;
+  justify-content: flex-end;
+  font-size: 14px;
+  line-height: 1; }
+  .xlx-operate.xlx-operate--right .xlx-operate__button {
+    margin-left: 26px; }
+  .xlx-operate.xlx-operate--between {
+    justify-content: space-between; }
+  .xlx-operate .xlx-operate__button {
+    color: var(--color-primary); }
+    .xlx-operate .xlx-operate__button:hover {
+      color: var(--color-primary-hover); }
+  .xlx-operate .xlx-operate__button--secondary {
+    color: var(--color-link); }
+
+.xlx-dialog__down-info-title {
+  display: flex;
+  height: 20px;
+  padding-right: 6px;
+  color: var(--color-primary-gray-2);
+  line-height: 20px;
+  box-sizing: border-box; }
+  .xlx-dialog__down-info-title .xlx-dialog__down-info-name {
+    border-right: solid 1px var(--color-primary-gray-2); }
+
+.xlx-dialog__down-info-content {
+  position: relative;
+  padding-bottom: 8px; }
+
+.xlx-dialog__down-unordered {
+  max-height: 120px;
+  overflow-y: scroll; }
+  .xlx-dialog__down-unordered::-webkit-scrollbar {
+    width: 4px; }
+    .xlx-dialog__down-unordered::-webkit-scrollbar:horizontal {
+      height: 4px; }
+    .xlx-dialog__down-unordered::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      width: 4px;
+      background: #e6e6e6; }
+    .xlx-dialog__down-unordered::-webkit-scrollbar-corner {
+      background: #fff; }
+    .xlx-dialog__down-unordered::-webkit-scrollbar-track {
+      background: #fff; }
+      .xlx-dialog__down-unordered::-webkit-scrollbar-track-piece {
+        background: #fff;
+        width: 4px; }
+
+.xlx-dialog__down-item {
+  display: flex;
+  height: 30px;
+  line-height: 30px; }
+  .xlx-dialog__down-item .td-checkbox__label {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all; }
+  .xlx-dialog__down-item .td-select {
+    display: inline-block;
+    width: calc(100% - 24px);
+    margin: 0 0 0 3px; }
+  .xlx-dialog__down-item .td-select-group {
+    height: 30px; }
+
+.td-dialog .xlx-file-size {
+  margin-right: 4px;
+  color: var(--color-primary-gray-2); }
+  .td-dialog .xlx-file-size.is-danger {
+    color: var(--color-danger-1); }
+  .td-dialog .xlx-file-size.is-warn {
+    color: var(--color-warn-1); }
+
+/* 弹出设置层 */
+.xlx-dialog__settings {
+  position: absolute;
+  width: 340px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
+
+.xlx-bt-setting {
+  background: #fff; }
+  .xlx-bt-setting .xlx-bt-setting__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px; }
+  .xlx-bt-setting__number {
+    display: inline-block;
+    margin-left: 18px;
+    color: var(--color-primary-gray-1); }
+    .xlx-bt-setting__number .td-input__inner {
+      width: 50px; }
+  .xlx-bt-setting .xlx-form {
+    display: inline-block; }
+    .xlx-bt-setting .xlx-form .td-input__inner {
+      width: 50px; }
+    .xlx-bt-setting .xlx-form .td-input__label {
+      margin-left: 7px; }
+
+.xlx-dialog__input .td-input {
+  display: flex;
+  align-items: center; }
+.xlx-dialog__input .td-input__inner {
+  flex: 1; }
+
+.xlx-bt-setting--popup {
+  width: calc(100% + 2px);
+  position: absolute;
+  top: 20px;
+  left: -1px;
+  z-index: 2;
+  padding: 12px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border: solid 1px #ccc;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
+.xlx-resource {
+  position: relative;
+  display: flex;
+  height: 32px;
+  margin-bottom: 20px; }
+  .xlx-resource > .td-input {
+    margin: 2px 0 0 8px; }
+    .xlx-resource > .td-input .td-input__inner {
+      width: 230px; }
+  .xlx-resource .xlx-resource__text {
+    margin-left: 12px; }
+    .xlx-resource .xlx-resource__text.is-warn {
+      color: var(--color-danger-1); }
+  .xlx-resource .xlx-resource__size {
+    position: absolute;
+    right: 0;
+    line-height: 32px;
+    color: var(--color-primary-gray-2); }
+  .xlx-resource .xlx-resource__name {
+    display: flex;
+    align-items: center;
+    line-height: 32px; }
+  .xlx-resource .xlx-resource__text {
+    max-width: 18em;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all; }
+  .xlx-resource .xlx-resource__operate {
+    position: absolute;
+    right: 0; }
+    .xlx-resource .xlx-resource__operate .td-button {
+      width: 60px; }
+  .xlx-resource .td-select {
+    margin-top: 2px;
+    margin-left: 8px; }
+  .xlx-resource .td-select-group {
+    width: 230px;
+    height: 30px; }
+
+.xlx-resource__rename {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 2px;
+  width: 16px;
+  height: 17px;
+  color: var(--color-primary-gray-2); }
+  .xlx-resource__rename:hover {
+    color: var(--color-primary-hover); }
+
+.xlx-dialog__column-1 {
+  width: 65px; }
+
+.xlx-dialog__column-2 {
+  width: 75px; }
+
+.xlx-dialog__down-info .td-table {
+  background: #fff;
+  border: 0; }
+.xlx-dialog__down-info .td-table th {
+  height: 20px;
+  border-bottom: 0; }
+  .xlx-dialog__down-info .td-table th:nth-child(2) {
+    border-left: solid 1px #ccc; }
+.xlx-dialog__down-info .xlx-dialog__down-item:hover {
+  background: var(--background-hover); }
+.xlx-dialog__down-info .td-table td {
+  height: 28px;
+  border-bottom: 0; }
+.xlx-dialog__down-info .td-table-tree .td-tree-node__label {
+  height: 25px;
+  line-height: 25px; }
+.xlx-dialog__down-info .td-table__header-wrapper {
+  margin-right: 6px; }
+.xlx-dialog__down-info .td-table__body-wrapper {
+  height: 180px; }
+
+/* 设置中心弹窗 */
+.xlx-dialog-setting .xlx-dialog-setting__form {
+  margin-top: 10px; }
+.xlx-dialog-setting .xlx-dialog-setting__item {
+  margin-bottom: 10px; }
+  .xlx-dialog-setting .xlx-dialog-setting__item .xlx-setting-content__horizontal {
+    display: inline-flex; }
+.xlx-dialog-setting .xlx-setting__input-1 .td-input__inner {
+  width: 280px; }
+.xlx-dialog-setting .xlx-setting__input-2 .td-input__inner {
+  width: 80px;
+  margin-right: 20px; }
+.xlx-dialog-setting .xlx-setting__input-3 .td-input__inner {
+  width: 60px; }
+.xlx-dialog-setting .xlx-dialog-setting__tips {
+  margin-bottom: 5px;
+  color: #999;
+  line-height: 20px; }
+.xlx-dialog-setting .td-textarea__inner {
+  height: 185px;
+  white-space: pre-wrap; }
+.xlx-dialog-setting .xlx-dialog-setting__label {
+  display: inline-block;
+  width: 55px; }
+.xlx-dialog-setting .td-input__inner::-webkit-input-placeholder {
+  color: #666; }
+.xlx-dialog-setting .td-radio {
+  margin-right: 20px; }
+.xlx-dialog-setting .td-button--small {
+  width: 65px; }
+
+.xlx-dialog-setting__speed .xlx-dialog-setting__item {
+  margin-bottom: 25px; }
+
+.xlx-dialog-setting__speed-time {
+  margin-top: 10px; }
+  .xlx-dialog-setting__speed-time .xlx-dialog-setting__item {
+    margin-bottom: 10px; }
+
+.xlx-dialog-setting__speed-content {
+  margin: 15px 0 0 20px;
+  display: flex;
+  justify-content: space-between; }
+  .xlx-dialog-setting__speed-content .td-slider {
+    width: 260px; }
+
+.xlx-dialog-setting__option {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+  vertical-align: middle; }
+  .xlx-dialog-setting__option .td-select-group {
+    margin-right: 5px; }
+
+.xlx-dialog__button {
+  display: flex; }
+  .xlx-dialog__button .td-button--secondary {
+    margin-left: 12px; }
+
+/* 确认框 */
+.xlx-dialog__confirm-icon {
+  width: 32px;
+  height: 32px;
+  font-size: 32px; }
+
+/* bt 任务 */
+.xlx-dialog-bt .xlx-resource .xlx-resource__text {
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  line-height: 1.3; }
+.xlx-dialog-bt .td-textarea {
+  width: 230px;
+  margin-left: 12px; }
+  .xlx-dialog-bt .td-textarea .td-textarea__inner {
+    height: 40px;
+    white-space: pre-wrap;
+    line-height: 15px;
+    padding: 3px 5px; }
+
+/* 播放任务 */
+.xlx-dialog__play-list {
+  padding: 3px 0;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  height: 148px;
+  overflow-x: auto; }
+  .xlx-dialog__play-list::-webkit-scrollbar {
+    width: 4px; }
+    .xlx-dialog__play-list::-webkit-scrollbar:horizontal {
+      height: 4px; }
+    .xlx-dialog__play-list::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      width: 4px;
+      background: #e6e6e6; }
+    .xlx-dialog__play-list::-webkit-scrollbar-corner {
+      background: #fff; }
+    .xlx-dialog__play-list::-webkit-scrollbar-track {
+      background: #fff; }
+      .xlx-dialog__play-list::-webkit-scrollbar-track-piece {
+        background: #fff;
+        width: 4px; }
+  .xlx-dialog__play-list ul {
+    display: inline-block; }
+    .xlx-dialog__play-list ul li {
+      display: inline-block;
+      min-width: 100%;
+      padding-left: 8px;
+      line-height: 28px;
+      white-space: nowrap;
+      box-sizing: border-box; }
+      .xlx-dialog__play-list ul li:hover {
+        background: var(--background-hover); }
+
+.xlx-dialog-comfirm__film-name {
+  padding: 5px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  cursor: default;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all; }
+
+.td-dialog-comfirm__title {
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical; }
+
+.td-dialog-comfirm__text {
+  color: #999; }
+
+/*  书签 */
+.xlx-dialog__bookmarks-add .xlx-dialog__bookmarks-add-item {
+  display: flex;
+  margin-bottom: 20px; }
+.xlx-dialog__bookmarks-add .td-input, .xlx-dialog__bookmarks-add .td-select {
+  display: flex;
+  width: 100%; }
+.xlx-dialog__bookmarks-add .td-input__label {
+  width: 45px;
+  line-height: 30px; }
+.xlx-dialog__bookmarks-add .td-input__inner, .xlx-dialog__bookmarks-add .td-select-group {
+  flex: 1; }
+.xlx-dialog__bookmarks-add .td-select-group {
+  height: 30px; }
+.xlx-dialog__bookmarks-add .td-dropdown-menu {
+  padding-bottom: 40px; }
+.xlx-dialog__bookmarks-add .td-tree-node__image-icon {
+  margin: 0 0 0 6px; }
+.xlx-dialog__bookmarks-add .td-tree-node__expand-icon {
+  margin: 0 -3px 0 3px; }
+.xlx-dialog__bookmarks-add .td-tree {
+  margin: 0 2px 0 5px;
+  max-height: 210px;
+  overflow-y: auto; }
+  .xlx-dialog__bookmarks-add .td-tree::-webkit-scrollbar {
+    width: 4px; }
+    .xlx-dialog__bookmarks-add .td-tree::-webkit-scrollbar:horizontal {
+      height: 4px; }
+    .xlx-dialog__bookmarks-add .td-tree::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      width: 4px;
+      background: #e6e6e6; }
+    .xlx-dialog__bookmarks-add .td-tree::-webkit-scrollbar-corner {
+      background: #fff; }
+    .xlx-dialog__bookmarks-add .td-tree::-webkit-scrollbar-track {
+      background: #fff; }
+      .xlx-dialog__bookmarks-add .td-tree::-webkit-scrollbar-track-piece {
+        background: #fff;
+        width: 4px; }
+  .xlx-dialog__bookmarks-add .td-tree .td-input {
+    width: 160px;
+    flex: none;
+    margin-left: 5px; }
+  .xlx-dialog__bookmarks-add .td-tree .td-input__inner {
+    width: 100%;
+    flex: none; }
+.xlx-dialog__bookmarks-add .td-tree-node__content {
+  height: 30px;
+  border-radius: 4px;
+  color: var(--color-default); }
+.xlx-dialog__bookmarks-add .td-select-group__label .xlx-icon-fav {
+  margin-right: 3px; }
+
+.xlx-dialog__bookmarks-list {
+  position: relative;
+  width: calc(100% - 45px);
+  max-height: 277px;
+  padding: 5px 0 40px;
+  border: solid 1px var(--input-border-color);
+  border-radius: 4px; }
+
+.xlx-dialog__bookmarks-link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  padding-left: 28px;
+  line-height: 40px;
+  color: var(--color-default);
+  background: var(--background-hover);
+  border-radius: 0 0 4px 4px;
+  box-sizing: border-box;
+  transition: .2s; }
+  .xlx-dialog__bookmarks-link:hover {
+    color: var(--color-default);
+    background: #d7e3fa; }
+
+.xlx-dialog__bookmarks-from ul {
+  display: flex; }
+.xlx-dialog__bookmarks-from .xlx-dialog__bookmarks-from-item {
+  text-align: center; }
+  .xlx-dialog__bookmarks-from .xlx-dialog__bookmarks-from-item a {
+    display: block;
+    width: 100px;
+    height: 82px;
+    padding-top: 14px;
+    border-radius: 4px;
+    box-sizing: border-box; }
+    .xlx-dialog__bookmarks-from .xlx-dialog__bookmarks-from-item a:hover {
+      background: var(--background-hover); }
+  .xlx-dialog__bookmarks-from .xlx-dialog__bookmarks-from-item.is-chosen a {
+    background: #eaedf5; }
+  .xlx-dialog__bookmarks-from .xlx-dialog__bookmarks-from-item p {
+    margin-top: 5px;
+    color: var(--color-primary); }
+
+/* 计划任务 */
+.xlx-dialog-plan .xlx-dialog-plan__time {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; }
+.xlx-dialog-plan .td-input {
+  margin-right: 5px; }
+.xlx-dialog-plan .td-input__inner {
+  width: 38px; }
+.xlx-dialog-plan .td-select {
+  width: 116px;
+  margin-left: 34px; }
+.xlx-dialog-plan .td-select-group {
+  height: 30px; }
+.xlx-dialog-plan .td-button {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px; }
+.xlx-dialog-plan .xlx-dialog-setting__text {
+  margin-right: 10px; }
+.xlx-dialog-plan .xlx-dialog-plan__result-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; }
+  .xlx-dialog-plan .xlx-dialog-plan__result-item .td-icon-close {
+    color: var(--color-danger-1); }
+.xlx-dialog-plan .xlx-dialog-plan__text {
+  width: 290px;
+  height: 30px;
+  padding-left: 10px;
+  line-height: 30px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  box-sizing: border-box; }
+  .xlx-dialog-plan .xlx-dialog-plan__text span {
+    margin-right: 10px; }
+  .xlx-dialog-plan .xlx-dialog-plan__text .xlx-dialog-plan__text-time {
+    color: var(--color-primary); }
+
+/* 下载完成 */
+.td-dialog__header .xlx-dialog__title {
+  padding: 10px 0 10px;
+  font-size: 12px;
+  text-align: left;
+  text-indent: -1em; }
+
+.xlx-dialog-finish {
+  display: block;
+  border: solid 1px var(--color-primary);
+  border-radius: 4px; }
+  .xlx-dialog-finish:hover {
+    background: var(--background-hover); }
+  .xlx-dialog-finish .xlx-dialog-finish__title {
+    display: flex;
+    align-items: center;
+    margin: 8px; }
+  .xlx-dialog-finish .xlx-dialog-finish__file-name {
+    max-width: 280px;
+    margin-left: 8px;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical; }
+  .xlx-dialog-finish .xlx-dialog-finish__operate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    margin: 0 8px;
+    text-align: center;
+    color: var(--color-primary);
+    font-size: 14px;
+    border-top: dashed 1px #ccc; }
+    .xlx-dialog-finish .xlx-dialog-finish__operate span {
+      margin-left: 5px;
+      margin-bottom: 2px; }
+
+/* secret */
+.td-dialog-secret__setting li {
+  position: relative;
+  margin-bottom: 20px; }
+.td-dialog-secret__setting .td-input {
+  display: flex;
+  align-items: center; }
+.td-dialog-secret__setting .td-input__inner {
+  flex: 1; }
+.td-dialog-secret__setting .td-dialog-secret__tips {
+  margin-bottom: 20px; }
+.td-dialog-secret__setting .td-dialog-secret__code {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  line-height: 30px;
+  color: var(--color-primary); }
+  .td-dialog-secret__setting .td-dialog-secret__code:hover {
+    color: var(--color-primary-hover); }
+  .td-dialog-secret__setting .td-dialog-secret__code:before {
+    width: 1px;
+    height: 16px;
+    margin-right: 10px;
+    background: #ccc;
+    content: ""; }
+
+.td-dialog-secret__link {
+  margin-top: -10px;
+  text-align: right; }
+  .td-dialog-secret__link a {
+    color: var(--color-primary); }
+    .td-dialog-secret__link a:hover {
+      color: var(--color-primary-hover); }
+
+/* skin */
+.td-dialog.xlx-skin {
+  width: 600px;
+  height: 440px;
+  padding: 0 20px 0 30px; }
+  .td-dialog.xlx-skin .td-tabs__title {
+    font-size: 14px;
+    border: 0; }
+  .td-dialog.xlx-skin .td-tabs__item {
+    width: 70px; }
+  .td-dialog.xlx-skin .xlx-skin__title {
+    font-size: 18px;
+    justify-content: center; }
+    .td-dialog.xlx-skin .xlx-skin__title .td-tabs__item {
+      width: auto;
+      margin: 0 15px; }
+    .td-dialog.xlx-skin .xlx-skin__title .td-tabs__item.is-active {
+      border: 0; }
+  .td-dialog.xlx-skin .td-tabs__content {
+    overflow: visible; }
+  .td-dialog.xlx-skin .td-slider {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    justify-content: center;
+    width: 40px;
+    height: 162px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); }
+    .td-dialog.xlx-skin .td-slider .td-slider__bar {
+      width: 4px;
+      height: 116px;
+      background: linear-gradient(to bottom, black, rgba(208, 208, 208, 0.4));
+      border-radius: 2px; }
+    .td-dialog.xlx-skin .td-slider .td-slider__bar-inner {
+      background: transparent; }
+
+.xlx-skin-color ul {
+  display: flex;
+  margin-left: -4px; }
+.xlx-skin-color .xlx-skin-color__item {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 4px;
+  background: #b8b8b8;
+  border-radius: 2px; }
+  .xlx-skin-color .xlx-skin-color__item.is-chosen:before {
+    color: #fff;
+    font-family: "thunder-icon" !important;
+    font-size: 20px;
+    content: "\e638"; }
+
+.xlx-skin-picture {
+  overflow-y: auto;
+  width: 550px;
+  height: 265px;
+  margin-top: 7px; }
+  .xlx-skin-picture::-webkit-scrollbar {
+    width: 4px; }
+    .xlx-skin-picture::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      width: 4px;
+      background: #e6e6e6; }
+  .xlx-skin-picture ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -6px; }
+  .xlx-skin-picture .xlx-skin-picture__item {
+    position: relative;
+    width: 130px;
+    height: 80px;
+    margin-left: 6px;
+    margin-bottom: 6px;
+    border-radius: 3px;
+    background-size: cover;
+    background-position: center; }
+    .xlx-skin-picture .xlx-skin-picture__item:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
+      opacity: 0;
+      content: "";
+      transition: .3s; }
+    .xlx-skin-picture .xlx-skin-picture__item:hover:after {
+      opacity: 1; }
+    .xlx-skin-picture .xlx-skin-picture__item:hover .xlx-skin-picture__name {
+      opacity: 1; }
+    .xlx-skin-picture .xlx-skin-picture__item .xlx-skin-picture__name {
+      position: relative;
+      z-index: 1;
+      line-height: 80px;
+      text-align: center;
+      color: #fff;
+      font-size: 16px;
+      user-select: none;
+      opacity: 0;
+      transition: .3s; }
+    .xlx-skin-picture .xlx-skin-picture__item.is-chosen:before {
+      position: absolute;
+      right: 2px;
+      bottom: 2px;
+      z-index: 2;
+      width: 16px;
+      height: 16px;
+      overflow: hidden;
+      text-align: center;
+      color: var(--color-success-1);
+      font-family: "thunder-icon" !important;
+      font-size: 16px;
+      background: #fff;
+      border-radius: 50%;
+      border: solid 1px #fff;
+      content: "\e638"; }
+    .xlx-skin-picture .xlx-skin-picture__item .xlx-skin__tag {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 32px;
+      height: 14px;
+      text-align: center;
+      line-height: 14px;
+      color: #fff;
+      background: var(--color-danger-2);
+      border-radius: 0 0 3px 0; }
+
+/* scrollbar */
+/* BEM */
+.xlx-file-list .td-tree-node {
+  max-width: calc(100% - 10px);
+  margin-right: 5px;
+  box-sizing: border-box; }
+.xlx-file-list .td-tree-node__image-icon {
+  background: transparent; }
+.xlx-file-list .td-button {
+  margin-right: 5px; }
+.xlx-file-list .td-table__body-wrapper {
+  max-height: 369px; }
+.xlx-file-list__column-2 {
+  width: 90px; }
+.xlx-file-list__size, .xlx-file-list__status {
+  margin: 0 10px; }
+.xlx-file-list a.xlx-file-list__status {
+  color: var(--color-primary); }
+  .xlx-file-list a.xlx-file-list__status:hover {
+    color: var(--color-primary-hover); }
+
+/* scrollbar */
+/* BEM */
+html, body {
+  width: 100vw;
+  overflow-x: hidden; }
+
+::-webkit-scrollbar {
+  width: 8px; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  width: 8px;
+  background: #ceddeb; }
+
+.is-scroll {
+  overflow-y: scroll;
+  height: 100vh; }
+
+.xlx-home {
+  min-width: 596px; }
+  .xlx-home .td-tabs__title {
+    justify-content: center;
+    margin: 30px 0 20px;
+    border-bottom: 0; }
+    .xlx-home .td-tabs__title .td-tabs__item {
+      width: auto;
+      margin: 0 15px; }
+    .xlx-home .td-tabs__title.is-fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      width: 100%;
+      padding: 5px 0;
+      margin: 0;
+      background: rgba(255, 255, 255, 0.9); }
+  .xlx-home .chart-box {
+    height: 35vh;
+    min-height: 200px; }
+  .xlx-home .xlx-file-list .td-tree-node {
+    width: calc(100vw - 310px); }
+  .xlx-home .td-tabs__content {
+    overflow: visible; }
+
+.index-wrap {
+  transition: .3s; }
+
+.xlx-home__content {
+  display: none;
+  margin: 0 50px; }
+
+.xlx-promote {
+  margin-top: 20px; }
+
+.xlx-home__operate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  cursor: pointer; }
+  .xlx-home__operate .xlx-home__operate-arrow {
+    display: flex;
+    position: relative;
+    width: 100px;
+    height: 2px; }
+    .xlx-home__operate .xlx-home__operate-arrow:before, .xlx-home__operate .xlx-home__operate-arrow:after {
+      display: block;
+      width: 50px;
+      height: 2px;
+      background-color: #8ec5ee;
+      content: "";
+      transition: .2s; }
+    .xlx-home__operate .xlx-home__operate-arrow:before {
+      transform-origin: right center; }
+    .xlx-home__operate .xlx-home__operate-arrow:after {
+      transform-origin: left center; }
+  .xlx-home__operate:hover .xlx-home__operate-arrow:before {
+    transform: rotate(-15deg); }
+  .xlx-home__operate:hover .xlx-home__operate-arrow:after {
+    transform: rotate(15deg); }
+
+.xlx-home-tool {
+  position: fixed;
+  right: 0;
+  bottom: 20px; }
+  .xlx-home-tool .xlx-home-top {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #b0d2f0;
+    transition: .2s; }
+    .xlx-home-tool .xlx-home-top:after {
+      position: absolute;
+      top: 12px;
+      left: 9px;
+      width: 10px;
+      height: 10px;
+      border: solid 2px #fff;
+      border-bottom: 0;
+      border-right: 0;
+      transform: rotate(45deg);
+      content: ""; }
+    .xlx-home-tool .xlx-home-top:hover {
+      background-color: #a1c5e5; }
+
+@font-face {
+  font-family: "xlx-icon";
+  -webkit-font-smoothing: antialiased;
+  src: url("../fonts/xlx-icon.ttf?t=1529390461110") format("truetype"); }
+[class^="xlx-icon"], [class*=" xlx-icon-"] {
+  font-family: "xlx-icon" !important;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.xlx-icon-download-play:before {
+  content: "\e627"; }
+
+.xlx-icon-lock:before {
+  content: "\e628"; }
+
+.xlx-icon-play:before {
+  content: "\e629"; }
+
+.xlx-icon-clear:before {
+  content: "\e62a"; }
+
+.xlx-icon-pause:before {
+  content: "\e62b"; }
+
+.xlx-icon-delete:before {
+  content: "\e62c"; }
+
+.xlx-icon-time:before {
+  content: "\e62d"; }
+
+.xlx-icon-file:before {
+  content: "\e62e"; }
+
+.xlx-icon-restore:before {
+  content: "\e62f"; }
+
+.xlx-icon-download:before {
+  content: "\e630"; }
+
+/* 导航 */
+.xlx-icon-nav-new:before {
+  content: "\e64a"; }
+
+.xlx-icon-nav-file:before {
+  content: "\e64b"; }
+
+.xlx-icon-nav-clear:before {
+  content: "\e64c"; }
+
+.xlx-icon-nav-rubbish:before {
+  content: "\e64d"; }
+
+.xlx-icon-nav-vip:before {
+  content: "\e64e"; }
+
+.xlx-icon-nav-lock:before {
+  content: "\e64f"; }
+
+.xlx-icon-nav-folder:before {
+  content: "\e650"; }
+
+.xlx-icon-nav-restore:before {
+  content: "\e651"; }
+
+.xlx-icon-nav-home:before {
+  content: "\e652"; }
+
+.xlx-icon-nav-more:before {
+  content: "\e653"; }
+
+.xlx-icon-nav-delete:before {
+  content: "\e654"; }
+
+.xlx-icon-nav-down:before {
+  content: "\e655"; }
+
+.xlx-icon-nav-computer:before {
+  content: "\e656"; }
+
+.xlx-icon-nav-pause:before {
+  content: "\e657"; }
+
+/* 右上角操作 */
+.xlx-icon-menu:before {
+  content: "\e68b"; }
+
+.xlx-icon-close:before {
+  content: "\e68c"; }
+
+.xlx-icon-minimize:before {
+  content: "\e68d"; }
+
+.xlx-icon-maximize:before {
+  content: "\e68e"; }
+
+.xlx-icon-maximize.is-active:before {
+  content: "\e69c"; }
+
+/* tips */
+.xlx-icon-tips-download:before {
+  content: "\e616"; }
+
+.xlx-icon-tips-upload:before {
+  content: "\e615"; }
+
+/* 详情页 */
+.xlx-icon-crown:before {
+  content: "\e635"; }
+
+.xlx-icon-file-hover:before {
+  content: "\e636"; }
+
+.xlx-icon-delete-hover:before {
+  content: "\e637"; }
+
+.xlx-icon-comment-hover:before {
+  content: "\e638"; }
+
+.xlx-icon-message:before {
+  content: "\e63a"; }
+
+.xlx-icon-quote {
+  font-size: 10px;
+  vertical-align: 6px; }
+
+.xlx-icon-quote:before {
+  content: "\e63b"; }
+
+.xlx-icon-file-comment:before {
+  content: "\e63c"; }
+
+.xlx-icon-comment:before {
+  content: "\e63d"; }
+
+.xlx-icon-send:before {
+  content: "\e63e"; }
+
+.xlx-icon-praise:before {
+  content: "\e63f"; }
+
+.xlx-icon-top:before {
+  content: "\e640"; }
+
+.xlx-icon-praise-done:before {
+  content: "\e641"; }
+
+.xlx-icon-face:before {
+  content: "\e642"; }
+
+.xlx-icon-delete-comment:before {
+  content: "\e643"; }
+
+.xlx-icon-success:before {
+  content: "\e644"; }
+
+.xlx-icon-fail:before {
+  content: "\e645"; }
+
+.xlx-icon-help:before {
+  content: "\e646"; }
+
+.xlx-icon-note:before {
+  content: "\e647"; }
+
+.xlx-icon-refresh:before {
+  content: "\e648"; }
+
+.is-active .xlx-icon-praise {
+  color: var(--color-primary); }
+.is-active .xlx-icon-praise:before {
+  content: "\e641"; }
+.is-active .xlx-icon-delete {
+  color: var(--color-primary); }
+.is-active .xlx-icon-comment {
+  color: var(--color-primary); }
+.is-active .xlx-icon-comment:before {
+  content: "\e638"; }
+
+.is-hot .xlx-icon-praise {
+  color: var(--color-danger-1); }
+
+.xlx-icon-girl {
+  color: #ff7cb6; }
+
+.xlx-icon-girl:before {
+  content: "\e626"; }
+
+.xlx-icon-boy {
+  color: #69f; }
+
+.xlx-icon-boy:before {
+  content: "\e631"; }
+
+.xlx-icon-dialog-play:before {
+  content: "\e69e"; }
+
+.xlx-icon-dialog-open:before {
+  content: "\e69f"; }
+
+/* 书签 */
+.xlx-icon-message-bookmarks:before {
+  content: "\e692"; }
+
+.xlx-icon-search-bookmarks:before {
+  content: "\e694"; }
+
+.xlx-icon-more-bookmarks:before {
+  content: "\e695"; }
+
+.xlx-icon-net:before {
+  content: "\e696"; }
+
+.xlx-icon-file-bookmarks {
+  color: #ffdf8b; }
+
+.xlx-icon-file-bookmarks:before {
+  content: "\e697"; }
+
+.xlx-icon-fav {
+  color: #ff9c1a; }
+
+.xlx-icon-fav:before {
+  content: "\e698"; }
+
+.xlx-icon-fav.is-checked:before {
+  content: "\e699"; }
+
+.xlx-icon-new:before {
+  content: "\e69a"; }
+
+.xlx-icon-new-file {
+  margin-right: 5px; }
+
+.xlx-icon-new-file:before {
+  content: "\e69b"; }
+
+.xlx-icon-unfold:before {
+  content: "\e69d"; }
+
+.xlx-icon-browser-ie,
+.xlx-icon-browser-chrome {
+  display: block;
+  width: 35px;
+  height: 32px;
+  margin: 0 auto 10px;
+  background: url(../img/bookmarks/xlx-bookmarks.png) no-repeat;
+  background-size: 70px auto; }
+
+.xlx-icon-browser-chrome {
+  background-position: -35px 0; }
+
+/* 下载文件类型图标 */
+.xlx-icon-type {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/xlx-icon-32x32.png) -560px 0 no-repeat;
+  background-size: 1085px auto; }
+
+.xlx-icon-type-apk {
+  background-position: 0 0; }
+
+.xlx-icon-type-avi {
+  background-position: -35px 0; }
+
+.xlx-icon-type-bt-link {
+  background-position: -70px 0; }
+
+.xlx-icon-type-bt-file {
+  background-position: -105px 0; }
+
+.xlx-icon-type-chm {
+  background-position: -140px 0; }
+
+.xlx-icon-type-doc {
+  background-position: -175px 0; }
+
+.xlx-icon-type-exe {
+  background-position: -210px 0; }
+
+.xlx-icon-type-install {
+  background-position: -245px 0; }
+
+.xlx-icon-type-flv {
+  background-position: -280px 0; }
+
+.xlx-icon-type-ipa {
+  background-position: -315px 0; }
+
+.xlx-icon-type-ipsw {
+  background-position: -350px 0; }
+
+.xlx-icon-type-iso {
+  background-position: -385px 0; }
+
+.xlx-icon-type-mkv {
+  background-position: -420px 0; }
+
+.xlx-icon-type-mov {
+  background-position: -455px 0; }
+
+.xlx-icon-type-mp4 {
+  background-position: -490px 0; }
+
+.xlx-icon-type-mpg {
+  background-position: -525px 0; }
+
+.xlx-icon-type-unknown {
+  background-position: -560px 0; }
+
+.xlx-icon-type-pdf {
+  background-position: -595px 0; }
+
+.xlx-icon-type-pic {
+  background-position: -630px 0; }
+
+.xlx-icon-type-ppt {
+  background-position: -665px 0; }
+
+.xlx-icon-type-rar {
+  background-position: -700px 0; }
+
+.xlx-icon-type-rm {
+  background-position: -735px 0; }
+
+.xlx-icon-type-rmvb {
+  background-position: -770px 0; }
+
+.xlx-icon-type-group {
+  background-position: -805px 0; }
+
+.xlx-icon-type-txt {
+  background-position: -840px 0; }
+
+.xlx-icon-type-video {
+  background-position: -875px 0; }
+
+.xlx-icon-type-link {
+  background-position: -910px 0; }
+
+.xlx-icon-type-wmv {
+  background-position: -945px 0; }
+
+.xlx-icon-type-word {
+  background-position: -980px 0; }
+
+.xlx-icon-type-xls {
+  background-position: -1015px 0; }
+
+.xlx-icon-type-music {
+  background-position: -1050px 0; }
+
+.td-tree-node__image-icon .xlx-icon-type {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/xlx-icon-16x16.png) -340px 0 no-repeat;
+  background-image: -webkit-image-set(url(../img/xlx-icon-16x16.png) 1x, url(../img/xlx-icon-16x16-2x.png) 2x);
+  background-position: -340px 0; }
+.td-tree-node__image-icon .xlx-icon-type-apk {
+  background-position: 0 0; }
+.td-tree-node__image-icon .xlx-icon-type-avi {
+  background-position: -20px 0; }
+.td-tree-node__image-icon .xlx-icon-type-bt-file {
+  background-position: -60px 0; }
+.td-tree-node__image-icon .xlx-icon-type-bt-link {
+  background-position: -40px 0; }
+.td-tree-node__image-icon .xlx-icon-type-chm {
+  background-position: -80px 0; }
+.td-tree-node__image-icon .xlx-icon-type-doc {
+  background-position: -100px 0; }
+.td-tree-node__image-icon .xlx-icon-type-exe {
+  background-position: -120px 0; }
+.td-tree-node__image-icon .xlx-icon-type-install {
+  background-position: -140px 0; }
+.td-tree-node__image-icon .xlx-icon-type-flv {
+  background-position: -160px 0; }
+.td-tree-node__image-icon .xlx-icon-type-ipa {
+  background-position: -180px 0; }
+.td-tree-node__image-icon .xlx-icon-type-ipsw {
+  background-position: -200px 0; }
+.td-tree-node__image-icon .xlx-icon-type-iso {
+  background-position: -220px 0; }
+.td-tree-node__image-icon .xlx-icon-type-mkv {
+  background-position: -240px 0; }
+.td-tree-node__image-icon .xlx-icon-type-mov {
+  background-position: -260px 0; }
+.td-tree-node__image-icon .xlx-icon-type-mp4 {
+  background-position: -280px 0; }
+.td-tree-node__image-icon .xlx-icon-type-mpg {
+  background-position: -300px 0; }
+.td-tree-node__image-icon .xlx-icon-type-music {
+  background-position: -320px 0; }
+.td-tree-node__image-icon .xlx-icon-type-unknown {
+  background-position: -340px 0; }
+.td-tree-node__image-icon .xlx-icon-type-pdf {
+  background-position: -360px 0; }
+.td-tree-node__image-icon .xlx-icon-type-pic {
+  background-position: -380px 0; }
+.td-tree-node__image-icon .xlx-icon-type-ppt {
+  background-position: -400px 0; }
+.td-tree-node__image-icon .xlx-icon-type-rar {
+  background-position: -420px 0; }
+.td-tree-node__image-icon .xlx-icon-type-rm {
+  background-position: -440px 0; }
+.td-tree-node__image-icon .xlx-icon-type-rmvb {
+  background-position: -460px 0; }
+.td-tree-node__image-icon .xlx-icon-type-group {
+  background-position: -480px 0; }
+.td-tree-node__image-icon .xlx-icon-type-txt {
+  background-position: -500px 0; }
+.td-tree-node__image-icon .xlx-icon-type-video {
+  background-position: -520px 0; }
+.td-tree-node__image-icon .xlx-icon-type-link {
+  background-position: -540px 0; }
+.td-tree-node__image-icon .xlx-icon-type-wmv {
+  background-position: -560px 0; }
+.td-tree-node__image-icon .xlx-icon-type-word {
+  background-position: -580px 0; }
+.td-tree-node__image-icon .xlx-icon-type-xls {
+  background-position: -600px 0; }
+
+.chart-box .xlx-icon-type, .xlx-suspension .xlx-icon-type {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  background: url(../img/xlx-icon-24x24.png) -780px 0 no-repeat;
+  background-image: -webkit-image-set(url(../img/xlx-icon-24x24.png) 1x, url(../img/xlx-icon-24x24-2x.png) 2x);
+  background-position: -780px 0; }
+.chart-box .xlx-icon-type-apk, .xlx-suspension .xlx-icon-type-apk {
+  background-position: 0 0; }
+.chart-box .xlx-icon-type-avi, .xlx-suspension .xlx-icon-type-avi {
+  background-position: -30px 0; }
+.chart-box .xlx-icon-type-bt-file, .xlx-suspension .xlx-icon-type-bt-file {
+  background-position: -60px 0; }
+.chart-box .xlx-icon-type-bt-link, .xlx-suspension .xlx-icon-type-bt-link {
+  background-position: -90px 0; }
+.chart-box .xlx-icon-type-chm, .xlx-suspension .xlx-icon-type-chm {
+  background-position: -120px 0; }
+.chart-box .xlx-icon-type-doc, .xlx-suspension .xlx-icon-type-doc {
+  background-position: -150px 0; }
+.chart-box .xlx-icon-type-exe, .xlx-suspension .xlx-icon-type-exe {
+  background-position: -180px 0; }
+.chart-box .xlx-icon-type-flv, .xlx-suspension .xlx-icon-type-flv {
+  background-position: -210px 0; }
+.chart-box .xlx-icon-type-group, .xlx-suspension .xlx-icon-type-group {
+  background-position: -240px 0; }
+.chart-box .xlx-icon-type-install, .xlx-suspension .xlx-icon-type-install {
+  background-position: -270px 0; }
+.chart-box .xlx-icon-type-ipa, .xlx-suspension .xlx-icon-type-ipa {
+  background-position: -300px 0; }
+.chart-box .xlx-icon-type-ipsw, .xlx-suspension .xlx-icon-type-ipsw {
+  background-position: -330px 0; }
+.chart-box .xlx-icon-type-iso, .xlx-suspension .xlx-icon-type-iso {
+  background-position: -360px 0; }
+.chart-box .xlx-icon-type-link, .xlx-suspension .xlx-icon-type-link {
+  background-position: -390px 0; }
+.chart-box .xlx-icon-type-mkv, .xlx-suspension .xlx-icon-type-mkv {
+  background-position: -420px 0; }
+.chart-box .xlx-icon-type-mov, .xlx-suspension .xlx-icon-type-mov {
+  background-position: -450px 0; }
+.chart-box .xlx-icon-type-mp4, .xlx-suspension .xlx-icon-type-mp4 {
+  background-position: -480px 0; }
+.chart-box .xlx-icon-type-mpg, .xlx-suspension .xlx-icon-type-mpg {
+  background-position: -510px 0; }
+.chart-box .xlx-icon-type-music, .xlx-suspension .xlx-icon-type-music {
+  background-position: -540px 0; }
+.chart-box .xlx-icon-type-pdf, .xlx-suspension .xlx-icon-type-pdf {
+  background-position: -570px 0; }
+.chart-box .xlx-icon-type-pic, .xlx-suspension .xlx-icon-type-pic {
+  background-position: -600px 0; }
+.chart-box .xlx-icon-type-ppt, .xlx-suspension .xlx-icon-type-ppt {
+  background-position: -630px 0; }
+.chart-box .xlx-icon-type-rar, .xlx-suspension .xlx-icon-type-rar {
+  background-position: -660px 0; }
+.chart-box .xlx-icon-type-rm, .xlx-suspension .xlx-icon-type-rm {
+  background-position: -690px 0; }
+.chart-box .xlx-icon-type-rmvb, .xlx-suspension .xlx-icon-type-rmvb {
+  background-position: -720px 0; }
+.chart-box .xlx-icon-type-txt, .xlx-suspension .xlx-icon-type-txt {
+  background-position: -750px 0; }
+.chart-box .xlx-icon-type-unknown, .xlx-suspension .xlx-icon-type-unknown {
+  background-position: -780px 0; }
+.chart-box .xlx-icon-type-video, .xlx-suspension .xlx-icon-type-video {
+  background-position: -810px 0; }
+.chart-box .xlx-icon-type-wmv, .xlx-suspension .xlx-icon-type-wmv {
+  background-position: -840px 0; }
+.chart-box .xlx-icon-type-word, .xlx-suspension .xlx-icon-type-word {
+  background-position: -870px 0; }
+.chart-box .xlx-icon-type-xls, .xlx-suspension .xlx-icon-type-xls {
+  background-position: -900px 0; }
+
+/* 会员图标类型 */
+@font-face {
+  font-family: "xlx-icon-vip";
+  src: url("../fonts/xlx-icon-vip.ttf?t=1525418285563") format("truetype"); }
+[class^="vip-icon-"] {
+  display: inline-block;
+  width: 19px;
+  height: 12px;
+  line-height: 12px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "xlx-icon-vip" !important;
+  font-style: normal;
+  border-radius: 2px; }
+  [class^="vip-icon-"].is-disabled {
+    background: #aaaaaa;
+    color: #e9e9e9; }
+  [class^="vip-icon-"].is-large {
+    width: 42px;
+    background-image: url(../img/spr-vip-icon-x2.png);
+    background-size: 400px auto; }
+  [class^="vip-icon-"].is-large:before {
+    display: none; }
+
+[class^="vip-icon-vip"] {
+  color: #ffe3a1 !important;
+  background: #f15063; }
+
+[class^="vip-icon-pvip"] {
+  color: #c17010 !important;
+  background: #fdca41; }
+
+[class^="vip-icon-svip"] {
+  color: #ffe14e !important;
+  background: #424242; }
+
+.vip-icon-vip0, .vip-icon-pvip0, .vip-icon-svip0 {
+  width: 15px; }
+
+.vip-icon-vip6:before {
+  content: "\e672"; }
+
+.vip-icon-vip4:before {
+  content: "\e670"; }
+
+.vip-icon-vip0:before {
+  content: "\e66c"; }
+
+.vip-icon-vip3:before {
+  content: "\e66f"; }
+
+.vip-icon-vip5:before {
+  content: "\e671"; }
+
+.vip-icon-vip7:before {
+  content: "\e673"; }
+
+.vip-icon-vip2:before {
+  content: "\e66e"; }
+
+.vip-icon-vip1:before {
+  content: "\e66d"; }
+
+.vip-icon-svip1:before {
+  content: "\e674"; }
+
+.vip-icon-svip0:before {
+  content: "\e675"; }
+
+.vip-icon-svip5:before {
+  content: "\e676"; }
+
+.vip-icon-svip6:before {
+  content: "\e677"; }
+
+.vip-icon-svip4:before {
+  content: "\e678"; }
+
+.vip-icon-svip7:before {
+  content: "\e679"; }
+
+.vip-icon-svip3:before {
+  content: "\e67a"; }
+
+.vip-icon-svip2:before {
+  content: "\e67b"; }
+
+.vip-icon-pvip0:before {
+  content: "\e67c"; }
+
+.vip-icon-pvip1:before {
+  content: "\e67d"; }
+
+.vip-icon-pvip2:before {
+  content: "\e67e"; }
+
+.vip-icon-pvip3:before {
+  content: "\e682"; }
+
+.vip-icon-pvip4:before {
+  content: "\e683"; }
+
+.vip-icon-pvip5:before {
+  content: "\e684"; }
+
+.vip-icon-pvip6:before {
+  content: "\e685"; }
+
+.vip-icon-pvip7:before {
+  content: "\e686"; }
+
+.vip-icon-vip0.is-large, .vip-icon-pvip0.is-large, .vip-icon-svip0.is-large {
+  width: 35px; }
+
+.vip-icon-nian.is-large {
+  width: 12px;
+  background-position: 0 -78px; }
+
+.vip-icon-nian.is-large.is-disabled {
+  background-position: -13px -78px; }
+
+.vip-icon-vip0.is-large {
+  background-position: 0 0; }
+
+.vip-icon-vip1.is-large {
+  background-position: -36px 0; }
+
+.vip-icon-vip2.is-large {
+  background-position: -79px 0; }
+
+.vip-icon-vip3.is-large {
+  background-position: -122px 0; }
+
+.vip-icon-vip4.is-large {
+  background-position: -165px 0; }
+
+.vip-icon-vip5.is-large {
+  background-position: -208px 0; }
+
+.vip-icon-vip6.is-large {
+  background-position: -251px 0; }
+
+.vip-icon-vip7.is-large {
+  background-position: -294px 0; }
+
+.vip-icon-vip0.is-large.is-disabled {
+  background-position: 0 -13px; }
+
+.vip-icon-vip1.is-large.is-disabled {
+  background-position: -36px -13px; }
+
+.vip-icon-vip2.is-large.is-disabled {
+  background-position: -79px -13px; }
+
+.vip-icon-vip3.is-large.is-disabled {
+  background-position: -122px -13px; }
+
+.vip-icon-vip4.is-large.is-disabled {
+  background-position: -165px -13px; }
+
+.vip-icon-vip5.is-large.is-disabled {
+  background-position: -208px -13px; }
+
+.vip-icon-vip6.is-large.is-disabled {
+  background-position: -251px -13px; }
+
+.vip-icon-vip7.is-large.is-disabled {
+  background-position: -294px -13px; }
+
+.vip-icon-pvip0.is-large {
+  background-position: 0 -26px; }
+
+.vip-icon-pvip1.is-large {
+  background-position: -36px -26px; }
+
+.vip-icon-pvip2.is-large {
+  background-position: -79px -26px; }
+
+.vip-icon-pvip3.is-large {
+  background-position: -122px -26px; }
+
+.vip-icon-pvip4.is-large {
+  background-position: -165px -26px; }
+
+.vip-icon-pvip5.is-large {
+  background-position: -208px -26px; }
+
+.vip-icon-pvip6.is-large {
+  background-position: -251px -26px; }
+
+.vip-icon-pvip7.is-large {
+  background-position: -294px -26px; }
+
+.vip-icon-pvip0.is-large.is-disabled {
+  background-position: 0 -39px; }
+
+.vip-icon-pvip1.is-large.is-disabled {
+  background-position: -36px -39px; }
+
+.vip-icon-pvip2.is-large.is-disabled {
+  background-position: -79px -39px; }
+
+.vip-icon-pvip3.is-large.is-disabled {
+  background-position: -122px -39px; }
+
+.vip-icon-pvip4.is-large.is-disabled {
+  background-position: -165px -39px; }
+
+.vip-icon-pvip5.is-large.is-disabled {
+  background-position: -208px -39px; }
+
+.vip-icon-pvip6.is-large.is-disabled {
+  background-position: -251px -39px; }
+
+.vip-icon-pvip7.is-large.is-disabled {
+  background-position: -294px -39px; }
+
+.vip-icon-svip0.is-large {
+  background-position: 0 -52px; }
+
+.vip-icon-svip1.is-large {
+  background-position: -36px -52px; }
+
+.vip-icon-svip2.is-large {
+  background-position: -79px -52px; }
+
+.vip-icon-svip3.is-large {
+  background-position: -122px -52px; }
+
+.vip-icon-svip4.is-large {
+  background-position: -165px -52px; }
+
+.vip-icon-svip5.is-large {
+  background-position: -208px -52px; }
+
+.vip-icon-svip6.is-large {
+  background-position: -251px -52px; }
+
+.vip-icon-svip7.is-large {
+  background-position: -294px -52px; }
+
+.vip-icon-svip0.is-large.is-disabled {
+  background-position: 0 -65px; }
+
+.vip-icon-svip1.is-large.is-disabled {
+  background-position: -36px -65px; }
+
+.vip-icon-svip2.is-large.is-disabled {
+  background-position: -79px -65px; }
+
+.vip-icon-svip3.is-large.is-disabled {
+  background-position: -122px -65px; }
+
+.vip-icon-svip4.is-large.is-disabled {
+  background-position: -165px -65px; }
+
+.vip-icon-svip5.is-large.is-disabled {
+  background-position: -208px -65px; }
+
+.vip-icon-svip6.is-large.is-disabled {
+  background-position: -251px -65px; }
+
+.vip-icon-svip7.is-large.is-disabled {
+  background-position: -294px -65px; }
+
+/* scrollbar */
+/* BEM */
+.xlx-personal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none; }
+
+.xlx-personal-concise {
+  margin-top: 10px;
+  display: flex;
+  align-items: center; }
+  .xlx-personal-concise__avatar {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%; }
+    .xlx-personal-concise__avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .xlx-personal-concise__name {
+    display: block;
+    max-width: 142px;
+    margin: 0 7px;
+    overflow: hidden;
+    font-size: 13px;
+    color: #454d72;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+    .xlx-personal-concise__name:hover {
+      color: initial; }
+    .xlx-personal-concise__name.is-vip {
+      color: #ff1a1a; }
+  .xlx-personal-concise__nian {
+    position: relative;
+    height: 12px;
+    margin-left: 5px; }
+    .xlx-personal-concise__nian .vip-icon-nian {
+      vertical-align: top; }
+  .xlx-personal-concise .td-tooltip {
+    z-index: 1;
+    width: max-content; }
+    .xlx-personal-concise .td-tooltip a {
+      color: #6293f6; }
+      .xlx-personal-concise .td-tooltip a:hover {
+        text-decoration: underline; }
+  .xlx-personal-concise.is-offline .xlx-personal-concise__avatar img {
+    filter: grayscale(1); }
+  .xlx-personal-concise.is-offline .xlx-personal-concise__name {
+    color: #454d72; }
+    .xlx-personal-concise.is-offline .xlx-personal-concise__name.is-vip {
+      color: #454d72; }
+
+.xlx-personal-main {
+  position: relative;
+  width: 270px;
+  height: 370px;
+  background: url(../img/xlx-personal-bg.png);
+  border-radius: 4px; }
+
+.xlx-personal-aside {
+  position: absolute;
+  top: 0;
+  left: 274px; }
+
+.xlx-personal-menu {
+  position: absolute;
+  top: 15px;
+  right: 15px; }
+
+.xlx-personal-information {
+  padding: 30px 0 0; }
+  .xlx-personal-information__avatar {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto; }
+    .xlx-personal-information__avatar img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      overflow: hidden;
+      border-radius: 50%; }
+    .xlx-personal-information__avatar.is-pendant {
+      position: relative; }
+      .xlx-personal-information__avatar.is-pendant:after {
+        position: absolute;
+        top: -7px;
+        left: 50%;
+        margin-left: -43px;
+        width: 86px;
+        height: 84px;
+        content: ""; }
+  .xlx-personal-information__pendant {
+    position: absolute;
+    left: 50%;
+    margin-left: -13px;
+    bottom: -16px;
+    z-index: 2;
+    width: 24px;
+    height: 24px;
+    border: solid 1px #e5c691;
+    border-radius: 50%; }
+    .xlx-personal-information__pendant img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      box-sizing: border-box;
+      border: solid 1px #e5210d;
+      object-fit: cover; }
+  .xlx-personal-information__name a {
+    display: block;
+    max-width: 245px;
+    margin: 20px auto;
+    overflow: hidden;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .xlx-personal-information__name.is-vip a {
+    color: #ff1a1a; }
+  .xlx-personal-information__vip {
+    margin-bottom: 21px;
+    font-size: 0;
+    text-align: center; }
+  .xlx-personal-information__data {
+    font-size: 0;
+    text-align: center; }
+    .xlx-personal-information__data a {
+      margin: 0 9px;
+      font-size: 12px;
+      color: #fff; }
+      .xlx-personal-information__data a em {
+        margin-left: 4px;
+        font-style: normal; }
+
+.xlx-personal-activity {
+  position: absolute;
+  bottom: 30px;
+  width: 100%; }
+  .xlx-personal-activity p {
+    font-size: 12px;
+    color: #4c4c4c;
+    text-align: center; }
+  .xlx-personal-activity__button {
+    display: block;
+    width: 210px;
+    height: 33px;
+    margin: 8px auto 0;
+    font-size: 12px;
+    color: #ff1a1a;
+    line-height: 33px;
+    text-align: center;
+    background: #ffdceb;
+    border-radius: 4px; }
+    .xlx-personal-activity__button:hover {
+      color: #fffefe;
+      background: #ff4d4d; }
+    .xlx-personal-activity__button:active {
+      color: #fffefe;
+      background: #ff7b7b; }
+
+.xlx-personal-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: -3px;
+  background: #fff;
+  -webkit-mask: url(../img/spr-personal-x2.png) no-repeat;
+  -webkit-mask-size: 16px auto;
+  transition: background .2s; }
+  .xlx-personal-icon__menu {
+    -webkit-mask-position: 0 0; }
+    .xlx-personal-icon__menu:hover {
+      background: #6699ff; }
+  .xlx-personal-icon__badge {
+    -webkit-mask-position: 0 -17px; }
+  .xlx-personal-icon__time {
+    -webkit-mask-position: 0 -34px; }
+  .xlx-personal-icon__rank {
+    -webkit-mask-position: 0 -51px; }
+
+/* scrollbar */
+/* BEM */
+.xlx-plugin-vip {
+  position: relative;
+  width: 284px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 4px; }
+  .xlx-plugin-vip .td-progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px; }
+    .xlx-plugin-vip .td-progress-bar .td-progress-bar__outer {
+      border-radius: 4px; }
+    .xlx-plugin-vip .td-progress-bar .td-progress-bar__inner {
+      box-sizing: border-box;
+      border-radius: 4px 0 0 4px; }
+  .xlx-plugin-vip__inner {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between; }
+  .xlx-plugin-vip__text {
+    padding: 0 8px;
+    white-space: nowrap; }
+    .xlx-plugin-vip__text.is-error {
+      color: var(--color-danger-2) !important; }
+    .xlx-plugin-vip__text.is-default {
+      color: var(--color-sub) !important; }
+    .is-normal .xlx-plugin-vip__text {
+      padding: 0; }
+  .xlx-plugin-vip__button {
+    display: flex;
+    height: 20px;
+    line-height: 20px;
+    margin: 4px;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: .2s; }
+  .xlx-plugin-vip__logo-vip {
+    padding: 0 3px;
+    background: #adadad; }
+  .xlx-plugin-vip__button-text {
+    padding: 0 3px;
+    white-space: nowrap; }
+  .xlx-plugin-vip__status {
+    color: #707070; }
+    .xlx-plugin-vip__status.is-super {
+      color: #b77020; }
+  .xlx-plugin-vip--ordinary {
+    background: #fff0d0; }
+    .xlx-plugin-vip--ordinary .td-progress-bar__outer {
+      background: var(--color-danger-3); }
+    .xlx-plugin-vip--ordinary .td-progress-bar__inner {
+      background: var(--color-danger-2);
+      border-right: solid 1px #ff9494; }
+    .xlx-plugin-vip--ordinary .xlx-plugin-vip__text {
+      color: var(--color-danger-2); }
+    .xlx-plugin-vip--ordinary .xlx-plugin-vip__button {
+      background-color: var(--color-danger-2);
+      color: #fff; }
+      .xlx-plugin-vip--ordinary .xlx-plugin-vip__button:hover {
+        background-color: var(--color-danger-3); }
+    .xlx-plugin-vip--ordinary .xlx-plugin-vip__button-text {
+      color: #fff; }
+    .xlx-plugin-vip--ordinary.is-trying .xlx-plugin-vip__text {
+      color: #fff; }
+    .xlx-plugin-vip--ordinary.is-trying .xlx-plugin-vip__button {
+      background: rgba(255, 255, 255, 0.6); }
+      .xlx-plugin-vip--ordinary.is-trying .xlx-plugin-vip__button:hover {
+        background: rgba(255, 255, 255, 0.8); }
+    .xlx-plugin-vip--ordinary.is-trying .xlx-plugin-vip__button-text {
+      color: #e13333; }
+    .xlx-plugin-vip--ordinary.is-normal {
+      background: transparent; }
+      .xlx-plugin-vip--ordinary.is-normal .xlx-plugin-vip__text {
+        color: var(--color-primary); }
+        .xlx-plugin-vip--ordinary.is-normal .xlx-plugin-vip__text:hover {
+          color: var(--color-primary-hover); }
+  .xlx-plugin-vip--super {
+    background: #efdea2; }
+    .xlx-plugin-vip--super [class^="vip-icon-svip"] {
+      width: 24px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 22px;
+      margin: 0;
+      color: #fc0 !important; }
+    .xlx-plugin-vip--super .xlx-plugin-vip__text {
+      color: #a86e17; }
+    .xlx-plugin-vip--super .xlx-plugin-vip__button {
+      background: rgba(0, 0, 0, 0.5); }
+      .xlx-plugin-vip--super .xlx-plugin-vip__button:hover {
+        background: rgba(0, 0, 0, 0.7); }
+    .xlx-plugin-vip--super .xlx-plugin-vip__button-text {
+      color: #f1B55a; }
+    .xlx-plugin-vip--super .td-progress-bar__outer {
+      background: #aa9373; }
+    .xlx-plugin-vip--super .td-progress-bar__inner {
+      background: #d6a55a;
+      border-right: solid 1px #edc78d; }
+    .xlx-plugin-vip--super.is-trying .xlx-plugin-vip__text {
+      color: #fff; }
+    .xlx-plugin-vip--super.is-normal {
+      background: transparent; }
+      .xlx-plugin-vip--super.is-normal .xlx-plugin-vip__text {
+        color: var(--color-primary); }
+
+/* scrollbar */
+/* BEM */
+.xlx-promote__item {
+  position: relative;
+  width: 30%;
+  max-width: 250px;
+  min-width: 183px;
+  line-height: 1; }
+.xlx-promote__content {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top: 38%;
+  border-radius: 4px;
+  overflow: hidden; }
+  .xlx-promote__content:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 62%, rgba(0, 0, 0, 0.8) 100%);
+    opacity: .6;
+    transition: .3s; }
+  .xlx-promote__content:hover .xlx-promote__detail {
+    height: 100%; }
+  .xlx-promote__content:hover .xlx-promote__text {
+    display: -webkit-box; }
+  .xlx-promote__content:hover:after {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
+    opacity: .8; }
+.xlx-promote__picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+.xlx-promote__detail {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+  transition: .2s; }
+.xlx-promote__detail-user {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  margin-bottom: 10px;
+  color: #fff; }
+.xlx-promote__name {
+  max-width: calc(100% - 65px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all; }
+.xlx-promote__text {
+  padding: 0 10px 0 37px;
+  height: 32px;
+  font-size: 11px;
+  line-height: 16px;
+  color: #ccc;
+  pointer-events: none;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: none; }
+.xlx-promote__avatar {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px; }
+  .xlx-promote__avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: solid 1px #fff; }
+
+.xlx-promote-list {
+  display: flex;
+  justify-content: space-between; }
+
+@media screen and (max-width: 1005px) {
+  .xlx-promote__item:nth-child(4) {
+    display: none; } }
+@media screen and (min-width: 1005px) {
+  .xlx-promote__item {
+    width: 23%; } }
+/* scrollbar */
+/* BEM */
+.xlx-search {
+  width: 38%;
+  background: #fff;
+  border: 0;
+  border-radius: 15px; }
+  .xlx-search .xlx-search__text {
+    color: var(--color-success-1); }
+  .xlx-search .td-icon-security {
+    color: #61ba96; }
+  .xlx-search .xlx-search__text {
+    color: var(--color-success-1); }
+
+/* scrollbar */
+/* BEM */
+body::-webkit-scrollbar {
+  width: 10px; }
+
+body::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+  border-radius: 5px;
+  border-right: solid 2px #fff; }
+
+.xlx-setting {
+  min-width: 900px;
+  height: 100%;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #fff;
+  box-sizing: border-box; }
+  .xlx-setting .td-button--small {
+    width: auto;
+    padding: 0 10px;
+    margin-left: 10px; }
+  .xlx-setting .xlx-setting-content__text + .xlx-setting-content__horizontal, .xlx-setting .xlx-setting-content__text + .xlx-setting-content__vertical {
+    margin-top: 15px; }
+  .xlx-setting .xlx-setting-content__horizontal + .xlx-setting-content__tips {
+    margin-top: 10px; }
+  .xlx-setting .td-icon-info {
+    color: var(--color-primary);
+    vertical-align: -1px; }
+  .xlx-setting .td-input__inner {
+    width: 55px;
+    height: 24px; }
+  .xlx-setting .td-select__dropdown {
+    width: 100px; }
+  .xlx-setting .td-checkbox + .xlx-setting-content__tips {
+    margin: 10px 0 0 20px; }
+  .xlx-setting .td-table {
+    margin-top: 15px; }
+
+.xlx-setting-nav {
+  position: fixed;
+  width: 180px;
+  height: calc(100vh - 20px);
+  padding-top: 34px;
+  background: #ebecf2;
+  border-radius: 10px;
+  box-sizing: border-box; }
+  .xlx-setting-nav__item {
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    cursor: default; }
+    .xlx-setting-nav__item:hover {
+      background: linear-gradient(to right, rgba(28, 20, 255, 0.05), rgba(169, 192, 248, 0.05)); }
+    .xlx-setting-nav__item.is-active {
+      background: #cfd4e6; }
+
+.xlx-setting-wrapper {
+  padding-top: 55px;
+  margin-left: 240px; }
+
+.xlx-setting-content__list {
+  display: flex;
+  align-items: center;
+  margin-top: 15px; }
+.xlx-setting-content__item {
+  display: flex;
+  margin-bottom: 40px; }
+.xlx-setting-content__label {
+  width: 130px; }
+.xlx-setting-content__vertical li {
+  margin-bottom: 15px; }
+.xlx-setting-content__horizontal {
+  display: flex;
+  flex-wrap: wrap; }
+  .xlx-setting-content__horizontal li {
+    margin-right: 38px; }
+.xlx-setting-content__tips {
+  color: #999; }
+.xlx-setting-content__link {
+  color: var(--color-primary);
+  margin-left: 50px; }
+.xlx-setting-content__config {
+  width: 360px;
+  height: 70px;
+  padding: 16px 25px;
+  margin: 20px 0;
+  color: #999;
+  line-height: 18px;
+  background: #f5f6fa;
+  border-radius: 4px;
+  box-sizing: border-box; }
+  .xlx-setting-content__config.is-checked {
+    color: var(--color-default); }
+.xlx-setting-content__button {
+  display: inline-flex;
+  margin-left: 10px; }
+.xlx-setting-content__select {
+  margin: 15px 0 0 20px; }
+  .xlx-setting-content__select .td-select {
+    display: inline-flex; }
+  .xlx-setting-content__select li {
+    display: inline-block;
+    margin: 0 45px 5px 0; }
+.xlx-setting-content .td-select-group {
+  width: 400px; }
+.xlx-setting-content .td-select--default {
+  border: solid 1px var(--color-primary-gray-2);
+  height: 26px;
+  border-radius: 4px; }
+  .xlx-setting-content .td-select--default:focus {
+    outline: 0; }
+
+.xlx-select-size-1 {
+  display: inline-block; }
+  .xlx-select-size-1 .td-select-group {
+    width: 64px;
+    height: 26px; }
+  .xlx-select-size-1 .td-select-group .td-input__inner {
+    width: 40px;
+    height: 24px;
+    padding-right: 0; }
+
+.xlx-select-size-2 {
+  display: inline-block;
+  margin-left: 10px; }
+  .xlx-select-size-2 .td-select-group {
+    width: 240px;
+    height: 26px;
+    margin: 0; }
+  .xlx-select-size-2 .td-input__inner {
+    height: 24px; }
+
+.xlx-select-size-3 {
+  margin-bottom: 10px; }
+  .xlx-select-size-3 .td-select-group {
+    height: 30px; }
+
+.xlx-select-size-4 {
+  display: inline-block; }
+  .xlx-select-size-4 .td-select-group {
+    width: 100px;
+    height: 26px; }
+  .xlx-select-size-4 .td-input__inner {
+    width: 130px; }
+
+.xlx-setting-margin-1 {
+  margin-bottom: 10px; }
+
+.xlx-setting-shield {
+  width: 260px;
+  padding: 8px 0;
+  margin: 15px 0;
+  background: #f5f6fa;
+  border-radius: 10px; }
+  .xlx-setting-shield ul {
+    height: 155px;
+    overflow-y: auto; }
+    .xlx-setting-shield ul::-webkit-scrollbar {
+      width: 4px;
+      background: transparent; }
+    .xlx-setting-shield ul::-webkit-scrollbar-thumb {
+      background: #e6e6e6;
+      border-radius: 4px; }
+  .xlx-setting-shield__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 28px;
+    padding: 0 10px;
+    line-height: 28px;
+    cursor: default; }
+    .xlx-setting-shield__item:hover {
+      background: #dbe3f2; }
+      .xlx-setting-shield__item:hover .xlx-setting-shield__link {
+        display: block; }
+  .xlx-setting-shield__picture {
+    width: 20px;
+    height: 20px; }
+    .xlx-setting-shield__picture img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%; }
+  .xlx-setting-shield__name {
+    max-width: 13em;
+    margin-left: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all; }
+  .xlx-setting-shield__link {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 10px; }
+
+.xlx-setting__column-1 {
+  width: 40%; }
+
+.xlx-setting__column-2 {
+  width: 30%; }
+
+.xlx-setting__column-3 {
+  width: 10%; }
+
+.xlx-setting-content__part .xlx-setting-content__button {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end; }
+  .xlx-setting-content__part .xlx-setting-content__button .td-button {
+    width: 58px; }
+
+/* scrollbar */
+/* BEM */
+/* var */
+:root {
+  --color-draglist-start:#ccc;
+  /* 列表背景起始色 */
+  --color-draglist-end:#ccc;
+  /* 列表背景结束色 */
+  --color-title-start:#ccc;
+  /* 标题背景起始色 */
+  --color-title-end:#ccc;
+  /* 标题背景结束色 */
+  --icon-color:linear-gradient(#3576ff, #a0a6fe);
+  --icon-color-hover:linear-gradient(45deg,#a54dff,#2153fd);
+  --color-side-auxiliary:rgba(0, 0, 0, 0.6); }
+
+.xlx-side, .xlx-nav {
+  width: 354px;
+  user-select: none; }
+
+.xlx-file-name {
+  width: calc(100% - 60px);
+  margin-bottom: 8px;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical; }
+
+.td-draglist-item__icon {
+  position: relative;
+  background: transparent; }
+
+.xlx-side-operate {
+  position: absolute;
+  top: 3px;
+  left: 293px;
+  display: flex;
+  justify-content: flex-end;
+  width: 56px; }
+  .xlx-side-operate .xlx-side-operate__button {
+    padding: 6px; }
+    .xlx-side-operate .xlx-side-operate__button i {
+      background-image: var(--icon-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: .2s; }
+    .xlx-side-operate .xlx-side-operate__button:hover i {
+      background-image: var(--icon-color-hover); }
+    .xlx-side-operate .xlx-side-operate__button:active i {
+      background-image: linear-gradient(45deg, #bf15d3, #0207df); }
+
+.xlx-file-info {
+  position: relative;
+  display: flex;
+  margin-top: 5px;
+  font-size: 11px;
+  line-height: 15px;
+  color: var(--color-sub); }
+  .xlx-file-info .xlx-file-num {
+    color: var(--color-primary); }
+  .xlx-file-info .xlx-file-status {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .xlx-file-info .xlx-file-percent {
+    position: absolute;
+    left: 126px; }
+  .xlx-file-info .xlx-file-time {
+    position: absolute;
+    left: 104px; }
+  .xlx-file-info .xlx-file-speed {
+    position: absolute;
+    right: 0; }
+    .xlx-file-info .xlx-file-speed .xlx-file-speed__vip {
+      color: var(--color-primary); }
+      .xlx-file-info .xlx-file-speed .xlx-file-speed__vip.is-super {
+        padding: 0 2px;
+        color: #b77020;
+        background: #f3d283;
+        border-radius: 2px; }
+    .xlx-file-info .xlx-file-speed .xlx-file-speed__vip-link {
+      color: var(--color-primary);
+      margin-left: 5px; }
+      .xlx-file-info .xlx-file-speed .xlx-file-speed__vip-link:hover {
+        color: var(--color-primary-hover); }
+  .xlx-file-info .xlx-file-error {
+    color: var(--color-danger-1); }
+
+/* 组队加速 */
+.xlx-accelerate {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0; }
+  .xlx-accelerate .xlx-accelerate__gif {
+    position: absolute; }
+  .xlx-accelerate .xlx-accelerate__link {
+    color: var(--color-primary); }
+
+.xlx-side-ad {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  margin-left: -14px; }
+  .xlx-side-ad .xlx-side-ad__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; }
+
+.xlx-side:hover .td-collapse-item__title {
+  background-image: var(--background-side-title); }
+.xlx-side .td-collapse-item {
+  border: 0;
+  outline: none; }
+  .xlx-side .td-collapse-item.is-active .td-collapse-item__title {
+    background: transparent; }
+    .xlx-side .td-collapse-item.is-active .td-collapse-item__title:hover {
+      color: var(--color-primary);
+      background: transparent; }
+  .xlx-side .td-collapse-item.is-active .td-collapse-item__content {
+    height: calc(100vh - 260px);
+    overflow-y: auto;
+    padding: 0; }
+    .xlx-side .td-collapse-item.is-active .td-collapse-item__content::-webkit-scrollbar {
+      width: 4px; }
+      .xlx-side .td-collapse-item.is-active .td-collapse-item__content::-webkit-scrollbar:horizontal {
+        height: 4px; }
+      .xlx-side .td-collapse-item.is-active .td-collapse-item__content::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+        width: 4px;
+        background: #e6e6e6; }
+      .xlx-side .td-collapse-item.is-active .td-collapse-item__content::-webkit-scrollbar-corner {
+        background: #fff; }
+      .xlx-side .td-collapse-item.is-active .td-collapse-item__content::-webkit-scrollbar-track {
+        background: #fff; }
+        .xlx-side .td-collapse-item.is-active .td-collapse-item__content::-webkit-scrollbar-track-piece {
+          background: #fff;
+          width: 4px; }
+  .xlx-side .td-collapse-item .td-collapse-item__title {
+    padding-left: 7px;
+    margin: 5px 7px;
+    border-radius: 4px; }
+    .xlx-side .td-collapse-item .td-collapse-item__title:hover {
+      color: var(--color-default);
+      background-image: linear-gradient(to right, var(--draglist-color-hover), rgba(15, 156, 255, 0.2));
+      background-image: var(--background-side-title-hover); }
+.xlx-side .td-draglist-item {
+  position: relative;
+  padding-right: 10px;
+  margin-bottom: 1px;
+  flex-wrap: wrap; }
+  .xlx-side .td-draglist-item:hover {
+    background-color: transparent;
+    background-image: var(--background-item-hover); }
+  .xlx-side .td-draglist-item.is-active {
+    background-color: transparent;
+    background-image: var(--background-item); }
+    .xlx-side .td-draglist-item.is-active:after {
+      position: absolute;
+      top: 0;
+      right: -22px;
+      width: 22px;
+      height: 100%;
+      background: rgba(15, 156, 255, 0.2);
+      clip-path: polygon(0 0%, 100% 48%, 100% 52%, 0% 100%);
+      content: ""; }
+    .xlx-side .td-draglist-item.is-active .xlx-side-completed__mark {
+      display: block !important; }
+  .xlx-side .td-draglist-item.is-chosen {
+    background-color: transparent;
+    background-image: var(--background-item-hover); }
+    .xlx-side .td-draglist-item.is-chosen .xlx-side-completed__mark {
+      display: block !important; }
+  .xlx-side .td-draglist-item.is-deleted .xlx-file-name, .xlx-side .td-draglist-item.is-deleted .xlx-file-info {
+    opacity: .5; }
+  .xlx-side .td-draglist-item.is-deleted .td-media__object {
+    position: relative;
+    opacity: .6; }
+    .xlx-side .td-draglist-item.is-deleted .td-media__object:after {
+      position: absolute;
+      right: 0;
+      bottom: -2px;
+      font-family: "xlx-icon" !important;
+      font-size: 16px;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px var(--color-default);
+      opacity: .8;
+      content: "\e62a"; }
+  .xlx-side .td-draglist-item.is-opened .xlx-file-name {
+    font-weight: normal; }
+  .xlx-side .td-draglist-item.is-opened .xlx-side-completed__mark {
+    display: none; }
+    .xlx-side .td-draglist-item.is-opened .xlx-side-completed__mark:before {
+      background-color: var(--color-primary-gray-1); }
+    .xlx-side .td-draglist-item.is-opened .xlx-side-completed__mark:after {
+      border-color: var(--color-primary-gray-1); }
+  .xlx-side .td-draglist-item.is-opened:hover .xlx-side-completed__mark {
+    display: block; }
+.xlx-side .td-draglist-item__content {
+  width: 280px;
+  flex: none; }
+.xlx-side .td-progress.is-super .td-progress-bar {
+  position: relative; }
+.xlx-side .td-progress.is-super .xlx-icon-rocket {
+  position: absolute;
+  top: -3px;
+  right: -8px;
+  width: 14px;
+  height: 8px;
+  background: url(../img/plugin/rocket.png) no-repeat;
+  background-size: 14px auto; }
+.xlx-side .td-progress.is-super .td-progress-bar__inner {
+  background: #FFA200;
+  position: relative; }
+.xlx-side .td-progress-bar__outer {
+  background: rgba(0, 0, 0, 0.1); }
+
+.xlx-client-side.is-secret .xlx-nav-operate i, .xlx-client-side.is-secret .xlx-side-operate .xlx-side-operate__button i {
+  background-image: linear-gradient(#000, #c3c3c3); }
+
+/* 导航 */
+.xlx-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px; }
+
+.xlx-nav-operate {
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center; }
+  .xlx-nav-operate.is-disabled {
+    opacity: .3; }
+  .xlx-nav-operate i {
+    font-size: 24px;
+    background-image: var(--icon-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .2s; }
+  .xlx-nav-operate:hover i {
+    background-image: var(--icon-color-hover); }
+  .xlx-nav-operate:hover .xlx-icon-nav-vip {
+    background-image: linear-gradient(to right, #fe31c9, #fe1839); }
+  .xlx-nav-operate:active i {
+    background-image: linear-gradient(45deg, #bf15d3, #0207df); }
+  .xlx-nav-operate:active .xlx-icon-nav-vip {
+    background-image: linear-gradient(to right, #eb01b1, #e40127); }
+  .xlx-nav-operate .xlx-icon-nav-vip {
+    background-image: linear-gradient(to right, #ff71d8, #ff6078) !important; }
+
+.xlx-drag-area {
+  position: absolute;
+  background: var(--background-drag);
+  border: solid 1px var(--border-drag); }
+
+.xlx-side-completed .xlx-file-name {
+  font-weight: bold; }
+.xlx-side-completed .xlx-side-completed__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 22px;
+  height: 100%; }
+  .xlx-side-completed .xlx-side-completed__mark:before {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    width: 5px;
+    height: 5px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    content: ""; }
+  .xlx-side-completed .xlx-side-completed__mark:after {
+    position: absolute;
+    top: 18px;
+    left: 3px;
+    width: 7px;
+    height: 7px;
+    border: solid 1px var(--color-primary);
+    border-radius: 50%;
+    content: "";
+    transform: scale(0);
+    opacity: 0;
+    transition: .1s; }
+  .xlx-side-completed .xlx-side-completed__mark:hover:after {
+    transform: scale(1);
+    opacity: 1; }
+.xlx-side-completed .xlx-file-num {
+  position: absolute;
+  right: 0; }
+
+.xlx-side__empty {
+  text-align: center; }
+  .xlx-side__empty h3 {
+    margin-top: 20px;
+    font-size: 18px; }
+  .xlx-side__empty p {
+    line-height: 30px;
+    font-size: 16px;
+    color: #a9c4db; }
+  .xlx-side__empty .td-button {
+    margin-top: 60px;
+    width: 138px; }
+  .xlx-side__empty .xlx-side__empty-text {
+    font-size: 14px;
+    color: #999; }
+
+[class^="xlx-icon-empty"] {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background: url(../img/spr-empty.png) no-repeat;
+  background-size: 150px auto; }
+
+.xlx-icon-empty-finish {
+  background-position: 0 0; }
+
+.xlx-icon-empty-down {
+  background-position: 0 -300px; }
+
+.xlx-icon-empty-dustbin {
+  background-position: 0 -150px; }
+
+.xlx-icon-empty-secret {
+  width: 83px;
+  height: 85px;
+  margin-top: 80px;
+  background-position: 0 -450px; }
+
+/* 搜索下载记录 */
+.xlx-search-record {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  z-index: 2;
+  width: 340px;
+  height: 36px;
+  line-height: 36px;
+  background: #e6e6e6;
+  border-radius: 18px; }
+  .xlx-search-record .td-input__inner {
+    width: 300px;
+    height: 34px;
+    padding-left: 15px;
+    background: transparent;
+    border: 0; }
+    .xlx-search-record .td-input__inner::-webkit-input-placeholder {
+      color: #808080; }
+  .xlx-search-record .xlx-search-record__result {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    color: #808080; }
+    .xlx-search-record .xlx-search-record__result span {
+      color: var(--color-danger-1); }
+  .xlx-search-record .xlx-search-record__clear {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 33px;
+    top: 3px;
+    right: 5px; }
+    .xlx-search-record .xlx-search-record__clear.is-danger {
+      color: var(--color-danger-1); }
+
+/* scrollbar */
+/* BEM */
+.xlx-speed-list {
+  width: 192px; }
+
+.xlx-speed-list__header {
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
+  line-height: 44px; }
+  .xlx-speed-list__header .xlx-speed-list__title {
+    color: #7698B7; }
+
+.xlx-speed-list__content .xlx-speed-list__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  height: 56px; }
+  .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__image {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: solid 2px transparent;
+    border-radius: 50%;
+    box-sizing: border-box; }
+    .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__image img {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      border-radius: 50%; }
+    .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__image:after {
+      position: absolute;
+      left: 1px;
+      bottom: -1px;
+      font-size: 24px;
+      font-family: "xlx-icon" !important;
+      content: "\e649"; }
+    .xlx-speed-list__rank {
+      position: absolute;
+      z-index: 3;
+      top: -15px;
+      left: 2px; }
+      .xlx-speed-list__rank .xlx-speed-list__rank-num {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 10px;
+        line-height: 20px;
+        font-style: normal; }
+    .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__image.is-first {
+      color: #ffc24c;
+      border-color: currentColor; }
+    .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__image.is-second {
+      color: #99bade;
+      border-color: currentColor; }
+    .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__image.is-third {
+      color: #ffaca1;
+      border-color: currentColor; }
+  .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__user-name {
+    display: inline-block;
+    max-width: 6em;
+    margin-left: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all; }
+  .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__infomation {
+    position: absolute;
+    top: 0;
+    right: 6px;
+    display: flex;
+    align-items: center;
+    height: 100%; }
+  .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__speed {
+    color: var(--color-detail-primary); }
+  .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__message {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    color: var(--color-primary);
+    display: none; }
+  .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__link, .xlx-speed-list__content .xlx-speed-list__item .xlx-speed-list__text {
+    margin-left: 8px;
+    color: var(--color-primary); }
+  .xlx-speed-list__content .xlx-speed-list__item:hover {
+    background: #f0f3fa; }
+  .xlx-speed-list__content .xlx-speed-list__item.is-front .xlx-speed-list__speed {
+    color: var(--color-danger); }
+  .xlx-speed-list__content .xlx-speed-list__item.is-last {
+    margin-bottom: 30px; }
+    .xlx-speed-list__content .xlx-speed-list__item.is-last:before {
+      position: absolute;
+      bottom: -15px;
+      left: 13px;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: #7698b7;
+      box-shadow: 6px 0 0 #7698b7,12px 0 0 #7698b7;
+      content: ""; }
+  .xlx-speed-list__content .xlx-speed-list__item.is-myself .xlx-speed-list__user-name {
+    color: var(--color-primary); }
+  .xlx-speed-list__content .xlx-speed-list__item.is-null .xlx-speed-list__image {
+    color: #d3e3f0;
+    border-color: var(--color-detail-line); }
+  .xlx-speed-list__content .xlx-speed-list__item.is-null .xlx-speed-list__user-name {
+    color: var(--color-detail-primary); }
+
+/* scrollbar */
+/* BEM */
+.xlx-status {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center; }
+  .xlx-status.is-limit .xlx-status-speed .xlx-status-speed__text {
+    color: var(--color-danger-1); }
+  .xlx-status.is-limit .xlx-icon-time {
+    color: var(--color-danger-1);
+    background-image: none; }
+
+.xlx-status-control {
+  position: relative; }
+  .xlx-status-control .xlx-icon-time {
+    margin-left: 10px;
+    font-size: 14px;
+    color: transparent;
+    background-image: linear-gradient(0, #9a9a9a 0, #656565 100%);
+    -webkit-background-clip: text; }
+    .xlx-status-control .xlx-icon-time:hover {
+      background-image: linear-gradient(0, #b3b3b3 0, #999999 100%); }
+    .xlx-status-control .xlx-icon-time:active {
+      background-image: linear-gradient(0, #9a9a9a 0, #656565 100%); }
+
+.xlx-status-control-pop {
+  position: absolute;
+  top: -170px;
+  z-index: 1000; }
+  .xlx-status-control-pop .td-context-menu__children {
+    top: -65px; }
+
+.xlx-status-speed {
+  position: relative;
+  margin-left: 5px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: default; }
+  .xlx-status-speed em {
+    font-style: normal;
+    color: var(--color-primary); }
+  .xlx-status-speed:hover .xlx-status-speed-pop {
+    display: block; }
+
+.xlx-status-speed-pop {
+  position: absolute;
+  top: -142px;
+  left: 0;
+  z-index: 1;
+  display: none;
+  width: 200px;
+  height: 142px;
+  padding: 17px 0 0;
+  background: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2); }
+
+.xlx-status-speed-list {
+  padding-bottom: 11px;
+  margin-bottom: 11px;
+  margin-left: 32px;
+  border-bottom: 1px solid #e6e6e6; }
+  .xlx-status-speed-list__item + .xlx-status-speed-list__item {
+    margin-top: 13px; }
+  .xlx-status-speed-list__item em {
+    color: var(--color-default); }
+  .xlx-status-speed-list__item .xlx-icon {
+    margin-right: 6px;
+    margin-left: -22px;
+    color: #1a1a1a;
+    vertical-align: -2px; }
+  .xlx-status-speed-list__item .xlx-icon-tips-download {
+    color: var(--color-success-1); }
+  .xlx-status-speed-list__item .xlx-icon-tips-upload {
+    color: var(--color-primary); }
+  .xlx-status-speed-list__item p {
+    display: inline-block;
+    font-size: 12px;
+    color: var(--color-default); }
+    .xlx-status-speed-list__item p em {
+      font-style: normal; }
+  .xlx-status-speed-list:last-child {
+    margin-bottom: 0;
+    border-bottom: 0; }
+
+/* scrollbar */
+/* BEM */
+.xlx-suspension__ball:before, .xlx-suspension__wave-inner:before, .xlx-suspension__wave-inner:after {
+  background: url(../img/spr-suspension.png) no-repeat;
+  background-size: 144px auto; }
+
+.xlx-suspension {
+  position: fixed;
+  top: 3px;
+  left: 5px;
+  user-select: none;
+  /* vip */
+  /* downing */ }
+  .xlx-suspension:hover .xlx-suspension__ball {
+    box-shadow: 0px 0px 8px #8ba1ff; }
+  .xlx-suspension:hover .xlx-suspension__bird {
+    transform: translate3d(0, -5px, 0); }
+  .xlx-suspension:hover .xlx-suspension__ball:before {
+    display: block; }
+  .xlx-suspension:hover .xlx-suspension__wave {
+    display: block; }
+  .xlx-suspension__ball {
+    position: relative;
+    z-index: 1;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    background: linear-gradient(#e8eefd, #fff);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); }
+    .xlx-suspension__ball:before {
+      display: none;
+      position: absolute;
+      top: -7px;
+      left: 0px;
+      width: 74px;
+      height: 79px;
+      background-position: 0 -70px;
+      content: "";
+      animation: ball 4s linear infinite;
+      transform-origin: center 44px;
+      z-index: 1; }
+@keyframes ball {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+  .xlx-suspension__bird {
+    position: absolute;
+    top: -2px;
+    left: -6px;
+    z-index: 2;
+    width: 75px;
+    height: 75px;
+    background: url(../img/spr-ball-ani.png) no-repeat;
+    transition: transform .2s; }
+  .xlx-suspension__wave {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: 74px;
+    border-radius: 50%;
+    overflow: hidden; }
+  .xlx-suspension__wave-inner {
+    position: absolute;
+    bottom: 0;
+    width: 74px;
+    height: 15px;
+    overflow: hidden; }
+    .xlx-suspension__wave-inner:before, .xlx-suspension__wave-inner:after {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      content: ""; }
+    .xlx-suspension__wave-inner:before {
+      width: 240px;
+      left: 0;
+      background-position: 0 -240px;
+      animation: ani-bg-1 1.5s  linear infinite; }
+    .xlx-suspension__wave-inner:after {
+      right: 0;
+      width: 144px;
+      background-position: 0 -160px;
+      animation: ani-bg-2 1.5s linear infinite; }
+@keyframes ani-bg-1 {
+  0% {
+    transform: translate3d(0, 0, 0); }
+  100% {
+    transform: translate3d(-70px, 0, 0); } }
+@keyframes ani-bg-2 {
+  0% {
+    transform: translate3d(0, 0, 0); }
+  100% {
+    transform: translate3d(70px, 0, 0); } }
+  .xlx-suspension__speed {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    text-align: center; }
+    .xlx-suspension__speed span {
+      font-size: 18px; }
+    .xlx-suspension__speed .xlx-suspension__speed-total {
+      font-size: 9px;
+      line-height: 74px; }
+    .xlx-suspension__speed .xlx-suspension__speed-upgrade {
+      position: absolute;
+      width: 100%;
+      bottom: 13px;
+      font-size: 11px;
+      color: #808080; }
+  .xlx-suspension__status {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    line-height: 74px;
+    text-align: center; }
+  .xlx-suspension.is-vip .xlx-suspension__bird {
+    background-position: -4240px 0; }
+  .xlx-suspension.is-vip .xlx-suspension__ball {
+    background-image: linear-gradient(#fff7e3 0%, white 100%); }
+  .xlx-suspension.is-vip .xlx-suspension__wave-inner:before {
+    background-position: 0 -420px;
+    animation: ani-bg-1 1.5s linear infinite; }
+  .xlx-suspension.is-vip .xlx-suspension__wave-inner:after {
+    background-position: 0 -330px;
+    animation: ani-bg-2 1.5s linear infinite; }
+  .xlx-suspension.is-vip:hover .xlx-suspension__ball {
+    background-image: linear-gradient(#fff7e3 0%, white 100%);
+    box-shadow: 0 0 10px #ffedb0; }
+    .xlx-suspension.is-vip:hover .xlx-suspension__ball:before {
+      animation: ball 2.5s linear infinite; }
+  .xlx-suspension.is-vip-login .xlx-suspension__bird {
+    animation: bird-vip 2s steps(53) both; }
+@keyframes bird-vip {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: -4240px 0; } }
+  .xlx-suspension.is-downing .xlx-suspension__bird, .xlx-suspension.is-downing .xlx-suspension__status {
+    display: none; }
+  .xlx-suspension.is-downing .xlx-suspension__wave, .xlx-suspension.is-downing .xlx-suspension__speed {
+    display: block; }
+  .xlx-suspension.is-downing .xlx-suspension__ball:before {
+    display: block;
+    animation: ball 4s linear infinite; }
+  .xlx-suspension.is-status .xlx-suspension__bird {
+    display: none; }
+  .xlx-suspension.is-status .xlx-suspension__wave, .xlx-suspension.is-status .xlx-suspension__status {
+    display: block; }
+  .xlx-suspension.is-status .xlx-suspension__ball:before {
+    display: block;
+    animation: ball 4s linear infinite; }
+  .xlx-suspension.is-vip .xlx-suspension__ball:before {
+    animation: ball 2.5s linear infinite; }
+
+.xlx-suspension-list {
+  position: absolute;
+  width: 354px;
+  height: 260px;
+  padding: 0 20px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
+  .xlx-suspension-list__header {
+    display: flex;
+    justify-content: space-between;
+    line-height: 54px; }
+    .xlx-suspension-list__header h2 {
+      font-size: 12px; }
+    .xlx-suspension-list__header p {
+      color: #808080; }
+    .xlx-suspension-list__header a {
+      margin: 0 35px 0 3px;
+      color: var(--color-primary); }
+      .xlx-suspension-list__header a:hover {
+        color: var(--color-primary-hover); }
+      .xlx-suspension-list__header a.is-vip {
+        color: #e6aa43; }
+        .xlx-suspension-list__header a.is-vip:hover {
+          color: #d88f3b; }
+  .xlx-suspension-list__body {
+    height: 155px;
+    overflow-y: auto; }
+    .xlx-suspension-list__body::-webkit-scrollbar {
+      width: 4px; }
+      .xlx-suspension-list__body::-webkit-scrollbar:horizontal {
+        height: 4px; }
+      .xlx-suspension-list__body::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+        width: 4px;
+        background: #e6e6e6; }
+      .xlx-suspension-list__body::-webkit-scrollbar-corner {
+        background: #fff; }
+      .xlx-suspension-list__body::-webkit-scrollbar-track {
+        background: #fff; }
+        .xlx-suspension-list__body::-webkit-scrollbar-track-piece {
+          background: #fff;
+          width: 4px; }
+    .xlx-suspension-list__body ul {
+      margin-right: 5px; }
+    .xlx-suspension-list__body .xlx-suspension-list__empty {
+      text-align: center;
+      line-height: 155px;
+      font-size: 14px;
+      color: var(--color-primary-gray-1); }
+  .xlx-suspension-list__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 0 3px;
+    margin-bottom: 1px;
+    border-radius: 2px;
+    cursor: pointer; }
+    .xlx-suspension-list__item .xlx-icon-type {
+      position: relative;
+      z-index: 1; }
+    .xlx-suspension-list__item:hover {
+      background: #f0f3fa; }
+  .xlx-suspension-list__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #d4e1ff;
+    border-radius: 2px; }
+  .xlx-suspension-list__name {
+    position: relative;
+    z-index: 1;
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all; }
+  .xlx-suspension-list__status {
+    position: absolute;
+    right: 0; }
+  .xlx-suspension-list .td-button {
+    width: 100%;
+    margin-top: 8px;
+    color: #707070; }
+
+:root {
+  --background-search: #fff;
+  --background-hover: #f0f3fa;
+  --background-body:#fff;
+  --opacity-tab-current: 1;
+  --opacity-tab: .5;
+  --color-icon-oparate: rgba(0,0,0,.9);
+  --color-text: #808080;
+  --color-sub:rgba(0, 0, 0, 0.6);
+  --background-item: linear-gradient(to right,rgba(181,224,255,.2),rgba(26,160,255,.2));
+  --background-item-hover:linear-gradient(to right,rgba(68,177,255,.2),rgba(181,224,255,.2));
+  --background-drag: rgba(102,153,255,.2);
+  --border-drag: rgba(102,153,255,.4);
+  --background-side-title: linear-gradient( to right, rgba(102,153,255,0.16),rgba(136,108,251,.08), rgba(136,108,251,0));
+  --background-side-title-hover: linear-gradient( to right, rgba(102,153,255,0.3),rgba(136,108,251,.15), rgba(136,108,251,0));
+  --background-progress-bar: #69f;
+  --background-progress: rgba(0,0,0,.1);
+  --color-tab-text: #1a1a1a;
+  --background-chart: linear-gradient(to right,#dff6fe,#e8e9fe);
+  --color-chart-line: rgba(255,255,255,.5);
+  --background-comment: #fff; }
+
+/* 下载进度 */
+.xlx-side .td-progress-bar__inner {
+  background: var(--background-progress-bar); }
+
+/* 下载进度条 */
+.xlx-side .td-progress-bar__outer {
+  background: var(--background-progress); }
+
+.xlx-side .td-collapse-item.is-active .td-collapse-item__title, .xlx-side .td-collapse-item .td-collapse-item__title:hover, .td-browser-tab__item:hover .td-browser-tab__text {
+  color: var(--color-tab-text-current); }
+
+.xlx-side .td-collapse-item__title, .td-browser-tab__text {
+  color: var(--color-tab-text); }
+
+/* 搜索背景色 */
+.xlx-search {
+  background: var(--background-search); }
+  .xlx-search a {
+    color: var(--color-icon-oparate); }
+
+.td-icon-arrow-line, .td-browser-tab__close {
+  color: var(--color-icon-oparate); }
+
+/* 浏览器TAB选中颜色 */
+.td-browser-tab__item.is-current .td-browser-tab__text {
+  color: var(--color-text); }
+
+/* 默认背景色 */
+.xlx-client-content--default {
+  background: var(--background-body); }
+
+/* 文件名颜色 */
+.xlx-file-name {
+  color: var(--color-text); }
+
+/* 下载信息颜色 */
+.td-draglist-item__content .xlx-file-info, .xlx-status-speed {
+  color: var(--color-sub); }
+
+.xlx-status-control .xlx-icon-time {
+  background-image: var(--icon-color); }
+
+/* 右侧 */
+.nav a, .index-article p, .from-info .art-name {
+  color: var(--color-text); }
+
+.index-article h1 a, .from-info .user-name, .from-info .praise, .td-tabs__item.is-active, .xlx-speed-list__user-name, .td-textarea__inner {
+  color: var(--color-tab-text-current); }
+
+.from-info .art-name a, .from-info .art-name a, .from-info .art-nam, .file-info .text-name {
+  color: var(--color-text);
+  opacity: .8; }
+
+.ico-praise {
+  background-color: var(--color-text); }
+
+.chart-box {
+  height: 100%;
+  background: var(--background-chart); }
+  .chart-box:after {
+    background: repeating-linear-gradient(transparent, transparent 24px, var(--color-chart-line) 24px, var(--color-chart-line) 25px); }
+
+.data-info {
+  color: var(--color-sub); }
+
+.xlx-comment .xlx-comment__write {
+  background: var(--background-comment); }
+
+:root {
+  --color-detail-primary: #a5b4c3;
+  --color-detail-line:#d7e7f1;
+  --color-danger:#ff4848;
+  --side-width: 354px; }
+
+.is-vip {
+  color: var(--color-danger) !important; }
+
+/* scrollbar */
+/* BEM */
+.css:after {
+  content: "author:ningwenjing;  desgin:fengyanni;  update:2018-01-15"; }
+
+body {
+  color: #1a1a1a;
+  --colorLight:#69f;
+  --innerWidth:1250px; }
+
+.index-wrap {
+  height: 100vh; }
+
+.index-x {
+  position: relative; }
+
+.wrap-x {
+  width: var(--innerWidth);
+  margin: 0 auto; }
+
+.banner-x {
+  height: 450px;
+  position: relative;
+  transition: .3s;
+  overflow: hidden;
+  border-radius: 10px; }
+  .banner-x:after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7));
+    z-index: 2;
+    top: 0;
+    left: 0;
+    pointer-events: none; }
+  .banner-x .bg-pic {
+    width: 125%;
+    height: 125%;
+    background-size: cover;
+    background-position: center top;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: -12.5%; }
+  .banner-x .banner-info {
+    width: 190px;
+    height: 100px;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    margin-left: -95px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    z-index: 4; }
+  .banner-x .time {
+    font-size: 30px;
+    line-height: 1.2; }
+  .banner-x .day {
+    font-size: 78px;
+    margin: 0 25px 0 0; }
+  .banner-x .line {
+    width: 1px;
+    height: 62px;
+    background: #ebf0f4;
+    margin: 0 15px; }
+  .banner-opt {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 12px;
+    z-index: 4; }
+    .banner-opt a {
+      width: 66px;
+      margin: 0 8px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      cursor: pointer; }
+      .banner-opt a:after {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.4);
+        content: '';
+        transition: .2s; }
+      .banner-opt a:hover:after {
+        background: #fff; }
+      .banner-opt a.cur:after {
+        background: #fff; }
+
+.index-article {
+  text-align: center;
+  margin: 30px 0 0; }
+  .index-article h1 {
+    font-size: 36px;
+    line-height: 3.5; }
+    .index-article h1 a {
+      transition: .3s;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-all; }
+      .index-article h1 a:hover {
+        color: #0f9cff; }
+  .index-article p {
+    color: #666;
+    font-size: 20px;
+    line-height: 2;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    height: 80px; }
+
+.user-pic img {
+  width: 100%;
+  border-radius: 50%; }
+
+.from-info {
+  position: relative;
+  margin: 25px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px; }
+  .from-info .user-pic {
+    width: 28px;
+    height: 28px; }
+  .from-info .user-name {
+    color: #333;
+    margin: 0 0 0 10px;
+    transition: .2s; }
+    .from-info .user-name:hover {
+      color: #0f9cff; }
+  .from-info .art-name, .from-info .art-name {
+    color: #999;
+    margin: 0 0 0 10px; }
+    .from-info .art-name a, .from-info .art-name a {
+      color: #999; }
+  .from-info .praise {
+    position: absolute;
+    right: 0;
+    color: var(--colorLight);
+    display: flex;
+    align-items: center;
+    font-size: 14px; }
+    .from-info .praise .praise-box {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 0 5px; }
+    .from-info .praise:hover {
+      color: #ff4848; }
+      .from-info .praise:hover .ico-praise {
+        background-color: #ff4848; }
+    .from-info .praise.done {
+      color: #ff4848; }
+
+.ico-label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/spr-label.png); }
+  .ico-label.label-sign {
+    background-position: -20px 0; }
+  .ico-label.label-official {
+    background-position: -40px 0; }
+
+.ico-praise {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  -webkit-mask: url(../img/spr-x.png);
+  background-color: var(--colorLight); }
+  .done .ico-praise {
+    background-color: #ff4848;
+    -webkit-mask-position: -20px 0 !important; }
+    .done .ico-praise .praise {
+      color: #ff4848; }
+  .done-ani .ico-praise {
+    animation: praise .6s both; }
+@keyframes praise {
+  0% {
+    transform: translateY(2px) rotate(30deg); }
+  50% {
+    transform: translateY(-2px) rotate(-10deg); }
+  100% {
+    transform: translateY(0) rotate(0deg); } }
+@media only screen and (min-width: 1101px) and (max-width: 1400px), only screen and (max-height: 860px) {
+  body {
+    --innerWidth:1000px; }
+
+  .nav {
+    height: 95px; }
+
+  .banner-x {
+    height: 380px; }
+    .banner-x .banner-info {
+      width: 300px;
+      height: 80px;
+      margin-left: -150px; }
+    .banner-x .day {
+      font-size: 60px; }
+    .banner-x .time {
+      font-size: 26px;
+      line-height: 1; }
+    .banner-x .line {
+      height: 45px; }
+    .banner-opt a {
+      width: 60px; }
+
+  .index-article {
+    margin: 30px 0 0; }
+    .index-article h1 {
+      font-size: 32px;
+      line-height: 3; }
+    .index-article P {
+      font-size: 16px;
+      line-height: 2;
+      height: 64px; }
+
+  .from-info {
+    font-size: 14px; } }
+@media only screen and (min-width: 800px) and (max-width: 1100px), only screen and (max-height: 730px) {
+  body {
+    --innerWidth:740px; }
+
+  .nav {
+    height: 85px; }
+
+  .banner-x {
+    height: 310px; }
+    .banner-x .banner-info {
+      width: 260px;
+      height: 70px;
+      margin-left: -130px; }
+    .banner-x .day {
+      font-size: 60px; }
+    .banner-x .time {
+      font-size: 26px;
+      line-height: 1; }
+    .banner-x .line {
+      height: 45px; }
+    .banner-opt a {
+      width: 50px; }
+
+  .index-article {
+    margin: 15px 0 0; }
+    .index-article h1 {
+      font-size: 28px;
+      line-height: 3; }
+    .index-article P {
+      font-size: 16px;
+      line-height: 2;
+      height: 64px; }
+
+  .from-info {
+    font-size: 14px; } }
+@media only screen and (max-width: 860px), only screen and (max-height: 650px) {
+  body {
+    --innerWidth:596px; }
+
+  .nav {
+    height: 80px; }
+
+  .banner-x {
+    height: 260px; }
+    .banner-x .banner-info {
+      height: 62px; }
+    .banner-x .day {
+      font-size: 50px; }
+    .banner-x .time {
+      font-size: 20px;
+      line-height: 1.1; }
+    .banner-x .line {
+      height: 45px; }
+    .banner-opt a {
+      width: 38px; }
+
+  .index-article {
+    margin: 10px 0 0; }
+    .index-article h1 {
+      font-size: 23px;
+      line-height: 3; }
+    .index-article P {
+      font-size: 14px;
+      line-height: 2;
+      height: 58px; }
+
+  .from-info {
+    font-size: 12px; } }
+/* scrollbar */
+/* BEM */
+:root {
+  --color-primary:#69f;
+  --color-chart-line: rgba(255,255,255,.5); }
+
+.ico-d-open, .ico-d-play, .ico-d-delete, .ico-d-redo, .ico-d-down, .ico-o-more, .ico-o-open, .ico-o-play, .ico-o-playnow, .ico-o-down, .ico-o-delete, .ico-o-redo, .ico-d-play, .ico-o-pause, .ico-d-note, .ico-o-share {
+  background: url(../img/spr-data.png) no-repeat; }
+
+.chart-box {
+  height: 100%;
+  background: linear-gradient(to right, #dff6fe, #e8e9fe);
+  border-radius: 5px;
+  position: relative; }
+  .chart-box:hover .data-info-main {
+    display: none; }
+  .chart-box:hover .data-info-des {
+    display: flex; }
+
+.data-chart {
+  position: relative;
+  z-index: 1;
+  height: 100%; }
+
+.file-info {
+  margin: 0 15px;
+  position: relative; }
+  .file-info .file-name {
+    display: flex;
+    align-items: center;
+    height: 46px;
+    flex: 1;
+    width: 100%; }
+  .file-info .text-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    max-width: calc(100% - 180px);
+    font-size: 13px;
+    color: #718bb1; }
+  .file-info .ico-file {
+    margin: 0 8px 0 0; }
+  .file-info .file-opt {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    height: 46px;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 2; }
+  .file-info .btn-delete {
+    border: solid 1px #69f;
+    border-radius: 12px;
+    width: 52px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: #69f; }
+    .file-info .btn-delete:hover {
+      background: #69f;
+      color: #fff; }
+  .file-info .link {
+    color: #69f;
+    margin-left: 3px; }
+
+.ico-o-open, .ico-o-more {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 0 0 0 15px; }
+
+.ico-o-open {
+  background-position: 0 -20px; }
+  .ico-o-open:hover {
+    background-position: -20px -20px; }
+
+.ico-o-more {
+  background-position: -40px -20px; }
+  .ico-o-more:hover {
+    background-position: -60px -20px; }
+
+.ico-o-play, .ico-o-pause, .ico-o-playnow, .ico-o-down, .ico-o-delete, .ico-o-redo {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin: 0 0 0 12px; }
+
+.ico-o-playnow {
+  background-position: 0 -40px; }
+  .ico-o-playnow:hover {
+    background-position: -30px -40px; }
+
+.ico-o-pause {
+  background-position: -60px -40px; }
+  .ico-o-pause:hover {
+    background-position: -90px -40px; }
+
+.ico-o-play {
+  background-position: -120px -40px; }
+  .ico-o-play:hover {
+    background-position: -150px -40px; }
+
+.ico-o-down {
+  background-position: -180px -40px; }
+  .ico-o-down:hover {
+    background-position: -210px -40px; }
+
+.ico-o-delete {
+  background-position: -240px -40px; }
+  .ico-o-delete:hover {
+    background-position: -270px -40px; }
+
+.ico-o-redo {
+  background-position: -300px -40px; }
+  .ico-o-redo:hover {
+    background-position: -330px -40px; }
+
+.ico-o-share {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 0 0 0 12px;
+  background-position: -80px -20px; }
+  .ico-o-share:hover {
+    background-position: -100px -20px; }
+
+.canvas-box {
+  position: relative;
+  z-index: 1;
+  height: calc(100% - 90px); }
+  .canvas-box:after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    background: repeating-linear-gradient(transparent, transparent 24px, var(--color-chart-line) 24px, var(--color-chart-line) 25px); }
+  .canvas-box .canvas-data {
+    position: relative;
+    z-index: 2; }
+
+.canvas-box.finish {
+  opacity: .3; }
+
+.data-show {
+  position: absolute;
+  color: var(--color-primary);
+  z-index: 3; }
+  .data-show .point {
+    position: relative;
+    z-index: 6;
+    width: 7px;
+    height: 7px;
+    margin: -4px 0 0 -5px;
+    border-radius: 50%;
+    border: solid 1px var(--color-primary);
+    background: #fff; }
+  .data-show .text-data {
+    position: absolute;
+    left: 13px;
+    bottom: -7px;
+    width: 72px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--color-primary);
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+    font-size: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+    .data-show .text-data.is-left {
+      left: auto;
+      right: 13px; }
+    .data-show .text-data.is-left-ani {
+      left: auto;
+      right: 35px; }
+    .data-show .text-data.is-right-ani {
+      left: 24px; }
+  .data-vip {
+    color: #ff4848; }
+    .data-vip .point {
+      border-color: #fe4e4f; }
+
+.data-info {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  line-height: 40px;
+  color: #718bb1;
+  font-size: 13px; }
+  .data-info .line {
+    display: block;
+    width: 1px;
+    height: 11px;
+    background: #c6d3ee;
+    margin: 0 12px; }
+  .data-info .data-info-main, .data-info .data-info-des {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .data-info .data-info-des {
+    display: none; }
+  .data-info .label-color {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    vertical-align: -1px; }
+  .data-info .color-all {
+    background-image: linear-gradient(45deg, #46adff, #a687ff); }
+  .data-info .color-vip {
+    background-image: linear-gradient(45deg, #bda3fe, #fc75db); }
+
+.data-tips {
+  position: absolute;
+  width: 70px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 3px;
+  text-align: center;
+  color: #718bb1;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 8px 0px rgba(147, 151, 178, 0.22);
+  z-index: 4; }
+  .data-tips:after {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+    border-style: dashed;
+    border-color: transparent;
+    border-width: 6px 5px;
+    border-top-color: #fff;
+    position: absolute;
+    content: '';
+    bottom: -12px;
+    left: 50%;
+    margin-left: -4px; }
+
+.data-note {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  margin: -20px 0 0;
+  line-height: 40px;
+  font-size: 15px;
+  color: #ff8a00;
+  text-align: center; }
+  .data-note p {
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px; }
+
+.ico-d-note {
+  width: 20px;
+  height: 20px;
+  background-position: 0 -80px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px 2px 0; }
+
+.ico-d-open, .ico-d-play, .ico-d-delete, .ico-d-redo, .ico-d-down {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 0 8px 0 0; }
+
+.ico-d-open {
+  background-position: 0 0; }
+
+.ico-d-play {
+  background-position: -20px 0; }
+
+.ico-d-delete {
+  background-position: -40px 0; }
+
+.ico-d-redo {
+  background-position: -60px 0; }
+
+.ico-d-down {
+  background-position: -80px 0; }
+
+.btn-data-wp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 96px);
+  top: 48px; }
+  .btn-data-wp .btn-opt {
+    height: 34px;
+    border-radius: 16px;
+    background-color: rgba(102, 153, 255, 0.8);
+    box-shadow: 0px 2px 8px 0px rgba(41, 159, 255, 0.64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    z-index: 3;
+    padding: 0 24px;
+    transition: .2s; }
+    .btn-data-wp .btn-opt:hover {
+      background: #69f; }
+  .btn-data-wp .txt-tips {
+    top: 50%;
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+    color: #ff8a00;
+    position: absolute;
+    font-size: 13px;
+    z-index: 3; }
+
+.xlx-data-ani {
+  position: absolute;
+  margin: -34px 0 0 -34px;
+  z-index: 5;
+  width: 60px;
+  height: 60px;
+  transform: scale(0.7); }
+  .xlx-data-ani .xlx-data-type {
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 3; }
+    .xlx-data-ani .xlx-data-type:after {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: url(../img/spr-data-ani.png) -999em no-repeat;
+      content: ""; }
+    .xlx-data-ani .xlx-data-type.is-speed1:after {
+      animation: speed1 1s 0.3s steps(25) infinite; }
+    .xlx-data-ani .xlx-data-type.is-speed2:after {
+      animation: speed2 1s 0.3s steps(25) infinite; }
+    .xlx-data-ani .xlx-data-type.is-speed4:after {
+      animation: speed4 1s 0.3s steps(25) infinite; }
+    .xlx-data-ani .xlx-data-type.is-speed3:after {
+      animation: speed3 1s 0.3s steps(25) infinite; }
+    .xlx-data-ani .xlx-data-type.is-scale {
+      animation: scale 1s both; }
+@keyframes speed1 {
+  0% {
+    background-position: 0 -180px; }
+  100% {
+    background-position: -1500px -180px; } }
+@keyframes speed2 {
+  0% {
+    background-position: 0 -120px; }
+  100% {
+    background-position: -1500px -120px; } }
+@keyframes speed4 {
+  0% {
+    background-position: 0 -60px; }
+  100% {
+    background-position: -1500px -60px; } }
+@keyframes speed3 {
+  0% {
+    background-position: 0 -240px; }
+  100% {
+    background-position: -1500px -240px; } }
+@keyframes bomb {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: -1500px 0; } }
+@keyframes scale {
+  0%,100% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0); } }
+  .xlx-data-ani .xlx-data-bomb {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: url(../img/spr-data-ani.png) -999em no-repeat;
+    animation: bomb 1s steps(25); }
+
+/*# sourceMappingURL=xlx-client-all.css.map */

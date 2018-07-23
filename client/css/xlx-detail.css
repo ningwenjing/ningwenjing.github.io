@@ -1,0 +1,10 @@
+.xlx-detail {
+  display: flex;
+  padding-bottom: 50px; }
+  .xlx-detail .xlx-comment {
+    flex: 1;
+    width: calc(100% - 212px); }
+  .xlx-detail .xlx-speed-list {
+    margin-left: 20px; }
+
+/*# sourceMappingURL=xlx-detail.css.map */

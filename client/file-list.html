@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="http://xl_public_service.gitlab.xunlei.cn/thunder-ui/_dist/thunder-ui.css">
+  <link rel="stylesheet" href="css/xlx-icon.css">
+  <link rel="stylesheet" href="css/xlx-file-list.css">
+  <title>文件列表</title>
+  <style>
+/*    
+    .xlx-file-list .td-tree-node__label{
+      line-height: 34px;
+      height: 34px;
+      overflow: hidden;
+      white-space: pre-wrap;
+      -webkit-line-clamp: 1; display: -webkit-box;word-break: break-all; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical;
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="xlx-file-list">
+    <div class="td-table">
+      <div class="td-table__header-wrapper">
+        <table class="td-table__header">
+          <colgroup>
+            <col class="xlx-file-list__column-1">
+            <col class="xlx-file-list__column-2">
+            <col class="xlx-file-list__column-2">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>
+                <a href="#" class="td-table__text">文件名
+                  <i class="td-icon-sequence"></i>
+                </a>
+              </th>
+              <th>
+                <a href="#" class="td-table__text">大小
+                  <i class="td-icon-sequence is-reversed"></i>
+                </a>
+              </th>
+              <th>
+                <p class="td-table__text">状态</p>
+              </th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="td-table__body-wrapper">
+        <table class="td-table__body td-table-tree td-table--checkbox td-table--stripe">
+          <colgroup>
+            <col class="xlx-file-list__column-1">
+            <col class="xlx-file-list__column-2">
+            <col class="xlx-file-list__column-2">
+          </colgroup>
+          <tbody>
+            <tr class="td-table-tree__row">
+              <td class="td-table-tree__cell">
+                <div class="td-tree-node">
+                  <div class="td-tree-node__content">
+                    <span class="td-tree-node__expand-icon td-icon-arrow-drop is-expanded"></span>
+                    <label class="td-checkbox is-indeterminate">
+                      <input type="checkbox" class="td-checkbox__inner">
+                    </label>
+                    <span class="td-tree-node__image-icon"><i class="xlx-icon-type xlx-icon-type-group"></i></span>
+                    <span class="td-tree-node__label is-checked">[www.8KMV.com]美国队长[原盘中字 花絮中字+六区公映国语]Captain America The First Avenger 2011 Blu-ray 1080p AVC DTS-HD MA7.1 DIY-wq561103@beAst</span>
+                  </div>
+                </div>
+              </td>
+              <td class="td-table-tree__cell">
+                <p class="xlx-file-list__size">199.88GB</p>
+              </td>
+              <td class="td-table-tree__cell">
+                <a href="#" class="xlx-file-list__status">打开</a>
+              </td>
+            </tr>
+            <tr class="td-table-tree__row">
+              <td class="td-table-tree__cell">
+                  <div class="td-tree-node" style="padding-left: 20px;">
+                    <div class="td-tree-node__content">
+                      <span class="td-tree-node__expand-icon td-icon-arrow-drop is-expanded"></span>
+                      <label class="td-checkbox">
+                        <input type="checkbox" class="td-checkbox__inner">
+                      </label>
+                      <span class="td-tree-node__image-icon"><i class="xlx-icon-type xlx-icon-type-group"></i></span>
+                      <span class="td-tree-node__label is-checked">88091</span>
+                    </div>
+                  </div>
+              </td>
+              <td class="td-table-tree__cell">
+                <p class="xlx-file-list__size">99.88GB</p>
+              </td>
+              <td class="td-table-tree__cell">
+                <a href="#" class="xlx-file-list__status">打开</a>
+              </td>
+            </tr>
+            <tr class="td-table-tree__row">
+              <td class="td-table-tree__cell">
+                  <div class="td-tree-node" style="padding-left: 40px;">
+                    <div class="td-tree-node__content">
+                      <span class="td-tree-node__expand-icon td-icon-arrow-drop is-expanded"></span>
+                      <label class="td-checkbox is-indeterminate">
+                        <input type="checkbox" class="td-checkbox__inner">
+                      </label>
+                      <span class="td-tree-node__image-icon"><i class="xlx-icon-type xlx-icon-type-group"></i></span>
+                      <span class="td-tree-node__label  is-checked">xxxxx</span>
+                    </div>
+                  </div>
+              </td>
+              <td class="td-table-tree__cell">
+                <p class="xlx-file-list__size">99.88GB</p>
+              </td>
+              <td class="td-table-tree__cell">
+                <a href="#" class="xlx-file-list__status">打开</a>
+              </td>
+            </tr>
+            <tr class="td-table-tree__row">
+              <td class="td-table-tree__cell">
+                <div class="td-tree-node" style="padding-left: 60px;">
+                  <div class="td-tree-node__content">
+                    <span class="td-tree-node__expand-icon td-icon-arrow-drop"></span>
+                    <label class="td-checkbox">
+                      <input type="checkbox" class="td-checkbox__inner">
+                    </label>
+                    <span class="td-tree-node__image-icon"><i class="xlx-icon-type xlx-icon-type-unknown"></i></span>
+                    <span class="td-tree-node__label">[www.8KMV.com]美国队长[原盘中字 花絮中字+六区公映国语]Captain America The First Avenger 2011 Blu-ray 1080p AVC DTS-HD MA7.1 DIY-wq561103@beAst</span>
+                  </div>
+                </div>
+              </td>
+              <td class="td-table-tree__cell">
+                <p class="xlx-file-list__size">99.88GB</p>
+              </td>
+              <td class="td-table-tree__cell">
+                <p class="xlx-file-list__status">99%</p>
+              </td>
+            </tr>
+            <tr class="td-table-tree__row">
+              <td class="td-table-tree__cell">
+                <div class="td-tree-node">
+                  <div class="td-tree-node__content">
+                    <span class="td-tree-node__expand-icon td-icon-arrow-drop is-hidden"></span>
+                    <label class="td-checkbox">
+                      <input type="checkbox" class="td-checkbox__inner" checked>
+                    </label>
+                    <span class="td-tree-node__image-icon"><i class="xlx-icon-type xlx-icon-type-rmvb"></i></span>
+                    <span class="td-tree-node__label is-checked">[www.8KMV.com]美国队长[原盘中字 花絮中字+六区公映国语]Captain America The First Avenger 2011 Blu-ray 1080p AVC DTS-HD MA7.1 DIY-wq561103@beAst</span>
+                  </div>
+                </div>
+              </td>
+              <td class="td-table-tree__cell">
+                <p class="xlx-file-list__size">2.12GB</p>
+              </td>
+              <td class="td-table-tree__cell">
+                <p class="xlx-file-list__status">不下载</p>
+              </td>
+            </tr>
+            <tr class="td-table-tree__row">
+              <td class="td-table-tree__cell">
+                <div class="td-tree-node">
+                  <div class="td-tree-node__content">
+                    <span class="td-tree-node__expand-icon td-icon-arrow-drop is-hidden"></span>
+                    <label class="td-checkbox">
+                      <input type="checkbox" class="td-checkbox__inner">
+                    </label>
+                    <span class="td-tree-node__image-icon"><i class="xlx-icon-type xlx-icon-type-doc"></i></span>
+                    <span class="td-tree-node__label is-checked">help.txt</span>
+                  </div>
+                </div>
+              </td>
+              <td class="td-table-tree__cell">
+                <p class="xlx-file-list__size">1.5KB</p>
+              </td>
+              <td class="td-table-tree__cell">
+                <p class="xlx-file-list__status">99%</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="td-table__footer-wrapper">
+        <table class="td-table__footer">
+          <colgroup>
+            <col>
+            <col width="110">
+          </colgroup>
+          <tr>
+            <td class="td-table-tree__cell">
+              <label class="td-checkbox is-checked">
+                <input type="checkbox" class="td-checkbox__inner" checked="">
+                <span class="td-checkbox__label">全选</span>
+              </label>
+            </td>
+            <td class="td-table-tree__cell">
+              <a href="javascript:;" class="td-button td-button--small">下载选中按钮</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

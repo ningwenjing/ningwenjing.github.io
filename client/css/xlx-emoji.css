@@ -1,0 +1,63 @@
+/* emoji */
+
+.xlx-face-emoji ul{display: flex;flex-wrap: wrap;height: 140px;overflow-y: auto;margin: 0 auto;}
+.xlx-face-emoji ul::-webkit-scrollbar{width: 4px;}
+.xlx-face-emoji ul::-webkit-scrollbar-thumb{background: #ccc;border-radius: 3px;}
+.xlx-face-emoji ul li{cursor: pointer;width: 24px;height: 24px;padding: 2px;}
+.xlx-face-emoji ul li:hover{background-color: #ececec;}
+.face-icon-emoji{vertical-align: -6px;}
+.face-icon-emoji,.ico-face{width: 24px;height: 24px;background: url(../img/spr-emoji.png) -999em no-repeat;display: inline-block;background-image: -webkit-image-set(url(../img/spr-emoji.png) 1x, url(../img/spr-emoji-x2.png) 2x);}
+
+.emoji-1F604{background-position: -72px -72px;}
+.emoji-1F60A{background-position: -120px -72px;}
+.emoji-1F603{background-position: -168px -72px;}
+.emoji-263A{background-position: -216px -72px;}
+.emoji-1F609{background-position: -264px -72px;}
+.emoji-1F60D{background-position: -312px -72px;}
+.emoji-1F618{background-position: -360px -72px;}
+.emoji-1F61A{background-position: -408px -72px;}
+.emoji-1F633{background-position: -456px -72px;}
+.emoji-1F60C{background-position: -504px -72px;}
+.emoji-1F601{background-position: -72px -120px;}
+.emoji-1F61C{background-position: -120px -120px;}
+.emoji-1F61D{background-position: -168px -120px;}
+.emoji-1F612{background-position: -216px -120px;}
+.emoji-1F60F{background-position: -264px -120px;}
+.emoji-1F613{background-position: -312px -120px;}
+.emoji-1F614{background-position: -360px -120px;}
+.emoji-1F61E{background-position: -408px -120px;}
+.emoji-1F616{background-position: -456px -120px;}
+.emoji-1F622{background-position: -504px -120px;}
+.emoji-1F630{background-position: -72px -168px;}
+.emoji-1F628{background-position: -120px -168px;}
+.emoji-1F623{background-position: -168px -168px;}
+.emoji-1F625{background-position: -216px -168px;}
+.emoji-1F62D{background-position: -264px -168px;}
+.emoji-1F602{background-position: -312px -168px;}
+.emoji-1F632{background-position: -360px -168px;}
+.emoji-1F631{background-position: -408px -168px;}
+.emoji-1F620{background-position: -456px -168px;}
+.emoji-1F621{background-position: -504px -168px;}
+.emoji-1F62A{background-position: -72px -216px;}
+.emoji-1F637{background-position: -120px -216px;}
+.emoji-ue11a{background-position: -168px -216px;}
+.emoji-ue541{background-position: -72px -264px;}
+.emoji-ue738{background-position:-120px -264px;}
+.emoji-ue332{background-position:-168px  -264px;}
+.emoji-ue333{background-position:-216px  -264px;}
+.emoji-ue30f{background-position:-264px  -264px;}
+.emoji-jinggao{background-position:-312px  -264px;}
+.emoji-ue252{background-position:-360px  -264px;}
+.emoji-hongdeng{background-position:-408px  -264px;}
+.emoji-landeng{background-position:-456px  -264px;}
+.emoji-ue432{background-position:-504px  -264px;}
+.emoji-jgz{background-position:-72px -312px;}
+.emoji-ppx{background-position:-120px -312px;}
+.emoji-lsj{background-position:-168px -312px;}
+.emoji-yyz{background-position:-216px -312px;}
+.emoji-666{background-position:-264px -312px;}
+.emoji-ok{background-position:-312px -312px;}
+.emoji-muzhi{background-position:-360px -312px;}
+.emoji-meitui{background-position:-408px -312px;}
+.emoji-huanggua{background-position:-456px -312px;}
+.emoji-gouyin{background-position:-504px -312px;}

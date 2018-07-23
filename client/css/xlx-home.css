@@ -1,0 +1,108 @@
+/* scrollbar */
+/* BEM */
+html, body {
+  width: 100vw;
+  overflow-x: hidden; }
+
+::-webkit-scrollbar {
+  width: 8px; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  width: 8px;
+  background: #ceddeb; }
+
+.is-scroll {
+  overflow-y: scroll;
+  height: 100vh; }
+
+.xlx-home {
+  min-width: 596px; }
+  .xlx-home .td-tabs__title {
+    justify-content: center;
+    margin: 30px 0 20px;
+    border-bottom: 0; }
+    .xlx-home .td-tabs__title .td-tabs__item {
+      width: auto;
+      margin: 0 15px; }
+    .xlx-home .td-tabs__title.is-fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      width: 100%;
+      padding: 5px 0;
+      margin: 0;
+      background: rgba(255, 255, 255, 0.9); }
+  .xlx-home .chart-box {
+    height: 35vh;
+    min-height: 200px; }
+  .xlx-home .xlx-file-list .td-tree-node {
+    width: calc(100vw - 310px); }
+  .xlx-home .td-tabs__content {
+    overflow: visible; }
+
+.index-wrap {
+  transition: .3s; }
+
+.xlx-home__content {
+  display: none;
+  margin: 0 50px; }
+
+.xlx-promote {
+  margin-top: 20px; }
+
+.xlx-home__operate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  cursor: pointer; }
+  .xlx-home__operate .xlx-home__operate-arrow {
+    display: flex;
+    position: relative;
+    width: 100px;
+    height: 2px; }
+    .xlx-home__operate .xlx-home__operate-arrow:before, .xlx-home__operate .xlx-home__operate-arrow:after {
+      display: block;
+      width: 50px;
+      height: 2px;
+      background-color: #8ec5ee;
+      content: "";
+      transition: .2s; }
+    .xlx-home__operate .xlx-home__operate-arrow:before {
+      transform-origin: right center; }
+    .xlx-home__operate .xlx-home__operate-arrow:after {
+      transform-origin: left center; }
+  .xlx-home__operate:hover .xlx-home__operate-arrow:before {
+    transform: rotate(-15deg); }
+  .xlx-home__operate:hover .xlx-home__operate-arrow:after {
+    transform: rotate(15deg); }
+
+.xlx-home-tool {
+  position: fixed;
+  right: 0;
+  bottom: 20px; }
+  .xlx-home-tool .xlx-home-top {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #b0d2f0;
+    transition: .2s; }
+    .xlx-home-tool .xlx-home-top:after {
+      position: absolute;
+      top: 12px;
+      left: 9px;
+      width: 10px;
+      height: 10px;
+      border: solid 2px #fff;
+      border-bottom: 0;
+      border-right: 0;
+      transform: rotate(45deg);
+      content: ""; }
+    .xlx-home-tool .xlx-home-top:hover {
+      background-color: #a1c5e5; }
+
+/*# sourceMappingURL=xlx-home.css.map */

@@ -1,0 +1,22 @@
+/* scrollbar */
+/* BEM */
+.xlx-file-list .td-tree-node {
+  max-width: calc(100% - 10px);
+  margin-right: 5px;
+  box-sizing: border-box; }
+.xlx-file-list .td-tree-node__image-icon {
+  background: transparent; }
+.xlx-file-list .td-button {
+  margin-right: 5px; }
+.xlx-file-list .td-table__body-wrapper {
+  max-height: 369px; }
+.xlx-file-list__column-2 {
+  width: 90px; }
+.xlx-file-list__size, .xlx-file-list__status {
+  margin: 0 10px; }
+.xlx-file-list a.xlx-file-list__status {
+  color: var(--color-primary); }
+  .xlx-file-list a.xlx-file-list__status:hover {
+    color: var(--color-primary-hover); }
+
+/*# sourceMappingURL=xlx-file-list.css.map */
