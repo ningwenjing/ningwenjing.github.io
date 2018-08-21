@@ -7,56 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         @font-face {
-        font-family: 'songti';
+        font-family: 'xlfont';
         src:
-            url('fonts/fzxs.ttf?1782vl') format('truetype');
+            url('fonts/xlfont.ttf?1782vl') format('truetype'),
+            url('fonts/xlfont.woff?1782vl') format('woff'),
+            url('fonts/xlfont.svg?1782vl#xlfont') format('svg');
         font-weight: normal;
         font-style: normal;
         }
         *{margin: 0;padding: 0;}
         body{
-            
-            line-height: 1.5;
-            font-size: 20px;
+            font-family: 'xlfont' !important;
+            line-height: 1;
+            font-size: 100px;
            
         }
         div{
-            margin: 20px;
+            height: 100vh;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
         }
-        .font{
-            font-family: 'songti' !important;
+        span{
+            margin: 0 10px;
         }
-
         .change-color{
             background: #000;
             color: #fff;
         }
         .change-color span{
             background: #666;
+            border: dashed 1px #fff;
         }
     </style>
 </head>
 <body>
-<div class="box font" style="font-size: 12px;">
-    迅雷始终致力于为全球互联网提供更好的多媒体资源数据传输服务,凭借云加速领域的核心技术,集成了包含下载、游戏、视频、网络加速、CDN应用等多种服务的迅雷产品平台
+<div class="box">
+    <span>A</span>
+    <span>B</span>
+    <span>C</span>
+    <span>D</span>
+    <span>E</span>
+    <span>F</span>
+    <span>G</span>
 </div>
-<div class="box1" style="font-size: 12px;">
-    迅雷始终致力于为全球互联网提供更好的多媒体资源数据传输服务,凭借云加速领域的核心技术,集成了包含下载、游戏、视频、网络加速、CDN应用等多种服务的迅雷产品平台
-</div>
-
-<div class="box font" style="font-size: 14px;">
-    迅雷始终致力于为全球互联网提供更好的多媒体资源数据传输服务,凭借云加速领域的核心技术,集成了包含下载、游戏、视频、网络加速、CDN应用等多种服务的迅雷产品平台
-</div>
-<div class="box1" style="font-size: 14px;">
-    迅雷始终致力于为全球互联网提供更好的多媒体资源数据传输服务,凭借云加速领域的核心技术,集成了包含下载、游戏、视频、网络加速、CDN应用等多种服务的迅雷产品平台
-</div>
-
-<div class="box font" style="font-size: 16px;">
-    迅雷始终致力于为全球互联网提供更好的多媒体资源数据传输服务,凭借云加速领域的核心技术,集成了包含下载、游戏、视频、网络加速、CDN应用等多种服务的迅雷产品平台
-</div>
-<div class="box1" style="font-size: 16px;">
-    迅雷始终致力于为全球互联网提供更好的多媒体资源数据传输服务,凭借云加速领域的核心技术,集成了包含下载、游戏、视频、网络加速、CDN应用等多种服务的迅雷产品平台
-</div>
-
+<script>
+    document.querySelector(".box").addEventListener("click",function(){
+        this.classList.add("change-color")
+    })
+</script>
 </body>
 </html>
