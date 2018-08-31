@@ -489,28 +489,14 @@
 /* 赛事简介 */
 .act-rule {
   margin: 0 75px;
-  font-size: 14px;
-  color: #f5c5c0;
+  font-size: 16px;
+  color: #fcded6;
+  line-height: 36px;
 }
 
 .act-rule h4 {
   margin-bottom: 10px;
   font-size: 18px;
-  color: #fff;
-}
-
-.act-rule ul {
-  margin-bottom: 20px;
-}
-
-.act-rule li {
-  line-height: 25px;
-  text-indent: -1em;
-  margin-left: 1em;
-}
-
-.act-rule li a {
-  font-weight: bold;
   color: #fff;
 }
 

@@ -140,6 +140,9 @@
   .act-module .act-module__title {
     margin: .28rem 0;
   }
+  .act-module .act-module__title h3:before, .act-module .act-module__title h3:after {
+    width: 1.7rem;
+  }
   .act-tab__content {
     padding-top: 1px;
     background: #832626;

@@ -137,6 +137,12 @@
     }
     .act-module__title{
       margin: .28rem 0;
+      h3{
+        &:before,
+        &:after{
+          width: 1.7rem;
+        }
+      }
     }
   }
   .act-tab__content{
