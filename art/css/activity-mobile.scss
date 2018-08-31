@@ -2,9 +2,10 @@
   html,body{font-size: 15.625vw; }
   .act-wrap{
     width: 100vw;
-    background-size: cover;
+    background-size: 200% auto;
     padding-bottom: 0;
     overflow-x: hidden;
+    background-color: #130509;
   }
   .act-wrap__top{
     height: 4.9rem;
