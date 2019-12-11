@@ -174,7 +174,7 @@ body {
 
 .logo-qingshan {
   position: absolute;
-  top: 0.24rem;
+  top: .145rem;
   left: 0.56rem;
   width: 1.36rem;
   height: 0.5rem;
@@ -185,7 +185,7 @@ body {
 
 .photo-music {
   position: absolute;
-  top: 0.25rem;
+  top: 0.158rem;
   right: 0.3rem;
   width: 0.52rem;
   height: 0.52rem;
@@ -384,14 +384,14 @@ body {
 }
 
 .button-main--next {
-  margin: 0.57rem auto;
+  margin: 0.3rem auto;
   width: 2.77rem;
   line-height: 0.86rem;
   font-size: 0.5rem;
 }
 
 .photo-book {
-  margin: 0.68rem 0 0 0.18rem;
+  margin: 0.31rem 0 0 0.18rem;
   padding: 0 0.62rem 0 0.44rem;
   width: 7.24rem;
   height: 11.49rem;
