@@ -119,6 +119,7 @@ body {
           align-items: center;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
   background: #fff;
 }
 
@@ -129,29 +130,44 @@ body {
 }
 
 .photo-loadding__img {
+  position: relative;
   width: 2.7rem;
   height: 1.7rem;
+  overflow: hidden;
+}
+
+.photo-loadding__img:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8.1rem;
+  height: 100%;
   background: url(../img/loading.png) no-repeat;
   background-size: 8.1rem auto;
+  content: '';
   -webkit-animation: loading 0.5s steps(3) infinite;
           animation: loading 0.5s steps(3) infinite;
 }
 
 @-webkit-keyframes loading {
   0% {
-    background-position: 0 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   100% {
-    background-position: -8.1rem 0;
+    -webkit-transform: translate3d(-8.1rem, 0, 0);
+            transform: translate3d(-8.1rem, 0, 0);
   }
 }
 
 @keyframes loading {
   0% {
-    background-position: 0 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   100% {
-    background-position: -8.1rem 0;
+    -webkit-transform: translate3d(-8.1rem, 0, 0);
+            transform: translate3d(-8.1rem, 0, 0);
   }
 }
 
@@ -165,7 +181,7 @@ body {
 .photo-wrap header {
   position: relative;
   background: #fff;
-  z-index: 2;
+  z-index: 11;
 }
 
 .photo-index {
@@ -429,8 +445,6 @@ body {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  -webkit-animation: fadeIn 0.5s 0.5s both;
-          animation: fadeIn 0.5s 0.5s both;
 }
 
 .photo-book__wrap {
@@ -526,7 +540,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  bottom: 28px;
+  bottom: .2rem;
 }
 
 .photo-number a {
@@ -617,6 +631,7 @@ body {
 }
 
 .photo-result__content {
+  position: relative;
   margin: 0.3rem 0.34rem;
   width: 6.81rem;
   height: 7.44rem;
@@ -698,16 +713,20 @@ body {
 }
 
 .photo-result__summary {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   padding: 0.09rem 0.22rem;
   height: 1.36rem;
   font-size: 0.26rem;
   color: #c8c8c8;
+  white-space: pre-line;
   background: #000;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.photo-result__bottom.is-other .photo-result__save {
+.photo-result__bottom.is-other .photo-result__get {
   display: none;
 }
 
@@ -782,6 +801,8 @@ body {
 }
 
 .photo-result__save {
+  position: absolute;
+  bottom: .4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -791,6 +812,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   color: #50555e;
 }
 
@@ -952,6 +974,11 @@ body {
           animation: fadeIn 0.5s 1.5s both;
 }
 
+.photo-boy--5 {
+  -webkit-animation: none;
+          animation: none;
+}
+
 .button-main--start {
   -webkit-animation: fadeIn 0.5s 1.7s both;
           animation: fadeIn 0.5s 1.7s both;
@@ -983,7 +1010,6 @@ body {
 }
 
 .photo-book__next {
-  display: none;
   -webkit-animation: fadeIn 0.5s 0.5s both;
           animation: fadeIn 0.5s 0.5s both;
 }
