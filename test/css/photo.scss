@@ -50,18 +50,16 @@ body {
   position: relative;
   width: 2.7rem;
   height: 1.7rem;
-
-
   overflow: hidden;
 
   &:after {
     position: absolute;
     left: 0;
     top: 0;
-    width: 8.1rem;
-    height: 100%;
+    width: 100%;
+    height: 5.1rem;
     background: url(../img/loading.png) no-repeat;
-    background-size: 8.1rem auto;
+    background-size: 2.7rem auto;
     content: '';
     animation: loading 0.5s steps(3) infinite;
   }
@@ -74,7 +72,7 @@ body {
 
   100% {
 
-    transform: translate3d(-8.1rem, 0, 0)
+    transform: translate3d(0, -5.1rem, 0)
   }
 }
 
