@@ -505,7 +505,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: .97rem 0;
+  padding: 0 0 .97rem;
   background: #fff;
   box-sizing: border-box;
 
@@ -717,7 +717,7 @@ body {
     top: 1.06rem;
     right: 0.38rem;
     width: 0.5rem;
-    height: 3.5rem;
+    height: 3.3rem;
     text-indent: -999em;
     @extend %spr;
     background-position: 0 -3rem;
@@ -726,7 +726,18 @@ body {
       top: -0.4rem;
       left: 0.12rem;
       @include arrow(0.2rem, 0.15rem, #fff, bottom);
+      animation: move .6s both infinite alternate linear;
     }
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, -5px, 0);
   }
 }
 

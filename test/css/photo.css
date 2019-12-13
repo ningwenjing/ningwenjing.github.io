@@ -615,7 +615,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  padding: .97rem 0;
+  padding: 0 0 .97rem;
   background: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -842,7 +842,7 @@ body {
   top: 1.06rem;
   right: 0.38rem;
   width: 0.5rem;
-  height: 3.5rem;
+  height: 3.3rem;
   text-indent: -999em;
   background-position: 0 -3rem;
 }
@@ -860,6 +860,30 @@ body {
   border-width: 0.2rem 0.15rem;
   border-bottom-color: #fff;
   content: '';
+  -webkit-animation: move .6s both infinite alternate linear;
+          animation: move .6s both infinite alternate linear;
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -5px, 0);
+            transform: translate3d(0, -5px, 0);
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -5px, 0);
+            transform: translate3d(0, -5px, 0);
+  }
 }
 
 .photo-canvas {
