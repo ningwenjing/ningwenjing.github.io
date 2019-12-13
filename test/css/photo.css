@@ -804,7 +804,7 @@ body {
 .photo-result__save {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: .4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
