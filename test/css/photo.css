@@ -821,9 +821,10 @@ body {
 
 .photo-result__save:before, .photo-result__save:after {
   width: 0.9rem;
-  height: 2px;
+  height: 1px;
   margin: 0 0.1rem;
   background: #454b54;
+  opacity: .9rem;
   content: "";
 }
 
