@@ -160,16 +160,18 @@ body {
 }
 
 .photo-wrap header {
-  position: relative;
+  position: fixed;
+  top: 0.23rem;
   width: 100vw;
-  height: .85rem;
-  background: #fff;
+  height: 0.85rem;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
   z-index: 11;
 }
 
 .photo-index {
   width: 100vw;
-  height: calc(100vh - .85rem);
+  height: calc(100vh - 0.85rem);
   position: relative;
 }
 
@@ -178,7 +180,7 @@ body {
   top: 0.145rem;
   left: 0.56rem;
   width: 1.36rem;
-  height: .53rem;
+  height: 0.53rem;
   text-indent: -999em;
   background: url(../img/logo.png) no-repeat;
   background-size: 100% 100%;
@@ -190,6 +192,7 @@ body {
   right: 0.3rem;
   width: 0.52rem;
   height: 0.52rem;
+  z-index: 13;
 }
 
 .photo-music:before {
@@ -393,15 +396,15 @@ body {
 
 .photo-page {
   position: relative;
-  margin-top: -.8rem;
-  z-index: 12;
+  margin-top: -0.2rem;
+  z-index: 10;
 }
 
 .photo-book {
   margin: 0.31rem 0 0 0.18rem;
   padding: 0 0.62rem 0 0.44rem;
   width: 7.24rem;
-  height: 11.49rem;
+  height: 11.35rem;
   background: url(../img/bg-book.png) no-repeat;
   background-size: 100% auto;
   -webkit-box-sizing: border-box;
@@ -523,7 +526,7 @@ body {
 }
 
 .photo-number {
-  position: absolute;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,7 +534,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  bottom: 0;
+  bottom: 0.28rem;
 }
 
 .photo-number a {
@@ -620,6 +623,8 @@ body {
   background: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
 }
 
 .photo-result h1 {
@@ -632,7 +637,7 @@ body {
 
 .photo-result__content {
   position: relative;
-  margin: 0.2rem 0.34rem .22rem;
+  margin: 0.2rem 0.34rem 0.22rem;
   width: 6.81rem;
   height: 7.4rem;
   background: url(../img/bg-result-book.png) no-repeat;
@@ -644,7 +649,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0.46rem 0.35rem .1rem;
+  padding: 0.46rem 0.35rem 0.1rem;
   white-space: nowrap;
   font-size: 0.36rem;
   line-height: 0.55rem;
@@ -652,7 +657,7 @@ body {
 
 .photo-result__text .user-name {
   position: relative;
-  height: .55rem;
+  height: 0.55rem;
 }
 
 .photo-result__text .user-name i {
@@ -668,7 +673,7 @@ body {
 .photo-result__text .user-name:after {
   position: absolute;
   left: 0;
-  bottom: -.07rem;
+  bottom: -0.07rem;
   width: 100%;
   height: 2px;
   background: #000;
@@ -725,7 +730,7 @@ body {
 }
 
 .photo-result__bottom.is-other .photo-result__get {
-  display: none;
+  visibility: hidden;
 }
 
 .photo-result__bottom.is-other .button-main {
@@ -817,10 +822,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: .03rem;
+  margin-top: 0.03rem;
   width: 100%;
   color: #50555e;
-  font-size: .26rem;
+  font-size: 0.26rem;
 }
 
 .photo-result__save:before, .photo-result__save:after {
@@ -828,7 +833,7 @@ body {
   height: 1px;
   margin: 0 0.1rem;
   background: #454b54;
-  opacity: .9rem;
+  opacity: 0.9;
   content: "";
 }
 
@@ -865,8 +870,8 @@ body {
   border-width: 0.2rem 0.15rem;
   border-bottom-color: #fff;
   content: '';
-  -webkit-animation: move .6s both infinite alternate linear;
-          animation: move .6s both infinite alternate linear;
+  -webkit-animation: move 0.6s both infinite alternate linear;
+          animation: move 0.6s both infinite alternate linear;
 }
 
 @-webkit-keyframes move {
@@ -999,6 +1004,11 @@ body {
   opacity: 0;
   z-index: 10;
   display: block;
+  -webkit-touch-callout: default;
+}
+
+.photo-canvas-img[src=""], .photo-canvas-img:not([src]) {
+  visibility: hidden;
 }
 
 .title1,
@@ -1049,8 +1059,8 @@ body {
 }
 
 .photo-book__wrap.is-hide {
-  -webkit-animation: fadeOut 0.5s 0.5s both;
-          animation: fadeOut 0.5s 0.5s both;
+  -webkit-animation: fadeOut 0.5s 1s both;
+          animation: fadeOut 0.5s 1s both;
 }
 
 .photo-book__next {
@@ -1338,11 +1348,15 @@ body {
 
 @media only screen and (min-height: 740px) {
   .photo-result__content {
-    margin-top: .3rem;
-    margin-bottom: .5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
   }
   .photo-result__get {
-    margin: .45rem 0 .15rem;
+    margin: 0.45rem 0 0.15rem;
+  }
+  .photo-book {
+    height: 11.6rem;
+    margin-top: 0.5rem;
   }
 }
 /*# sourceMappingURL=photo.css.map */
