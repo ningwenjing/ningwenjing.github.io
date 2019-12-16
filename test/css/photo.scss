@@ -434,6 +434,7 @@ body {
   justify-content: center;
   width: 100%;
   bottom: 0.28rem;
+  left: 0;
 
   a {
     position: relative;
@@ -618,12 +619,13 @@ body {
 .photo-result__bottom {
   &.is-other {
     .photo-result__get {
-      //display: none;
-      visibility: hidden;
+      display: none;
     }
 
     .photo-result__save {
-      margin-top: -.65rem;
+      position: fixed;
+      left: 0;
+      bottom: .23rem;
     }
 
     .button-main {
@@ -1063,5 +1065,13 @@ body {
   .photo-book {
     height: 11.6rem;
     margin-top: 0.5rem;
+  }
+
+  .photo-result__bottom.is-other .photo-result__save {
+    bottom: .5rem;
+  }
+
+  .photo-result {
+    margin-top: -.5rem;
   }
 }
