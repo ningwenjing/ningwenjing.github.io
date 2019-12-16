@@ -733,6 +733,10 @@ body {
   visibility: hidden;
 }
 
+.photo-result__bottom.is-other .photo-result__save {
+  margin-top: -.65rem;
+}
+
 .photo-result__bottom.is-other .button-main {
   height: 0.8rem;
 }
@@ -898,6 +902,7 @@ body {
 
 .photo-capture {
   opacity: 0;
+  pointer-events: none;
 }
 
 .photo-canvas {
