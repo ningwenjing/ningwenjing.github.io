@@ -1366,11 +1366,11 @@ body {
     height: 11.6rem;
     margin-top: 0.5rem;
   }
-  .photo-result__bottom.is-other .photo-result__save {
-    bottom: .5rem;
-  }
   .photo-result {
     margin-top: -.5rem;
+  }
+  .photo-result__bottom.is-other .photo-result__save {
+    bottom: .5rem;
   }
 }
 /*# sourceMappingURL=photo.css.map */
