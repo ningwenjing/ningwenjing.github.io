@@ -16,12 +16,12 @@
       <span class="logo-qingshan">轻删</span>
       <div class="photo-music is-playing"></div>
     </header>
-    <div class="photo-result">
+    <div class="photo-result" style="display: none;">
 
       <h1>直男拍照技术等级考试</h1>
       <div class="photo-result__content">
         <p class="photo-result__text">
-          <span class="user-name"><i>我是用户名名名名名</i></span>同学的成绩为：<span class="score">75</span>分
+          <span class="user-name"><i>小飞侠</i></span>同学的成绩为：<span class="score">75</span>分
           <!-- 您本次的考试成绩为：<span class="score">75</span>分 -->
         </p>
         <p class="photo-result__evaluate">等级称号为： </p>
@@ -30,7 +30,7 @@
         </div>
         <p class="photo-result__summary">考后总结：看到你就想到被“直男摄影”支配的恐惧 风里雨里“死亡”角度对准你；不要问对方为什么会生气，跪下认错就对了；</p>
       </div>
-      <div class="photo-result__bottom">
+      <div class="photo-result__bottom is-other">
         <!-- 其它平台叠加is-other -->
         <div class="photo-result__wrap">
           <a href="javascript:;" class="button-main "><span>补考一次</span></a>
@@ -50,30 +50,29 @@
       <span class="photo-boy photo-boy--5"></span>
       <p class="photo-share__text">告诉身边的直男们</p>
     </div>
-
-    <div id="capture" class="photo-canvas" style="z-index: 99;">
-      <div class="photo-result">
-        <h1>直男拍照技术等级考试</h1>
-        <div class="photo-result__content">
-          <p class="photo-result__text">
-            <span class="user-name"><i>我是用户名名名名名</i></span>同学的成绩为：<span class="score">75</span>分
-            <!-- 您本次的考试成绩为：<span class="score">75</span>分 -->
-          </p>
-          <p class="photo-result__evaluate">等级称号为： </p>
-          <div class="photo-result__img">
-            <img src="img/result/result-1.png" alt="铁血无情">
+    <div class="photo-capture" style="opacity: 1;">
+      <div id="capture" class="photo-canvas" style="z-index: 1;">
+        <div class="photo-result">
+          <h1>直男拍照技术等级考试</h1>
+          <div class="photo-result__content">
+            <p class="photo-result__text">
+              <span class="user-name"><i>我是用户名名名名名</i></span>同学的成绩为：<span class="score">85</span>分
+              <!-- 您本次的考试成绩为：<span class="score">75</span>分 -->
+            </p>
+            <p class="photo-result__evaluate">等级称号为： </p>
+            <div class="photo-result__img">
+              <img src="img/result/result-1.png" alt="铁血无情">
+            </div>
+            <p class="photo-result__summary">考后总结：看到你就想到被“直男摄影”支配的恐惧 风里雨里“死亡”角度对准你；不要问对方为什么会生气，跪下认错就对了；</p>
           </div>
-          <p class="photo-result__summary">考后总结：看到你就想到被“直男摄影”支配的恐惧 风里雨里“死亡”角度对准你；不要问对方为什么会生气，跪下认错就对了；</p>
-        </div>
-        <div class="photo-canvas__code">
-          <span class="photo-boy photo-boy--2"></span>
-          <span class="photo-boy photo-boy--3"></span>
-          <div class="code"><span><img
-                src="https://img-vip-ssl.a.88cdn.com/n_vip_7/img-y16/base/vipqqbig.png?version=20170427"
-                alt="二维码"></span>
+          <div class="photo-canvas__code">
+            <span class="photo-boy photo-boy--2"></span>
+            <span class="photo-boy photo-boy--3"></span>
+            <div class="code"><span><img src="images/qrcode.png" alt="二维码"></span>
+            </div>
           </div>
+          <p class="photo-canvas__text">长按识别二维码，查看你的拍照等级&gt;</p>
         </div>
-        <p class="photo-canvas__text">长按识别二维码，查看你的拍照等级&gt;</p>
       </div>
     </div>
   </div>
@@ -94,13 +93,13 @@
         $(this).addClass('is-playing')
       }
     })
-    // setTimeout(function () {
-    //   new html2canvas(document.getElementById('capture')).then(canvas => {
-    //     // canvas为转换后的Canvas对象
+    setTimeout(function () {
+      new html2canvas(document.getElementById('capture')).then(canvas => {
+        // canvas为转换后的Canvas对象
 
-    //     document.getElementById('canvasImg').src = canvas.toDataURL()
-    //   });
-    // }, 50)
+        document.getElementById('canvasImg').src = canvas.toDataURL()
+      });
+    }, 50)
   </script>
 
 </body>
