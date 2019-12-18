@@ -16,12 +16,12 @@
       <span class="logo-qingshan">轻删</span>
       <div class="photo-music is-playing"></div>
     </header>
-    <div class="photo-result">
+    <div class="photo-result" style="display: none;">
 
       <h1>直男拍照技术等级考试</h1>
       <div class="photo-result__content">
         <p class="photo-result__text">
-          <span class="user-name"><i>小飞侠2</i></span>同学的成绩为：<span class="score">95</span>分
+          <span class="user-name"><i>小飞侠2</i></span>同学的成绩为：<span class="score">100</span>分
           <!-- 您本次的考试成绩为：<span class="score">75</span>分 -->
         </p>
         <p class="photo-result__evaluate">等级称号为： </p>
@@ -50,8 +50,9 @@
       <span class="photo-boy photo-boy--5"></span>
       <p class="photo-share__text">告诉身边的直男们</p>
     </div>
-    <div class="photo-capture">
-      <div id="capture" class="photo-canvas">
+    <img src="" id="canvasImg" class="photo-canvas-img" alt="图片" style="opacity:1">
+    <div class="photo-capture" style="opacity: 1;">
+      <div id="capture" class="photo-canvas" style="z-index: 1;">
         <div class="photo-result">
           <h1>直男拍照技术等级考试</h1>
           <div class="photo-result__content">
@@ -99,7 +100,7 @@
 
         document.getElementById('canvasImg').src = canvas.toDataURL()
       });
-    }, 50)
+    }, 100)
   </script>
 
 </body>
