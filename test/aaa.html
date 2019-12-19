@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>直男拍照技术等级考试-结果</title>
+    <link rel="stylesheet" href="css/photo.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="photo-wrap">
+
+        <div class="photo-capture" style="opacity: 1;">
+            <div id="capture" class="photo-canvas" style="z-index: 1;">
+                <div class="photo-result">
+                    <p class="title-copy"><img src="img/title1.png" alt=""></h1>
+                        <div class="photo-result__content">
+                            <p class="photo-result__text">
+                                <span class="user-name"><i>我是用户名名名名名</i></span>同学的成绩为：<span class="score">85</span>分
+                                <!-- 您本次的考试成绩为：<span class="score">75</span>分 -->
+                            </p>
+                            <p class="photo-result__evaluate">等级称号为： </p>
+                            <div class="photo-result__img">
+                                <img src="img/result/result-1.png" alt="铁血无情">
+                            </div>
+                            <p class="photo-result__summary">考后总结：看到你就想到被“直男摄影”支配的恐惧；</p>
+                        </div>
+                        <div class="photo-canvas__code">
+                            <span class="boy1"><img src="img/boy1.png" alt="图片"></span>
+                            <span class="boy2"><img src="img/boy2.png" alt="图片"></span>
+                            <div class="code"><span><img src="images/qrcode.png" alt="二维码"></span>
+                            </div>
+                        </div>
+                        <p class="photo-canvas__text">长按识别二维码，查看你的拍照等级&gt;</p>
+                </div>
+            </div>
+        </div>
+        <img src="" id="canvasImg" class="photo-canvas-img" alt="图片">
+    </div>
+
+    <script src="js/html2canvas.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(".button-book").click(function () {
+            $(".photo-book__next").css('display', 'block')
+            $(".photo-book__wrap").addClass('is-hide');
+            $('.photo-book__img img').attr("src", 'images/a1.png');
+
+        })
+        $(".photo-music").click(function () {
+            if ($(this).hasClass("is-playing")) {
+                $(this).removeClass('is-playing')
+            } else {
+                $(this).addClass('is-playing')
+            }
+        })
+        setTimeout(function () {
+            new html2canvas(document.getElementById('capture')).then(canvas => {
+                // canvas为转换后的Canvas对象
+
+                document.getElementById('canvasImg').src = canvas.toDataURL()
+            });
+        }, 50)
+    </script>
+
+</body>
+
+</html>
