@@ -38,7 +38,8 @@
                 </div>
             </div>
         </div>
-        <img src="" id="canvasImg" class="photo-canvas-img" alt="图片">
+        <img src="" id="canvasImg" class="photo-canvas-img" alt="图片"
+            style="border: solid 10px #000; opacity: 1; box-sizing: border-box;">
     </div>
 
     <script src="js/html2canvas.min.js"></script>
@@ -57,13 +58,12 @@
                 $(this).addClass('is-playing')
             }
         })
-        setTimeout(function () {
-            new html2canvas(document.getElementById('capture')).then(canvas => {
-                // canvas为转换后的Canvas对象
 
-                document.getElementById('canvasImg').src = canvas.toDataURL()
-            });
-        }, 50)
+        new html2canvas(document.getElementById('capture')).then(canvas => {
+            // canvas为转换后的Canvas对象
+
+            document.getElementById('canvasImg').src = canvas.toDataURL()
+        });
     </script>
 
 </body>
