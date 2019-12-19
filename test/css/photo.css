@@ -397,7 +397,7 @@ body {
 }
 
 .button-main--next {
-  margin: 0.3rem auto;
+  margin: 0.53rem auto 0;
   width: 2.77rem;
   line-height: 0.86rem;
   font-size: 0.5rem;
@@ -421,11 +421,10 @@ body {
 }
 
 .photo-book .photo-book__question {
-  width: 6.1rem;
   padding: 0.97rem 0 0.19rem 0;
   font-size: 0.3rem;
   line-height: 0.4rem;
-  letter-spacing: 0.005rem;
+  white-space: nowrap;
 }
 
 .photo-book .photo-book__answer {
@@ -501,6 +500,7 @@ body {
 }
 
 .photo-book .photo-book__img.is-result .img-before .answer {
+  font-weight: bold;
   -webkit-animation: showOut 0.1s 0.5s both;
           animation: showOut 0.1s 0.5s both;
 }
@@ -701,7 +701,7 @@ body {
 
 .photo-book__analyze {
   position: relative;
-  height: 1.84rem;
+  height: 1.62rem;
   background: #5ed2ac;
   border: solid 0.03rem #000;
 }
@@ -723,13 +723,15 @@ body {
   position: absolute;
   right: 0.22rem;
   color: #fff;
-  font-size: 0.28rem;
+  font-size: 0.3rem;
+  font-weight: bold;
 }
 
 .photo-book__analyze .content {
   padding: 0.52rem 0.28rem 0 0.22rem;
-  font-size: 0.28rem;
-  line-height: 0.36rem;
+  font-size: 0.36rem;
+  line-height: 0.48rem;
+  font-weight: bold;
 }
 
 .photo-result {
@@ -760,6 +762,15 @@ body {
   background-position: 0 -2rem;
   text-indent: -999em;
   overflow: hidden;
+}
+
+.photo-result .title-copy {
+  width: 7.5rem;
+  height: 0.84rem;
+}
+
+.photo-result .title-copy img {
+  width: 100%;
 }
 
 .photo-result__content {
@@ -846,9 +857,11 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 0.09rem 0.22rem;
+  padding: 0.25rem 0.22rem;
   height: 1.36rem;
-  font-size: 0.26rem;
+  line-height: 0.48rem;
+  font-size: 0.36rem;
+  font-weight: bold;
   color: #c8c8c8;
   white-space: pre-line;
   background: #000;
@@ -885,6 +898,10 @@ body {
   margin-right: 0.075rem;
   background-position: -1.9rem 0;
   content: "";
+  -webkit-animation: swing 1s both infinite;
+          animation: swing 1s both infinite;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
 }
 
 .photo-result__wrap {
@@ -942,6 +959,10 @@ body {
   height: 0.65rem;
   margin-right: 0.075rem;
   background-position: -1.9rem 0;
+  -webkit-animation: swing 1s both infinite;
+          animation: swing 1s both infinite;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
 }
 
 .photo-result__save {
@@ -1030,7 +1051,7 @@ body {
 }
 
 .photo-capture {
-  opacity: 0.01;
+  opacity: 0.002;
   pointer-events: none;
 }
 
@@ -1102,25 +1123,20 @@ body {
   content: "";
 }
 
-.photo-canvas__code .photo-boy {
-  -webkit-transform-origin: left top;
-          transform-origin: left top;
-  -webkit-animation: unset;
-          animation: unset;
-}
-
-.photo-canvas__code .photo-boy--2 {
+.photo-canvas__code .boy1 {
+  position: absolute;
   top: 0.3rem;
   left: 1.26rem;
-  -webkit-transform: scale(0.636);
-          transform: scale(0.636);
+  width: 1.26rem;
+  height: 1.8rem;
 }
 
-.photo-canvas__code .photo-boy--3 {
+.photo-canvas__code .boy2 {
+  position: absolute;
   top: 0.36rem;
   left: 5.08rem;
-  -webkit-transform: scale(0.66);
-          transform: scale(0.66);
+  width: 1.43rem;
+  height: 1.69rem;
 }
 
 .photo-canvas__text {
@@ -1478,6 +1494,52 @@ body {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+@keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
   }
 }
 
