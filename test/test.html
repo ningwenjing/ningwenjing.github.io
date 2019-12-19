@@ -24,7 +24,7 @@
                             </p>
                             <p class="photo-result__evaluate">等级称号为： </p>
                             <div class="photo-result__img">
-                                <img src="img/result/result-1.png" alt="铁血无情">
+                                <img src="img/result/result-3.png" alt="铁血无情">
                             </div>
                             <p class="photo-result__summary">考后总结：看到你就想到被“直男摄影”支配的恐惧；</p>
                         </div>
@@ -59,11 +59,13 @@
             }
         })
 
-        new html2canvas(document.getElementById('capture')).then(canvas => {
-            // canvas为转换后的Canvas对象
+        setTimeout(function () {
+            new html2canvas(document.getElementById('capture')).then(canvas => {
+                // canvas为转换后的Canvas对象
 
-            document.getElementById('canvasImg').src = canvas.toDataURL()
-        });
+                document.getElementById('canvasImg').src = canvas.toDataURL()
+            });
+        }, 500)
     </script>
 
 </body>
