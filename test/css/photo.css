@@ -869,6 +869,11 @@ body {
           box-sizing: border-box;
 }
 
+.photo-result__bottom {
+  position: relative;
+  z-index: 11;
+}
+
 .photo-result__bottom.is-other .photo-result__get {
   display: none;
 }
@@ -912,7 +917,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 11;
 }
 
 .photo-result__wrap .button-main {

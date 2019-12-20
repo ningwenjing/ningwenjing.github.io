@@ -723,6 +723,9 @@ body {
 }
 
 .photo-result__bottom {
+  position: relative;
+  z-index: 11;
+
   &.is-other {
     .photo-result__get {
       display: none;
@@ -762,7 +765,7 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  z-index: 11;
+
 
   .button-main {
     display: inline-flex;
