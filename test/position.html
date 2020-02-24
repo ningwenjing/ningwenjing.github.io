@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body,
+    div,
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    .page {
+      height: 2000px;
+    }
+
+    .top {
+      height: 300px;
+    }
+
+    .xlx-coin-list__title {
+      position: sticky;
+      top: 0;
+      display: flex;
+      height: 40px;
+      line-height: 40px;
+      background: #ccc;
+    }
+
+    .xlx-coin-list__title a {
+      width: 25%;
+      color: #000;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .content li {
+      height: 300px;
+      list-style: none;
+      margin:  20px;
+      flex: 1;
+      border: solid 1px #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="top"></div>
+    <div class="xlx-coin-list__title">
+      <a href="javascript:;" class="xlx-coin-list__title-item is-active">热门推荐</a>
+      <a href="javascript:;" class="xlx-coin-list__title-item">实物礼品</a>
+      <a href="javascript:;" class="xlx-coin-list__title-item">超值会员</a>
+      <a href="javascript:;" class="xlx-coin-list__title-item">优惠卡券</a>
+    </div>
+    <ul class="content">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</body>
+
+</html>
