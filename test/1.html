@@ -57,9 +57,18 @@
         《荷塘月色》作于1927年7月，正值大革命失败，白色恐怖笼罩中国大地。这时，蒋介石叛变革命，中国处于一片黑暗之中。朱自清作为“大时代中一名小卒”，一直在呐喊和斗争，但是在四一二政变之后，却从斗争的“十字街头”，钻进古典文学的“象牙之塔”。但是作者既做不到投笔从戎，拿起枪来革命，但又始终平息不了对黑暗现实产生的不满与憎恶，作者对生活感到惶惑矛盾，内心是抑郁的，是始终无法平静的。于是作者写下了这篇文章。这篇散文通过对冷清的月夜下荷塘景色的描写，流露出作者想寻找安宁但又不可得，幻想超脱现实但又无法超脱的复杂心情，这正是那个黑暗的时代在作者心灵上的折射。
     </div>
     <script>
-        document.body.addEventListener('touchmove', function (e) {
-  e.preventDefault(); //阻止默认的处理方式(阻止下拉滑动的效果)
-}, {passive: false});
+        document.body.addEventListener('touchmove', this.bodyScroll, {
+            passive: false
+        }); // 实例摧毁解绑 其他页面就可正常滚动
+        // destroyed() {
+        //     document.body.removeEventListener('touchmove', this.bodyScroll, {
+        //         passive: false
+        //     });
+        // }, methods: {
+        //     bodyScroll(event) {
+        //         event.preventDefault();
+        //     },
+        // }
     </script>
 </body>
 
