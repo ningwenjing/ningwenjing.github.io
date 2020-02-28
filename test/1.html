@@ -38,7 +38,7 @@
 
 <body>
     <div class="box"></div>
-    <div class="box1">
+    <div class="box1 scroll">
         这几天心里颇不宁静。今晚在院子里坐着乘凉，忽然想起日日走过的荷塘，在这满月的光里，总该另有一番样子吧。月亮渐渐地升高了，墙外马路上孩子们的欢笑，已经听不见了；妻在屋里拍着闰儿⑴，迷迷糊糊地哼着眠歌。我悄悄地披了大衫，带上门出去。
         沿着荷塘，是一条曲折的小煤屑路。这是一条幽僻的路；白天也少人走，夜晚更加寂寞。荷塘四面，长着许多树，蓊蓊郁郁⑵的。路的一旁，是些杨柳，和一些不知道名字的树。没有月光的晚上，这路上阴森森的，有些怕人。今晚却很好，虽然月光也还是淡淡的。
         路上只我一个人，背着手踱⑶着。这一片天地好像是我的；我也像超出了平常的自己，到了另一个世界里。我爱热闹，也爱冷静；爱群居，也爱独处。像今晚上，一个人在这苍茫的月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现
@@ -57,30 +57,9 @@
         《荷塘月色》作于1927年7月，正值大革命失败，白色恐怖笼罩中国大地。这时，蒋介石叛变革命，中国处于一片黑暗之中。朱自清作为“大时代中一名小卒”，一直在呐喊和斗争，但是在四一二政变之后，却从斗争的“十字街头”，钻进古典文学的“象牙之塔”。但是作者既做不到投笔从戎，拿起枪来革命，但又始终平息不了对黑暗现实产生的不满与憎恶，作者对生活感到惶惑矛盾，内心是抑郁的，是始终无法平静的。于是作者写下了这篇文章。这篇散文通过对冷清的月夜下荷塘景色的描写，流露出作者想寻找安宁但又不可得，幻想超脱现实但又无法超脱的复杂心情，这正是那个黑暗的时代在作者心灵上的折射。
     </div>
     <script>
-        var overscroll = function (el) {
-            el.addEventListener('touchstart', function () {
-                var top = el.scrollTop,
-                    totalScroll = el.scrollHeight,
-                    currentScroll = top + el.offsetHeight;
-                if (top === 0) {
-                    el.scrollTop = 1;
-                } else if (currentScroll === totalScroll) {
-                    el.scrollTop = top - 1;
-                }
-            });
-
-            el.addEventListener('touchmove', function (evt) {
-                if (el.offsetHeight < el.scrollHeight)
-                    evt._isScroller = true;
-            });
-        }
-
-        overscroll(document.querySelector('.scroll'));
-        document.body.addEventListener('touchmove', function (evt) {
-            if (!evt._isScroller) {
-                evt.preventDefault();
-            }
-        });
+        document.body.addEventListener('touchmove', function (e) {
+  e.preventDefault(); //阻止默认的处理方式(阻止下拉滑动的效果)
+}, {passive: false});
     </script>
 </body>
 
