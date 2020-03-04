@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta data-n-head="true" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .box{
+            position: relative;
+        }
+        .box-img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+        }
+        .box-img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter:hue-rotate(50deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        
+        <video poster="https://shortvideo-image.a.88cdn.com/9411a37002b264d2e7ca6dcff3200a94" src="https://sl.video.ali.n0808.com/r_63e3d3726ee2586903a4ceaaf33f5a04a3fb1ab9?sign=f2d350365b34f1f42911957335dafe76&amp;t=bcc09364&amp;auth_key=1583426226-0-0-6d61ece99a76842825ba87a8b4d30c21" autoplay="autoplay" controls="controls" playsinline="" webkit-playsinline="" x5-video-player-type="h5"></video>
+        <div class="box-img">
+            <img src="https://shortvideo-image.a.88cdn.com/9411a37002b264d2e7ca6dcff3200a94" alt="">
+        </div>
+    </div>
+</body>
+</html>
